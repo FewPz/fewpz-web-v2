@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Bai_Jamjuree, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import SpotifyNowPlaying from "@/components/SpotifyNowPlaying";
 
 const baiJamjuree = Bai_Jamjuree({
   variable: "--font-bai-jamjuree",
@@ -31,6 +32,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <SpotifyNowPlaying />
       </body>
     </html>
   );
