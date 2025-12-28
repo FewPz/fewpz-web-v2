@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Fewpz | Developer & Designer",
+  title: "Peeranat Matsor - FewPz",
   description: "Portfolio of Fewpz - Full-stack Developer based in Bangkok, Thailand",
 };
 
