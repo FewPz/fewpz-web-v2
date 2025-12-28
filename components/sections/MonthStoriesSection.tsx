@@ -5,8 +5,9 @@ import AnimatedContent from '@/components/AnimatedContent';
 import { Calendar, X } from 'lucide-react';
 import { Stories, StoriesContent, Story, StoryAuthor, StoryAuthorImage, StoryAuthorName, StoryOverlay, StoryVideo, StoryImage } from '@/components/kibo-ui/stories';
 import { CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Dialog, DialogContent, DialogClose } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogClose, DialogTitle } from '@/components/ui/dialog';
 import Image from 'next/image';
+import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
 
 export type StoryItem = {
   id: number;
@@ -77,6 +78,10 @@ const MonthStoriesSection: React.FC<MonthStoriesSectionProps> = ({ title, storie
       {/* Modal Dialog */}
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="max-w-4xl w-full h-[90vh] p-0 bg-black/95 border-none">
+          <VisuallyHidden.Root>
+            <DialogTitle>View {selectedStory?.author}&apos;s story</DialogTitle>
+          </VisuallyHidden.Root>
+          
           <DialogClose className="absolute right-4 top-4 z-50 rounded-full bg-black/50 p-2 text-white hover:bg-black/70 transition-colors">
             <X className="h-5 w-5" />
           </DialogClose>
