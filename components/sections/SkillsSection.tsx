@@ -4,9 +4,11 @@ import CountUp from '@/components/CountUp';
 import { Separator } from '@/components/ui/separator';
 
 const skills = [
-  'React', 'Next.js', 'TypeScript', 'Tailwind CSS', 
-  'Node.js', 'Python', 'PostgreSQL', 'MongoDB',
-  'Git', 'Docker', 'Figma', 'AWS'
+  'JavaScript', 'TypeScript', 'Python', 'Java', 'Go', 'PHP', 'SQL', 'C',
+  'Next.js', 'Sveltekit', 'Express.js', 'Ejs', 'Django', 'Nuxt',
+  'Docker', 'Kubernetes', 'Jenkins', 'Git', 'VSCode', 'Rancher', 'Nginx',
+  'HAProxy', 'ArgoCD', 'Harbor', 'Minio', 'AWS', 'GCP', 'Huawei Cloud',
+  'PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Elasticsearch',
 ];
 
 const stats = [

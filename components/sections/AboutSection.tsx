@@ -16,7 +16,7 @@ export default function AboutSection() {
         {/* Bio Text with Blur Animation */}
         <div className="space-y-8">
           <BlurText
-            text="สวัสดีครับ ผมชื่อ Fewpz"
+            text="Hi, I'm Peeranat (Few) 🚀"
             className="text-3xl sm:text-4xl md:text-5xl text-foreground font-light leading-tight"
             delay={80}
             animateBy="words"
@@ -25,13 +25,13 @@ export default function AboutSection() {
           />
           
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-            Full-stack developer จาก Bangkok, Thailand 
-            ผมชอบสร้าง digital experiences ที่สวยงามและใช้งานได้จริง
+            Fourth-Year Information Technology Student with a Focus on Software Engineer 
+            at the School of Information Technology, KMITL.
           </p>
           
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-            เชี่ยวชาญด้าน React, Next.js, TypeScript 
-            และกำลังสำรวจโลกของ design และ creative coding
+            Passionate about building web applications, backend systems, 
+            and creating tools that solve real-world problems.
           </p>
         </div>
         

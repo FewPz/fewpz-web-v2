@@ -7,9 +7,9 @@ import { ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
 
 const socialLinks = [
-  { label: 'GitHub', href: 'https://github.com' },
-  { label: 'LinkedIn', href: 'https://linkedin.com' },
-  { label: 'Twitter', href: 'https://twitter.com' },
+  { label: 'GitHub', href: 'https://github.com/FewPz' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/pfewpz/' },
+  { label: 'Email', href: 'mailto:fewpz.peeranat@gmail.com' },
 ];
 
 export default function ContactSection() {
@@ -34,17 +34,17 @@ export default function ContactSection() {
           />
           
           <p className="text-lg text-muted-foreground max-w-lg">
-            มีโปรเจคน่าสนใจ? มาคุยกันครับ 
-            พร้อมรับงาน freelance และ full-time
+            Have an interesting project? Let&apos;s talk! 
+            Open for freelance and full-time opportunities.
           </p>
           
           {/* Email Link */}
           <Magnet padding={60} magnetStrength={3}>
             <Link 
-              href="mailto:hello@fewpz.dev"
+              href="mailto:fewpz.peeranat@gmail.com"
               className="group inline-flex items-center gap-2 text-2xl sm:text-3xl text-foreground hover:text-muted-foreground transition-colors"
             >
-              hello@fewpz.dev
+              fewpz.peeranat@gmail.com
               <ArrowUpRight className="w-6 h-6 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Magnet>

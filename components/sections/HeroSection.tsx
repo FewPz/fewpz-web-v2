@@ -136,9 +136,9 @@ export default function HeroSection() {
         <motion.div className="mt-6 mb-12" variants={itemVariants}>
           <RotatingText
             texts={[
-              'I\'m a Full-Stack Developer (Backend 99%, Frontend 1%)',
-              'ITKMITL Student (Honors Program 4+1)',
-              'Kaza wo Matsu - ความทรงและสายลม',
+              'Fourth-Year IT Student @ KMITL',
+              'Software Engineer Focus 🚀',
+              'Full-Stack Developer',
             ]}
             className="text-xl sm:text-2xl text-muted-foreground font-light"
             rotationInterval={3000}

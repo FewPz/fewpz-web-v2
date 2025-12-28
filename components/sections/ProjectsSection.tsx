@@ -199,7 +199,7 @@ export default function ProjectsSection() {
 
   return (
     <section id="work" className="py-32 sm:py-40">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-3xl mx-auto px-6">
         {/* Section Label */}
         <div className="flex items-center gap-4 mb-12">
           <span className="text-xs uppercase tracking-widest text-muted-foreground">Projects</span>
