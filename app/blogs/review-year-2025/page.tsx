@@ -824,9 +824,10 @@ export default function ReviewYear2025Page() {
                 <p className="text-muted-foreground leading-relaxed mb-6">
                     ในเดือนตุลาคม 2025 นี้ เป็นเดือนที่ฟิวส์ส่งรายงานโครงงานใหญ่ (โปรเจกต์จบ) เอาจริง ๆ มะ
                     ฟิวส์ยอมรับว่าฟิวส์กลัวทุกอย่าง แม้กระทั่งการทำโปรเจกต์จบ เพราะกลัวว่าจะทำไม่เสร็จ กลัวกรรมการสอบ กลัวโดนดุ
-                    กลัวแม่งทุกอย่างไอ้สัสนี่ ก็เลยรีบปั่นให้เสร็จตั้งแต่เนิ่น ๆ ในขณะเดียวกันฟิวส์งอกเว็บใหม่ที่ชื่อว่า <a href="https://ujudge.it.kmitl.ac.th" className="text-orange-400 hover:text-orange-600">ujudge.it.kmitl.ac.th</a>
+                    กลัวแม่งทุกอย่างไอ้สัสนี่ ก็เลยรีบปั่นให้เสร็จตั้งแต่เนิ่น ๆ ในขณะเดียวกันฟิวส์งอกเว็บใหม่ที่ชื่อว่า <a href="https://ujudge.it.kmitl.ac.th" className="text-orange-400 hover:text-orange-600">ujudge.it.kmitl.ac.th </a>
                     (uJudge) ขึ้นมาเพื่อใช้ในการทำข้อสอบ โดยสามารถตรวจข้อเขียนเป็นอัตโนมัติได้ด้วย เป็นระบบที่พัฒนาภายใน 7 วัน 5555+
-                    โคตรเหนื่อย โคตรบ้า เปลืองพลังสุด ๆ ได้ลองเล่น AI ใหม่ ๆ ไม่ว่าจะเป็น OpenAI, Gemini, Qwen 
+                    โคตรเหนื่อย โคตรบ้า เปลืองพลังสุด ๆ ได้ลองเล่น AI ใหม่ ๆ ไม่ว่าจะเป็น OpenAI, Gemini, Qwen เหนื่อยแต่สนุกมาก ๆ ที่ได้ลองข้าม
+                    ขีพจำกัดของตัวเอง 
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                     ฟิวส์จำได้วันนึง มันจะเป็นงาน ICTIEE 2025 (The 17th International Conference on Information Technology and Electrical Engineering)
@@ -967,14 +968,20 @@ export default function ReviewYear2025Page() {
                 ]
             }>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                    2025 has been an incredible year of growth, challenges, and achievements.
-                    From starting new projects to learning cutting-edge technologies,
-                    every moment has been a stepping stone towards becoming a better developer.
+                    ก่อนจะเดือนสุดท้ายแห่งปี 2025 นี้ ในเดือนพฤศจิกายน 2025 เป็นเดือนที่ฟิวส์ต้องขึ้นสอบโปรเจกต์จบโครงงาน 1 ยอมรับว่าทุกคนกลัว
+                    ไอ้ฟิวส์ก็กลัวด้วยเหมือนกัน แน่นอนว่าฟิวส์ก็ไปหาเพื่อนกะว่าจะไปให้กำลังใจเพื่อน ๆ แต่ไม่แน่ใจว่าอันนี้เรียกว่าให้กำลังใจไหมนะ
+                    เหมือนเราไปกดดันเพื่อนรึเปล่านะ เพื่อนดูเกรงเชี่ยว - -" ขออภัยครับ พอเป็นตัวเองก็เครียดเหมือนกัน 5555+
+                    ไม่อยากสอบแล้ว อยากกระโดดลงจากเวทีสอบ ณ ตอนนี้เลย ไม่ไหวแล้ว สุดท้ายก็ผ่านมาได้ หลังจากสอบเสร็จ ฟิวส์ก็ไปพักผ่อนไปกินขนมหวานที่ร้านอาหารกัน ใกล้ FBT ร้านอะไรไม่รู้อะ ไอ้เต้พามา
+                    อร่อยเหมือนกัน พอถึงร้านก็โดนตามตัวให้กลับคณะหน่อย เราที่เพิ่งโต๊ะ เพิ่งสั่งอาหารไปตลกร้ายดีเหมือนกัน
+                    ไอ้กิตก็โดนเหมือนกัน 5555+ กินเสร็จก็เลยรีบเบ่งไปคณะทันที่ 
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                    This year, I focused heavily on building real-world applications,
-                    contributing to open source, and expanding my knowledge in areas like
-                    AI/ML, cloud computing, and modern web development frameworks.
+                    หลังที่ทุกคนเสร้จหมดแล้วนั้น พวกเราก็ได้เที่ยวที่หัวหิน ใครคิดว่าไอ้ฟิวส์จะได้ไปเที่ยวทะเลกับเขาบ้าง แล้วใครมาเสนอไปทะเลหน้าหนาว
+                    ฮัลโหลลลลลลลลลล หนาวชิบหายยยยยยย ได้กินอาหารทะเล ย้อมใจอร่อยเหมือนกัน ได้เล่นไฟเย็น ๆ ริมทะเล ฟิวส์ชอบมาก ๆ
+                    อ๋อ มันจะมีจังหวะนึงเกรด Project ปี 4 ออก ฟิวส์ได้ A มา ช็อกดิ เพราะคิดว่าตัวเองจะได้แค่ B+ อะไรทำนองนี้
+                    หลังจากนั้นก็กลับมาทำงานต่อ ไปเตรียมงานเปิดบ้านไอทีลาดกระบังกันต่อ ฟิวส์ได้มีโอกาสโชว์โปรเจกต์ <a href="https://ijudge.it.kmitl.ac.th" className="text-orange-400 hover:text-orange-600">ijudge.it.kmitl.ac.th</a> (iJudge) ให้กับน้อง ๆ ที่มาเยี่ยมชมงานด้วย
+                    และตัวฟิวส์ก็ไปเป็นเฮด Workshop ในสาย Software Engineering ตอนแรกไม่รู้จะทำอะไร ธีมเป็นแนว 8bit ทรง Minecraft หน่อย ๆ
+                    จัดไป Web Speedrun แม่ง เขียนเว้บยังไงให้เสร็จเร็ว deploy ให้เสร็จเลย น้อง ๆ ใน Workshop ตั้งใจเรียนกันมาก ๆ ขอบคุณน้อง ๆ ทุกคนนะครับ
                 </p>
             </MonthStoriesSection>
 
@@ -1096,14 +1103,16 @@ export default function ReviewYear2025Page() {
                 ]
             }>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                    2025 has been an incredible year of growth, challenges, and achievements.
-                    From starting new projects to learning cutting-edge technologies,
-                    every moment has been a stepping stone towards becoming a better developer.
+                    สุดท้ายในเดือนธันวาคม 2025 นี้ เป็นเดือนที่ฟิวส์เรียกว่าน่าจะภาคภูมิใจในตัวเองสุด ๆ ก่อนจบปีนี้ ฟิวส์ได้รับรางวัล
+                    Huawei National ICT Competition 2025 ระดับประเทศ ในฐานะที่อันดับที่ 1 โดยใช้ชื่อทีมว่า <span className="text-orange-500">"SIGKILL"</span> สุดยอดไปเลย
+                    ฟิวส์ดีใจมาก ๆ ที่ความพยายามตลอดทั้งปีที่ผ่านมาไม่เสียเปล่า ฟิวส์แข่งรายการนี้ตั้งแต่ปี 1 จนตอนนี้เป็นปีสุดท้ายที่สามารถลงแข่งได้
+                    ฟิวส์ได้ไปกินอาหารจีนอร่อยมาก ๆ ได้นาฬิกาและโล่ห์รางวัลกลับมาเป็นที่ระลึกด้วย เอาไปตั้งโชว์ใน Lab 306 หลังห้อง (นับวันฟิวส์กลัวแม่งตกชิบหาย ของข้างหลังมันเยอะ)
+                    และฟิวส์ได้เป็นตัวแทนจะได้ไปแข่งต่อในรอบ APAC ในเดือนมีนาที่กำลังมาถึงนี่ 
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
-                    This year, I focused heavily on building real-world applications,
-                    contributing to open source, and expanding my knowledge in areas like
-                    AI/ML, cloud computing, and modern web development frameworks.
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                    หลังจากนั้นฟิวส์ก็ทำการแลกของขวัญปีใหม่กับเพื่อน ๆ ในห้อง Creative บอกเลยว่าของแต่ละคน แค่เห็นชื่อก็รู้แล้วว่าจะได้อะไร
+                    ของเกรียน ๆ ทั้งนั้น 5555+ ฟิวส์ได้ของขวัญเป็นเก้าอี้ดำจากน้องครูส โยนไปทิ้งไว้ที่แลปไปละ 5555+ สุดท้ายก่อนจะปีใหม่
+                    ในขณะเดียวกัน ใครไม่รู้ปริ้นท์รูปกิตไปติดในห้องแลปโคตรน่ากลัว ถึงขั้นต้องหันออกไปข้างนอก สุดท้ายนี้ฟิวส์ก็ได้กินข้าว ๆ กับเพื่อน ๆ ไปดูหนังด้วยกัน เป็นการส่งท้ายปี 2025 ที่ดีมาก ๆ
                 </p>
             </MonthStoriesSection>
 
