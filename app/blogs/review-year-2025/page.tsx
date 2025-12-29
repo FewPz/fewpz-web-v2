@@ -1,12 +1,15 @@
 'use client';
 
 import { motion } from 'motion/react';
+import { useState, useEffect, useMemo } from 'react';
 import BlurText from '@/components/BlurText';
 import AnimatedContent from '@/components/AnimatedContent';
 import CountUp from '@/components/CountUp';
 import SpotlightCard from '@/components/SpotlightCard';
 import TiltedCard from '@/components/TiltedCard';
 import Magnet from '@/components/Magnet';
+import ClickSpark from '@/components/ClickSpark';
+import ScrollFloat from '@/components/ScrollFloat';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import {
@@ -25,6 +28,20 @@ import {
 import Link from 'next/link';
 import Image from 'next/image';
 import MonthStoriesSection from '@/components/sections/MonthStoriesSection';
+
+// Background images array - randomized on each visit
+const BACKGROUND_IMAGES = [
+    '/blogs/review-year-2025/585883946_2301665550348361_8664537836990158268_n.jpg',
+    '/blogs/review-year-2025/586246020_2301665567015026_4460457620215506663_n.jpg',
+    '/blogs/review-year-2025/jan/8cca8c68-2764-4279-baa5-82b7b873d8e5.jpg',
+    '/blogs/review-year-2025/feb/4828543b-8244-4fd3-9fe2-e44827775c76.jpg',
+    '/blogs/review-year-2025/mar/10176945-0b0a-44f5-8361-3add2e843240.jpg',
+    '/blogs/review-year-2025/apr/0bb480fa-31c5-4255-a630-0c73ccc80e22.jpg',
+    '/blogs/review-year-2025/may/3e7b3118-5cc0-425f-80fc-3dd57ea7d383.jpg',
+    '/blogs/review-year-2025/jun/6000c1af-ac7c-46bb-a4b5-cd86af1938bf.jpg',
+    '/blogs/review-year-2025/july/8c750ac8-d017-413e-9817-3a6a0332748b.jpg',
+    '/blogs/review-year-2025/aug/5ca73459-4376-4e79-99a0-896b77157804.jpg',
+];
 
 // Polaroid component
 function Polaroid({
@@ -65,23 +82,41 @@ function Polaroid({
 }
 
 export default function ReviewYear2025Page() {
+    // Randomize background image on mount
+    const [randomBackground, setRandomBackground] = useState(BACKGROUND_IMAGES[0]);
+
+    useEffect(() => {
+        const randomIndex = Math.floor(Math.random() * BACKGROUND_IMAGES.length);
+        setRandomBackground(BACKGROUND_IMAGES[randomIndex]);
+    }, []);
+
     return (
-        <main className="min-h-screen bg-background">
-            {/* Hero Section */}
-            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-                {/* Blurred background image with mask gradient */}
-                <img
-                    src="/blogs/review-year-2025.png"
-                    alt="blog background"
-                    className="absolute top-0 left-0 w-full object-center object-cover"
-                    style={{
-                        height: '50vh',
-                        filter: 'blur(8px)',
-                        maskImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%)',
-                        WebkitMaskImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%)',
-                        zIndex: 0,
-                    }}
-                />
+        <ClickSpark
+            sparkColor="#f97316"
+            sparkSize={12}
+            sparkRadius={20}
+            sparkCount={10}
+            duration={500}
+        >
+            <main className="min-h-screen bg-background">
+                {/* Hero Section */}
+                <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+                    {/* Blurred background image with mask gradient */}
+                    <motion.img
+                        src={randomBackground}
+                        alt="blog background"
+                        className="absolute top-0 left-0 w-full object-center object-cover"
+                        initial={{ scale: 1.1, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 1.5, ease: 'easeOut' }}
+                        style={{
+                            height: '50vh',
+                            filter: 'blur(8px)',
+                            maskImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%)',
+                            WebkitMaskImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%)',
+                            zIndex: 0,
+                        }}
+                    />
 
                 {/* Orange gradient from top */}
                 <div className="absolute inset-0 bg-gradient-to-b from-orange-300/50 via-orange-from-orange-300/20 to-transparent z-5" />
@@ -1115,128 +1150,33 @@ export default function ReviewYear2025Page() {
                     ในขณะเดียวกัน ใครไม่รู้ปริ้นท์รูปกิตไปติดในห้องแลปโคตรน่ากลัว ถึงขั้นต้องหันออกไปข้างนอก สุดท้ายนี้ฟิวส์ก็ได้กินข้าว ๆ กับเพื่อน ๆ ไปดูหนังด้วยกัน เป็นการส่งท้ายปี 2025 ที่ดีมาก ๆ
                 </p>
             </MonthStoriesSection>
-
-            <Separator className="max-w-4xl mx-auto" />
-
-            {/* Looking Forward Section */}
-            <section className="py-20 px-6">
-                <div className="max-w-4xl mx-auto text-center">
-                    <AnimatedContent distance={40} duration={0.8}>
-                        <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center justify-center gap-3">
-                            <Rocket className="w-8 h-8 text-orange-500" />
-                            Looking Forward to 2026
-                        </h2>
-                        <p className="text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
-                            As I step into 2026, I&apos;m excited about the possibilities ahead.
-                            My goals include deepening my expertise in AI/ML, contributing more to
-                            open source, and building products that make a difference.
-                        </p>
-
-                        <div className="flex flex-wrap justify-center gap-3">
-                            {['AI/ML', 'Cloud Architecture', 'System Design', 'Open Source', 'Content Creation'].map((goal, index) => (
-                                <motion.div
-                                    key={goal}
-                                    initial={{ opacity: 0, scale: 0.8 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    transition={{ delay: index * 0.1 }}
-                                    viewport={{ once: true }}
-                                >
-                                    <Magnet padding={40} magnetStrength={2}>
-                                        <Badge
-                                            variant="outline"
-                                            className="px-4 py-2 text-sm hover:bg-orange-500/10 hover:border-orange-500/50 transition-colors cursor-pointer"
-                                        >
-                                            {goal}
-                                        </Badge>
-                                    </Magnet>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </AnimatedContent>
-                </div>
-            </section>
-
-            
-
-            <Separator className="max-w-4xl mx-auto" />
-
-            {/* Looking Forward Section */}
-            <section className="py-20 px-6">
-                <div className="max-w-4xl mx-auto text-center">
-                    <AnimatedContent distance={40} duration={0.8}>
-                        <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center justify-center gap-3">
-                            <Rocket className="w-8 h-8 text-orange-500" />
-                            Looking Forward to 2026
-                        </h2>
-                        <p className="text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
-                            As I step into 2026, I&apos;m excited about the possibilities ahead.
-                            My goals include deepening my expertise in AI/ML, contributing more to
-                            open source, and building products that make a difference.
-                        </p>
-
-                        <div className="flex flex-wrap justify-center gap-3">
-                            {['AI/ML', 'Cloud Architecture', 'System Design', 'Open Source', 'Content Creation'].map((goal, index) => (
-                                <motion.div
-                                    key={goal}
-                                    initial={{ opacity: 0, scale: 0.8 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    transition={{ delay: index * 0.1 }}
-                                    viewport={{ once: true }}
-                                >
-                                    <Magnet padding={40} magnetStrength={2}>
-                                        <Badge
-                                            variant="outline"
-                                            className="px-4 py-2 text-sm hover:bg-orange-500/10 hover:border-orange-500/50 transition-colors cursor-pointer"
-                                        >
-                                            {goal}
-                                        </Badge>
-                                    </Magnet>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </AnimatedContent>
-                </div>
-            </section>
-
-            {/* Closing Section */}
-            <section className="py-20 px-6 bg-gradient-to-b from-transparent via-orange-500/5 to-orange-500/10">
-                <div className="max-w-4xl mx-auto text-center">
-                    <AnimatedContent distance={40} duration={0.8}>
+            {/* Looking Forward / Goal Section */}
+            <section className="py-20 px-6 relative overflow-hidden">
+                {/* Background decorative elements */}
+                <div className="absolute inset-0 pointer-events-none">
+                    {[...Array(3)].map((_, i) => (
                         <motion.div
-                            className="text-6xl mb-6"
+                            key={i}
+                            className="absolute w-64 h-64 rounded-full bg-gradient-to-br from-red-500/10 to-orange-500/10 blur-3xl"
                             animate={{
+                                x: [0, 30, 0],
+                                y: [0, 20, 0],
                                 scale: [1, 1.1, 1],
-                                rotate: [0, 5, -5, 0]
                             }}
                             transition={{
-                                duration: 2,
+                                duration: 6 + i * 2,
                                 repeat: Infinity,
-                                repeatDelay: 3
+                                delay: i * 0.5,
                             }}
-                        >
-                            🎉
-                        </motion.div>
-                        <h2 className="text-3xl font-bold text-foreground mb-4">
-                            Thank You for Reading!
-                        </h2>
-                        <p className="text-muted-foreground mb-8">
-                            Here&apos;s to an amazing 2026 filled with growth, creativity, and endless possibilities!
-                        </p>
-                        <Link href="/">
-                            <Magnet padding={60} magnetStrength={3}>
-                                <motion.button
-                                    className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-full font-medium hover:bg-orange-600 transition-colors"
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                >
-                                    <ArrowLeft className="w-4 h-4" />
-                                    Back to Home
-                                </motion.button>
-                            </Magnet>
-                        </Link>
-                    </AnimatedContent>
+                            style={{
+                                left: `${20 + i * 25}%`,
+                                top: `${10 + i * 20}%`,
+                            }}
+                        />
+                    ))}
                 </div>
             </section>
         </main>
+        </ClickSpark>
     );
 }
