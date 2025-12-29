@@ -822,14 +822,16 @@ export default function ReviewYear2025Page() {
                 ]
             }>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                    2025 has been an incredible year of growth, challenges, and achievements.
-                    From starting new projects to learning cutting-edge technologies,
-                    every moment has been a stepping stone towards becoming a better developer.
+                    ในเดือนตุลาคม 2025 นี้ เป็นเดือนที่ฟิวส์ส่งรายงานโครงงานใหญ่ (โปรเจกต์จบ) เอาจริง ๆ มะ
+                    ฟิวส์ยอมรับว่าฟิวส์กลัวทุกอย่าง แม้กระทั่งการทำโปรเจกต์จบ เพราะกลัวว่าจะทำไม่เสร็จ กลัวกรรมการสอบ กลัวโดนดุ
+                    กลัวแม่งทุกอย่างไอ้สัสนี่ ก็เลยรีบปั่นให้เสร็จตั้งแต่เนิ่น ๆ ในขณะเดียวกันฟิวส์งอกเว็บใหม่ที่ชื่อว่า <a href="https://ujudge.it.kmitl.ac.th" className="text-orange-400 hover:text-orange-600">ujudge.it.kmitl.ac.th</a>
+                    (uJudge) ขึ้นมาเพื่อใช้ในการทำข้อสอบ โดยสามารถตรวจข้อเขียนเป็นอัตโนมัติได้ด้วย เป็นระบบที่พัฒนาภายใน 7 วัน 5555+
+                    โคตรเหนื่อย โคตรบ้า เปลืองพลังสุด ๆ ได้ลองเล่น AI ใหม่ ๆ ไม่ว่าจะเป็น OpenAI, Gemini, Qwen 
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                    This year, I focused heavily on building real-world applications,
-                    contributing to open source, and expanding my knowledge in areas like
-                    AI/ML, cloud computing, and modern web development frameworks.
+                    ฟิวส์จำได้วันนึง มันจะเป็นงาน ICTIEE 2025 (The 17th International Conference on Information Technology and Electrical Engineering)
+                    เป็นงาน Conference โดยไอทีลาดกระบังเป็นเจ้าภาพจัดงาน ฟิวส์ได้มีโอกาสไปช่วยงานในส่วนของ worker ที่ดี ยกของ เป็น belle-man อะไรประมาณนี้
+                    ในงานนี้ฟิวส์ได้เจออาจารย์หลาย ๆ นับว่าเป็นโอกาสดีมาก ๆ ที่ได้เจออาจารย์หลาย ๆ ท่าน
                 </p>
             </MonthStoriesSection>
 
