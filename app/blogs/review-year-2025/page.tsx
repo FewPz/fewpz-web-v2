@@ -196,12 +196,14 @@ export default function ReviewYear2025Page() {
                     </motion.div>
 
                     {/* Title */}
-                    <BlurText
-                        text="Review Year 2025"
-                        className="text-5xl sm:text-7xl font-bold text-foreground mb-6"
-                        delay={100}
-                        animateBy="letters"
-                    />
+                    <div className="flex justify-center">
+                        <BlurText
+                            text="2025 Recap"
+                            className="text-5xl sm:text-7xl font-bold text-foreground mb-6"
+                            delay={100}
+                            animateBy="letters"
+                        />
+                    </div>
 
                     {/* Subtitle */}
                     <motion.p
@@ -210,7 +212,7 @@ export default function ReviewYear2025Page() {
                         transition={{ delay: 0.5 }}
                         className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8"
                     >
-                        A year of growth, learning, and countless lines of code.
+                        A year of growth, learning
                         Here&apos;s my journey through 2025.
                     </motion.p>
 
