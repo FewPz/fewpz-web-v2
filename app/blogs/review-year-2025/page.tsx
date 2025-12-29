@@ -623,14 +623,17 @@ export default function ReviewYear2025Page() {
                 ]
             }>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                    2025 has been an incredible year of growth, challenges, and achievements.
-                    From starting new projects to learning cutting-edge technologies,
-                    every moment has been a stepping stone towards becoming a better developer.
+                    ต่อมาในเดือนกรกฎาคม 2025 นี้ เป็นเดือนแรกของการเรียนภาคการศึกษาที่ 1/2568 ฟิวส์ได้มีโอกาสเจอเพื่อน ๆ
+                    อาจจะไม่ครบทุกคนแต่ก็ได้เจอหลาย ๆ คนที่ไม่ได้เจอกันมานาน แน่นอนว่ามันยังอยู่ช่วต้นเทอม 1/2568 อยู่
+                    ฟิวส์ชอบเอาตุ๊กต้าไปวางที่โต๊ะแลป เวลาฟิวส์คิดงานไม่ออก ไอ้พวกนี้หละ จะเป็นที่ระบายอารมณ์ของฟิวส์
+                    ขอโทษนะ หิวแสงคุง 5555+ 
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                    This year, I focused heavily on building real-world applications,
-                    contributing to open source, and expanding my knowledge in areas like
-                    AI/ML, cloud computing, and modern web development frameworks.
+                    ฟิวส์มีเรียนแค่ไม่กี่ตัว ในรายวิชา Cloud Application Development เขาเชิญพี่ ๆ ที่ทำงาน Huawei มีขายรายการแข่งขัน
+                    Huawei ICT Competition มาบรรยายให้ฟังด้วย ตอนแรกฟังไปก็ไม่ได้อะไรจนกระทั่ง พี่เขาเล่าว่า "เนี่ยในสถาบันเรามีนักศึกษา KMITL
+                    ไปแข่งเยอะมากเลยนะคะ นี่คือเพื่อน ๆ เราที่ไปคว้ารางวัลมาได้นะคะ" ฟิวส์กับเสียงในหัวคือว่า "อ้าว นั้นมีชื่อทีมกูนิ" 5555+ เขินตาย
+                    หลังจากนั้นไม่นาน ฟิวส์ได้กลับไปเล่นมายคราฟกับเพื่อน ๆ กลุ่ม Happy Survival แน่นอนว่าไอ้ฟิวส์ต้องอยู่กับไอ้เป็ต เพราะทั้งคู่แน่นอนว่าเข้าเซิร์ฟน้อยมาก
+                    ในเดือนนี้ไม่มีอะไร ก็พัฒนาโครงงานไปเรื่อย ๆ
                 </p>
             </MonthStoriesSection>
 
@@ -675,14 +678,16 @@ export default function ReviewYear2025Page() {
                 ]
             }>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                    2025 has been an incredible year of growth, challenges, and achievements.
-                    From starting new projects to learning cutting-edge technologies,
-                    every moment has been a stepping stone towards becoming a better developer.
+                    ในเดือนสิงหาคม 2025 นี้ ฟิวส์มีโอกาสได้สร้างแลปพิเศษสำหรับวิชา IPA เป็นแลป
+                    Kubernetes ให้กับน้อง ๆ แขนง Network ได้ลองเล่น Kubernetes กัน
+                    ฟิวส์รู้สึกดีใจมาก ๆ ที่ได้นำความรู้ที่มีไปแบ่งปันให้น้อง ๆ ได้ลองเล่น อยู่จนดึกเลยทีเดียว
+                    ไม่แน่ใจว่าเดือนสิงหาเป็นเดือนที่ท้องฟ้าเป็นอะไร เดี๋ยวฝนตก หรือแห้ง เล่นเอาสะงงเลย
+                    ติดฝนมาตลอดทั้งเดือน ได้กลับบ้านก็ตี 3 กว่า ๆ
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                    This year, I focused heavily on building real-world applications,
-                    contributing to open source, and expanding my knowledge in areas like
-                    AI/ML, cloud computing, and modern web development frameworks.
+                    นอกจากนี้ ฟิวส์ก็แอบกลับบ้านไปหาดใหญ่อีกรอบ ได้มีโอกาสไปแนะแนวโรงเรียนเก่าของตัวเอง
+                    ที่ขายวิญญาณให้แก่ไอทีลาดกระบัง 5555+ ได้เจอครูเก่า ๆ ไปทุกสายเลย ที่พีคคือ
+                    ไปห้องเรียน SMA ตรงบอร์ดประกาศ แม่งมีใบลาออกติดอยู่ด้วย 555555+ 
                 </p>
             </MonthStoriesSection>
 
@@ -734,14 +739,16 @@ export default function ReviewYear2025Page() {
                 ]
             }>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                    2025 has been an incredible year of growth, challenges, and achievements.
-                    From starting new projects to learning cutting-edge technologies,
-                    every moment has been a stepping stone towards becoming a better developer.
+                    ต่อมาในเดือนกันยายน 2025 นี้ จะเป็น Lab ที่ฟิวส์เขียนขึ้นมาได้ถูกใช้งานจริงแล้วใน IPA
+                    ถึงขั้นน้องไทด์บอกว่า "Lab Kube พี่ฟิวส์ เหี้ยมมาก" ในใจฟิวส์คิดว่า "เอ่อ มึงเติม มอ ม้า มาให้ใช่มะ"
+                    ไม่รู้มันตั้งใจด่าหรือเหี้ยมจริง ๆ 
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                    This year, I focused heavily on building real-world applications,
-                    contributing to open source, and expanding my knowledge in areas like
-                    AI/ML, cloud computing, and modern web development frameworks.
+                    ในเดือนนี้ผมก็แทบจะไม่มีอะไร ให้เวลาโฟกับการเรียนและโครงงานเป็นหลักมากกว่า อ๋อ มันจะช่วงนึงนี้เป็นการเรียนวิชา
+                    Code with Python วิชานี้เป็นเสรีรูปแบบ Hy-brid คือเรียนทั้งออนไลน์และออนไซต์ ได้หมดเลย เรียนที่ 42 Bangkok
+                    มีทั้งหมด 7 Modules เป็น Basic Python ไม่ยากมาก แต่ต้องแข่งกับเวลา ในวิชานี้จะมีโปรเจกต์ให้ทำด้วยซึ่งใช้เวลาทำแค่
+                    1 วันเท่านั้น ฟิวส์ถึงกับห้ะ ต้องทำไรนะ 1 วันเองหรอวะ 5555+ สุดท้ายก็ผ่านไปได้ด้วยดี ได้รางวัลเป็นเสื้อจาก 42 Bangkok ด้วย
+                    แต่เสื้อตัวนั้นก็ยกให้น้องอิน เพราะว่าวันเกิดน้องเขา + เขาหลงไหลในความเป็น 42 Bangkok
                 </p>
             </MonthStoriesSection>
 

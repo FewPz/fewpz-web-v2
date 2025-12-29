@@ -27,7 +27,15 @@ export default function Navbar() {
     <nav className={`fixed top-0 z-50 w-full transition-all duration-500 ${
       scrolled ? 'py-4' : 'py-6'
     }`}>
-      <div className="max-w-3xl mx-auto px-6 flex items-center justify-between">
+      <div 
+        className={`absolute inset-0 -z-10 transition-opacity duration-500 ${
+          scrolled ? 'opacity-100' : 'opacity-0'
+        }`}
+      >
+        <div className="absolute inset-0 bg-background/50 backdrop-blur-xl [mask-image:linear-gradient(to_bottom,black_60%,transparent)]" />
+      </div>
+
+      <div className="max-w-5xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Magnet padding={40} magnetStrength={3}>
           <Link href="/" className="text-lg font-medium text-foreground">
