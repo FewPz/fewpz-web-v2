@@ -1,9 +1,10 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Music, X } from 'lucide-react';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 interface NowPlaying {
   album: string;
@@ -13,6 +14,52 @@ interface NowPlaying {
   songUrl: string;
   title: string;
 }
+
+const ScrollingText = ({ children, className }: { children: string; className?: string }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const textRef = useRef<HTMLDivElement>(null);
+  const [width, setWidth] = useState(0);
+  const [containerWidth, setContainerWidth] = useState(0);
+
+  useEffect(() => {
+    if (!containerRef.current || !textRef.current) return;
+    
+    const updateWidths = () => {
+        if (!containerRef.current || !textRef.current) return;
+        setWidth(textRef.current.scrollWidth);
+        setContainerWidth(containerRef.current.offsetWidth);
+    };
+
+    updateWidths();
+    
+    const observer = new ResizeObserver(updateWidths);
+    observer.observe(containerRef.current);
+    observer.observe(textRef.current);
+    
+    return () => observer.disconnect();
+  }, [children]);
+
+  const shouldScroll = width > containerWidth;
+
+  return (
+    <div ref={containerRef} className={cn("overflow-hidden w-full", className)}
+         style={{ maskImage: shouldScroll ? 'linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)' : 'none' }}>
+      <motion.div
+        className={cn("flex gap-8 w-fit", shouldScroll ? "" : "truncate")}
+        animate={shouldScroll ? { x: [0, -width - 32] } : { x: 0 }}
+        transition={shouldScroll ? {
+            duration: width * 0.05, // Speed factor
+            ease: "linear",
+            repeat: Infinity,
+            delay: 2,
+        } : {}}
+      >
+        <div ref={textRef} className="whitespace-nowrap">{children}</div>
+        {shouldScroll && <div className="whitespace-nowrap" aria-hidden="true">{children}</div>}
+      </motion.div>
+    </div>
+  );
+};
 
 export default function SpotifyNowPlaying() {
   const [data, setData] = useState<NowPlaying | null>(null);
@@ -98,7 +145,7 @@ export default function SpotifyNowPlaying() {
                   </a>
 
                   {/* Song Info */}
-                  <div className="flex-1 min-w-0">
+                  <div className="flex-1 min-w-0 overflow-hidden">
                     <div className="flex items-start justify-between gap-2 mb-1">
                       <div className="flex items-center gap-2">
                         <span className="relative flex h-2 w-2">
@@ -123,12 +170,12 @@ export default function SpotifyNowPlaying() {
                       rel="noopener noreferrer"
                       className="block hover:underline"
                     >
-                      <p className="text-sm font-medium text-foreground line-clamp-1">
+                      <ScrollingText className="text-sm font-medium text-foreground">
                         {data.title}
-                      </p>
-                      <p className="text-xs text-muted-foreground line-clamp-1">
+                      </ScrollingText>
+                      <ScrollingText className="text-xs text-muted-foreground">
                         {data.artist}
-                      </p>
+                      </ScrollingText>
                     </a>
                   </div>
                 </div>

@@ -228,14 +228,14 @@ export default function ReviewYear2025Page() {
                 ]
             }>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                    2025 has been an incredible year of growth, challenges, and achievements.
-                    From starting new projects to learning cutting-edge technologies,
-                    every moment has been a stepping stone towards becoming a better developer.
+                    ในเดือนมกราคม 2025 จะเป็นช่วงเดือนสอบกลางภาคเขียนไอทีลาดกระบังแน่นอนว่า เราเป็น 1 ในนั้นที่เตรียมตัวที่สอบ
+                    สรุปทั้งวิชา ITPM, MDD เพื่อให้ผ่านไปได้ด้วยดี ในปี 2024 เราได้แข่งขัน Huawei ICT Competition 2023-2024
+                    ใน Computing Track และได้รับรางวัลรองชนะเลิศอันดับ 1 ของประเทศไทย ภูมิใจสุด ๆ ตอนนั้นได้มีรวมงานกับรุ่นน้อง
+                    อย่าง <a href='#' className='text-orange-400 hover:text-orange-600'>@_redfriend_</a> และ <a href='#' className='text-orange-400 hover:text-orange-600'>@phos.07</a> ซึ่งทั้งสองคนนั้นเก่งมาก ๆ เรียนรู้กันไวสุด ๆ ขอบคุณทั้งสองคนที่พยายามกันมาตลอดนะ
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                    This year, I focused heavily on building real-world applications,
-                    contributing to open source, and expanding my knowledge in areas like
-                    AI/ML, cloud computing, and modern web development frameworks.
+                    นอกจากการแข่งขันแล้ว มันยังเป็นคาบเกี่ยวกับช่วง TCAS รอบที่ 1 เรามีโอกาสที่ช่วยพี่ ๆ ห้องฟ้า ช่วยดำเนินการจัดแถว ช่วยดูแล
+                    ในสถานที่ Auditorium ซึ่ง ๆ น้องรอบที่ 1 มาสมัครกันเยอะมาก ยินดีที่ได้ช่วยพี่ ๆ และได้เจอน้อง ๆ ที่ตั้งใจอยากเข้ามาเรียนที่นี่เหมือนกัน
                 </p>
             </MonthStoriesSection>
             
@@ -280,14 +280,17 @@ export default function ReviewYear2025Page() {
                 ]
             }>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                    2025 has been an incredible year of growth, challenges, and achievements.
-                    From starting new projects to learning cutting-edge technologies,
-                    every moment has been a stepping stone towards becoming a better developer.
+                    ในเดือนกุมภาพันธ์ 2025 นี้ หลังจากช่วงสอบกลางภาคเสร็จ พอมีเวลาว่างได้หายใจสักพัก ... จนกระทั่ง คณะอาจารย์ กรรมการหลักสูตรนัด
+                    IT20 เพื่อนัดประชุมวิชาโครงงาน 1 ว่าต้องเตรียมตัวอะไรยังไง แต่ด้วยสถานการณ์ตอนนั้น IT20 หลาย ๆ คนมองว่าเหมือน กูมาขึ้นเคียงเลยนี่หว่า
+                    ดูจากภาพประกอบ โดยในการประชุมครั้งนั้นจะมีเรื่องชี้แข้ง คำแนะนำเบื้องต้น และหัวข้อโครงงานที่น่าสนใจต่าง ๆ มากมาย ที่อาจารย์ได้แนะนำไว้
+                    ซึ่งแน่นอนว่า ฟิวส์เป็นคนนึงที่มีโปรเจกต์อยู่แล้ว ได้ทำการอาจารย์ที่ปรึกษาอย่างอาจารย์โช หลังจากนั้นก็เริ่มเตรียมตัวทำโครงงานกันต่อไป
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                    This year, I focused heavily on building real-world applications,
-                    contributing to open source, and expanding my knowledge in areas like
-                    AI/ML, cloud computing, and modern web development frameworks.
+                    การมาของกิจกรรม ITCLASH นั้น ฟิวส์ที่เคยทำมาค่อนข้างหลายข้างเช่น ToBeIT'67, ToBeIT'67 The Second, ITCAMP19, ITCAMP20
+                    เป็นค่ายที่แนะแนวเรื่องการเรียนด้านไอทีให้กับน้อง ๆ ที่ลงค่ายไว้ บางค่าย Hackathon บางค่าย Workshop ต่าง ๆ ฟิวส์อาจจะอยากทำรูปแบบอื่น ๆ บ้าง
+                    จนน้อง อยาก Hardcore กว่าเดิม - -"  เลยมีกิจกรรมที่ว่าชื่อว่า ITCLASH ขึ้นมา เป็นกิจกรรมที่รวมการแข่งขันหลาย ๆ อย่างไว้ในงานเดียว
+                    หลังจากนั้นก็จะเข้าสู่แนะนำโครงการให้กับทางคณะในลำดับถัดไป ตอนยังดีที่ได้น้องนิว (น้องรหัส) และน้องไทด์ (<a href='#' className='text-orange-400 hover:text-orange-600'>@ntp.taikie</a>)
+                    มาช่วยกันทำโครงงานในครั้งนี้ด้วย ไม่งั้นกูตายยยย 555+
                 </p>
             </MonthStoriesSection>
 
@@ -333,14 +336,17 @@ export default function ReviewYear2025Page() {
                 ]
             }>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                    2025 has been an incredible year of growth, challenges, and achievements.
-                    From starting new projects to learning cutting-edge technologies,
-                    every moment has been a stepping stone towards becoming a better developer.
+                    เดือนมีนาคม 2025 จะเป็นเดือนสุดท้ายของการเรียนภาคการศึกษาที่ 2/2567 ก่อนจะเข้าสู่ช่วงสอบปลายภาคและปิดเทอมใหญ่กัน
+                    แน่นอนว่าเดือนนี้ฟิวส์ต้องโฟกัสหลายอย่างไม่ว่าจะเป็นโปรเจกต์หลายวิชา รวมถึงโครงงานที่กำลังมาถึงด้วย -*- ไอ้เหี้ยตายๆๆๆ
+                    ยังดีที่ยังมีจังหวะมา Happy Birthday เพื่อน ๆ อย่างเพื่อนกิตติ์ <a href='#' className='text-orange-400 hover:text-orange-600'>@krit789 </a> 
+                    ดูจาก poster ฟิวส์ตั้งใจทำมากๆๆๆ 55555+ ใส่ใจทุกรายละเอียดจริง ๆ
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                    This year, I focused heavily on building real-world applications,
-                    contributing to open source, and expanding my knowledge in areas like
-                    AI/ML, cloud computing, and modern web development frameworks.
+                    นอกจากนี้ กรรมการหลักสูตรของไอทีเขาก็มีการนัดประชุมเพื่อพูดคุยเกี่ยวกับการปรับปรุงหลักสูตร อยากให้เพิ่มวิชาอะไรไหม
+                    อยากให้แก้ไขอะไรยังไง เขายินดีที่จะรับฟังความคิดเห็นจากนักศึกษา ฟิวส์เองก็ได้เสนอแนะไปบาง แต่ส่วนใหญ่ตอนนั้นจะเป็นคน
+                    จดโน๊ตประชุมมากว่า ตอนประชุมเขาก็บอกว่าเด็กไอทีของเราไปคว้ารางวัลอะไรมาบ้างในปีที่ผ่านมา ก็ภูมิใจแทนเพื่อน ๆ ทุกคนนะ
+                    แต่แอบเห็นตัวเองเหมือนกัน 5555+ ตอนนั้นคิดอยู่ในใจว่า นั้นน่าจะเป็นครั้งแรกและครั้งสุดท้ายของฟิวส์แล้ว ไม่น่าจะมีโอกาสได้ไปแข่งอีก
+                    พอประชุมเสร็จฟิวส์ต้องเตรียมกิจกรรม ITCLASH ที่จะจัดขึ้นในเดือนเมษายนต่อไป
                 </p>
             </MonthStoriesSection>
 
@@ -399,14 +405,20 @@ export default function ReviewYear2025Page() {
                 ]
             }>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                    2025 has been an incredible year of growth, challenges, and achievements.
-                    From starting new projects to learning cutting-edge technologies,
-                    every moment has been a stepping stone towards becoming a better developer.
+                    ในเดือนเมษายน 2025 ในที่สุดก็ได้ปิดเทอมจากการเรียนภาคการศึกษาที่ 2/2567 สักทีเหอะ ๆๆๆ
+                    มีโอกาสได้แวบกลับบ้านสักพักนึง แล้วกลับขึ้นมาไป แน่นอนกลับบ้านครั้งนี้ ทางโรงเรียนเก่า ได้จัดกิจกรรม
+                    คืนสู่เหย้าบุคลากรเก่าแก่ของโรงเรียน ฟิวส์เองก็ได้มีโอกาสไปร่วมงานด้วย ได้เจอครูเก่า ๆ เพื่อนเก่า ๆ
+                    รู้สึกดีใจมาก ๆ ที่ได้กลับไปเยี่ยมบ้านเก่า ได้เจอคนที่เราคุ้นเคยอีกครั้ง 
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                    ก่อนบินกลับหาดใหญ่ ฟิวส์จำได้ว่าวันนั้นเป็น Present งานวิชา OOP พอดี เราก็ทำตัวเป็นคนไทยอยากรู้อยากเห็น
+                    เลยขอแวะไปดูรุ่นน้อง Present งานกันหน่อยละกัน พอไปถึงน้อง ๆ ก็กำลัง Present งานกันอยู่
+                    จนฟิวส์ต้องคิดกลับตัวเองว่า ตอนนี้กูตามน้องไม่ทันละไอ้สาส 5555+ เทคโนโลยีมันไปไกลมากจริง ๆ
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                    This year, I focused heavily on building real-world applications,
-                    contributing to open source, and expanding my knowledge in areas like
-                    AI/ML, cloud computing, and modern web development frameworks.
+                    พอกลับขึ้นมากรุงเทพ ฟิวส์ก็ได้ไปเที่ยวกับเพื่อน ๆ ที่สวนสนุกแถวพัทยาเรียกว่าเป็นพักผ่อนที่ดีมาก ๆ
+                    ได้ทำอะไรสนุก ๆ กินอาหารอร่อย ๆ กับเพื่อน ๆ รู้สึกเหมือนได้ชาร์จพลังเต็มที่ก่อนจะกลับมา ลุยงานต่อ
+                    พอกลับจากเที่ยวพวกเราเตรียมงาน ITCLASH ตอนนั้นจำได้ว่า มีคนสมัครเกือบ 77 จังหวัด น่าจะ 75 จังหวัดนี่หละ
                 </p>
             </MonthStoriesSection>
 
@@ -452,14 +464,29 @@ export default function ReviewYear2025Page() {
                 ]
             }>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                    2025 has been an incredible year of growth, challenges, and achievements.
-                    From starting new projects to learning cutting-edge technologies,
-                    every moment has been a stepping stone towards becoming a better developer.
+                    ต่อมาในเดือนพฤษภาคม 2025 นี้ หลังจากความวุ่นวายจากงาน ITCLASH จบลง
+                    ยอมรับว่าเป็นกิจกรรมที่เหนื่อยมาก ๆ แต่ก็คุ้มค่ามาก ๆ ที่ได้เห็นน้อง ๆ แสดงศักยภาพ
+                    และความสามารถของตัวเองออกมา ฟิวส์รู้สึกภูมิใจในตัวน้อง ๆ ทุกคนจริง ๆ 
+                    ขอบคุณอาจารย์ขิมและอาจารย์บุญที่ให้ฟิวส์ได้มีโอกาสนี้ด้วยนะครับ ❤️
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
-                    This year, I focused heavily on building real-world applications,
-                    contributing to open source, and expanding my knowledge in areas like
-                    AI/ML, cloud computing, and modern web development frameworks.
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                    ไม่นานนัก คณะไอทีลาดกระบังได้มีประกาศรับสมัครนักศึกษาระดับ ป.โท แล้วดันมีโครงการใหม่ด้วย
+                    AI in Education แต่ฟิวส์เลือกที่จะไม่สมัครเพราะว่า ไม่ใช่ว่าโครงการมันไม่ดี แต่ไม่มั่นใจในตัวเอง
+                    ในหัวข้อเรื่อง AI ขนาดนั้น เพราะลำพังตัวเองโฟกัสกับการเรียนปริญญาตรีและสาย Software ให้จบก่อนดีกว่า 5555+
+                    จนกระทั่งพี่โอ๊ต (<a href='#' className='text-orange-400 hover:text-orange-600'>@oat_chayanont</a>) แล้วว่าชวนฟิวส์ไปสมัครด้วยกัน
+                    แต่สุดท้ายฟิวส์เลือกที่แนวทางแบบ 4+1 มากกว่า เพราะรู้สึกว่าหัวข้อเรายังไม่นิ่งมากพอ เราอยากทำหลาย ๆ อ่าน Paper หลาย ๆ ตัว
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                    ตอนสัมภาษณ์ยอมรับว่า ตัวเองอาการน่าเป็นห่วงมาก ๆ คือแบบ เหมือนคนไม่ได้นอนมา 3 วัน จำได้ว่ามีอาจารย์กันและอาจารย์เบ้นอยู่ในห้องสัมภาษณ์ด้วย
+                    แน่นอนว่าอาจารย์เบ้นเคยเรียนกับท่านมาก่อน (วิชา Funtional และ MircoServices) สภาพตอนสัมภาษณ์เเหมือนเราอาลัย อาวอนสุด ๆ 
+                    คิดในแง่ว่า เออ ไม่ได้เรียนต่อแล้วหละ วันนั้นก็เลยไปดูหนังกับพวกเต้ กิต มีน้องอินมาด้วย กำลังรอดูหนังกันนี้หละ อยู่ดี ๆ สำนักทะเบียน
+                    ประกาศรายชื่อคนที่รับเลือกเข้าต่อระดับบัณฑิตศึกษา ฟิวส์ก็เห็นชื่อตัวเองโผล่มาในลิสต์ด้วย หันไปบอกเพื่อนว่า
+                    "ไอ้สัส กูติดไอทีลาดกระบัง (อีกแล้ว)" พอผ่านจุดนั้นได้ก็รู้สึกโล่งใจมาก ๆ 
+                </p>
+                <p className='text-muted-foreground leading-relaxed'>
+                    หลังจากเครียเรื่อง ป. โท ก็มีโอกาสไปหาเพื่อน ๆ เก่าอย่าง คุณเดียร์ (<a href='#' className='text-orange-400 hover:text-orange-600'>@deartnk</a>) และ
+                    คุณหมอ - จริง ๆ ฟิวส์เรียกหมอตลอดแหละ - -" (<a href='#' className='text-orange-400 hover:text-orange-600'>@maythiwat</a>) ฟิวส์รู้จักพวกเขาตั้งแต่สมัยมัธยม
+                    ฟิวส์ดีใจมาก ๆ ที่ได้เจอเพื่อน ๆ เก่า พอขึ้้นมหาลัยแทบจะไม่ได้ติดต่อกันอีกเลย ได้เจอหน้ากันก็พูดคุยกันยาวเลย
                 </p>
             </MonthStoriesSection>
 
@@ -519,14 +546,17 @@ export default function ReviewYear2025Page() {
                 ]
             }>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                    2025 has been an incredible year of growth, challenges, and achievements.
-                    From starting new projects to learning cutting-edge technologies,
-                    every moment has been a stepping stone towards becoming a better developer.
+                    ในเดือนมิถุนายน 2025 นี้ เป็นเดือนสุดท้ายของการปิดเทอมใหญ่ ก่อนจะกลับมาเรียนภาคการศึกษาที่ 1/2568 ฟิวส์ได้มีโอกาสรื้อห้อง "332" ซึ่งเจอ
+                    iMAC ทิ้งล้างไว้อยู่ แน่นอนว่าพวกเราเป็นเด็กไอที พวกเราใช้ยาแก้ไอในการให้มันสามารถเปิดใช้งานได้ปกติ 5555+
+                    จากภาพฟิวส์เพิ่งรู้ว่า Camera มันมีพวก effect ด้วย ถ่ายเสร็จเอามาตั้ง wallpaper สะเลย หึหึ แน่นอนว่าเปิดภาตเรียน
+                    เราต้องลงทะเบียนด้วย ฟิวส์ก็ลงตามปกติ ป. ตรี ก็ลง 18 หน่วยกิต ป. โท ก็ลง 36 หน่วยกิต แต่ปัญหาอยู่ที่ ป. โท
+                    4+1 มันลงได้แค่ 9 หน่วยกิต ในใจกูท่องว่าชิบหายแล้ว ทำไงดี ติดต่อพี่ ๆ ที่ดูแลระบบทะเบียน ปรากฏว่าพี่เขาช่วยแก้ไขให้ 
+                    ตลกร้ายเกิน
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                    This year, I focused heavily on building real-world applications,
-                    contributing to open source, and expanding my knowledge in areas like
-                    AI/ML, cloud computing, and modern web development frameworks.
+                    ก่อนเปิดเทอม มันมี AnyWheel ไอที่แม่งเป็นจักรยานให้เช่าอะ ก็เลยเปิดประเดิมแม่งเลย ปั่นรอบมอสะเลย 5555+ สนุกดีเหมือนกัน
+                    ตอนเย็น ๆ ได้ข่าว่า Springtab จะเข้าเซิร์ฟ Dead by Day light นี่เป็นครั้งแรกที่กลับมาเล่นเกมแนว 4 vs 1 อีกครั้ง
+                    ฟิวส์เล่นเป็น Killer นะ สนุกดี ได้ฆ่าคนหลายคนอยู่ 5555+ หลังจากนั้นก็เตรียมตัวเปิดเทอม
                 </p>
             </MonthStoriesSection>
 
