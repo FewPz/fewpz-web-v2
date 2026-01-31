@@ -63,7 +63,7 @@ export default function ThaiGoldWidget() {
         };
 
         fetchData();
-        const interval = setInterval(fetchData, 60000);
+        const interval = setInterval(fetchData, 60000); // Fetch every 60 seconds for real-time updates
         return () => clearInterval(interval);
     }, []);
 
@@ -152,6 +152,15 @@ export default function ThaiGoldWidget() {
                     </div>
                 </div>
             </div>
+
+            {/* SMS Announcement Marquee */}
+            {data.marketStatus && (
+                <div className="bg-white/90 text-black overflow-hidden border-y-2 border-yellow-500">
+                    <div className="animate-marquee whitespace-nowrap py-3 xl:py-4 2xl:py-5 text-xl xl:text-3xl 2xl:text-4xl font-semibold">
+                        {data.marketStatus}
+                    </div>
+                </div>
+            )}
 
             {/* Bottom Stats Section */}
             <div className="bg-white text-black">
