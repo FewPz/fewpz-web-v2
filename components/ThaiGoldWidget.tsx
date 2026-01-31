@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { MoveDown, MoveUp, Minus, Volume2 } from "lucide-react";
+import Image from "next/image";
 
 interface GoldData {
     buy: string | null;
@@ -93,6 +94,14 @@ export default function ThaiGoldWidget() {
             <div className="flex-1 grid grid-cols-[180px_1fr] xl:grid-cols-[220px_1fr] 2xl:grid-cols-[280px_1fr] p-4 xl:p-8 2xl:p-12 gap-4 xl:gap-8">
                 {/* Left Column: Logo + Arrow */}
                 <div className="flex flex-col items-center gap-4 xl:gap-6">
+                    {/* Logo */}
+                    <Image
+                        src="/logos/trade-gold-1.png"
+                        alt="Trade Gold Logo"
+                        width={180}
+                        height={180}
+                        className="rounded-xl"
+                    />
 
                     {/* Arrow + Change Value */}
                     <div className="flex flex-col items-center bg-white/10 rounded-2xl p-3 xl:p-5 2xl:p-6">
