@@ -16,6 +16,13 @@ interface GoldData {
     updateTime: string | null;
 }
 
+// Detect if running on webOS TV
+function detectWebOS(): boolean {
+    if (typeof navigator === "undefined") return false;
+    const userAgent = navigator.userAgent || "";
+    return /webos|hbbtv|smarttv|googletv|appletv/i.test(userAgent);
+}
+
 // Format number with commas
 function formatNumber(num: string | null): string {
     if (!num) return "-";
@@ -28,6 +35,43 @@ export default function ThaiGoldWidget() {
     const [data, setData] = useState<GoldData | null>(null);
     const [loading, setLoading] = useState(true);
     const [currentTime, setCurrentTime] = useState<string>("");
+    const [isWebOS, setIsWebOS] = useState(false);
+
+    // Initialize webOS TV environment
+    useEffect(() => {
+        const isWebOSTV = detectWebOS();
+        setIsWebOS(isWebOSTV);
+
+        if (isWebOSTV) {
+            // Initialize webOS TV
+            if (typeof window !== "undefined" && (window as any).webOS) {
+                const webOS = (window as any).webOS;
+                // Request fullscreen on webOS TV
+                if (webOS.platformBack) {
+                    webOS.platformBack = function() {
+                        console.log("Back pressed on webOS TV");
+                    };
+                }
+            }
+
+            // Request fullscreen for TV display
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen().catch(() => {
+                    console.log("Fullscreen request failed or denied");
+                });
+            }
+
+            // Disable screensaver
+            if (typeof window !== "undefined") {
+                document.addEventListener("keydown", (e) => {
+                    // Prevent default power button behavior on TV
+                    if (e.key === "Power" || e.keyCode === 179) {
+                        e.preventDefault();
+                    }
+                });
+            }
+        }
+    }, []);
 
     // Real-time clock
     useEffect(() => {
@@ -89,9 +133,11 @@ export default function ThaiGoldWidget() {
     const isDown = buyChange < 0;
 
     return (
-        <div className="w-full h-full bg-gradient-to-b from-[#C41E3A] to-[#8B0000] text-white font-bai-jamjuree flex flex-col overflow-hidden">
+        <div className={`w-full h-full bg-linear-to-b from-[#C41E3A] to-[#8B0000] text-white font-bai-jamjuree flex flex-col overflow-hidden ${isWebOS ? "webos-tv" : ""}`}
+            style={isWebOS ? { margin: 0, padding: 0, height: "100dvh" } : undefined}
+        >
             {/* Main Content - Optimized for TV */}
-            <div className="flex-1 grid grid-cols-[180px_1fr] xl:grid-cols-[220px_1fr] 2xl:grid-cols-[280px_1fr] p-4 xl:p-8 2xl:p-12 gap-4 xl:gap-8">
+            <div className={`flex-1 grid gap-4 xl:gap-8 p-4 xl:p-8 2xl:p-12 ${isWebOS ? "grid-cols-[200px_1fr] 2xl:grid-cols-[300px_1fr]" : "grid-cols-[180px_1fr] xl:grid-cols-[220px_1fr] 2xl:grid-cols-[280px_1fr]"}`}>
                 {/* Left Column: Logo + Arrow */}
                 <div className="flex flex-col items-center gap-4 xl:gap-6">
                     {/* Logo */}
@@ -104,7 +150,7 @@ export default function ThaiGoldWidget() {
                     />
 
                     {/* Arrow + Change Value */}
-                    <div className="flex flex-col items-center bg-white/10 rounded-2xl p-3 xl:p-5 2xl:p-6">
+                    <div className="flex flex-col items-center rounded-2xl p-3 xl:p-5 2xl:p-6" style={isWebOS ? { backgroundColor: "rgba(255,255,255,0.15)" } : { backgroundColor: "rgba(255,255,255,0.1)" }}>
                         {isDown && (
                             <MoveDown className="w-14 h-14 xl:w-20 xl:h-20 2xl:w-28 2xl:h-28 text-white drop-shadow-lg" strokeWidth={3} />
                         )}
@@ -134,7 +180,7 @@ export default function ThaiGoldWidget() {
                     <div className="flex flex-col items-end gap-2 xl:gap-4">
                         {/* Buy Price */}
                         <div className="flex items-baseline gap-3 xl:gap-5">
-                            <span className="text-2xl xl:text-4xl 2xl:text-5xl text-white/70">ซื้อ/buy</span>
+                            <span className="text-2xl xl:text-4xl 2xl:text-5xl" style={isWebOS ? { color: "rgba(255,255,255,0.9)" } : undefined}>ซื้อ/buy</span>
                             <span className="text-6xl xl:text-8xl 2xl:text-[10rem] font-black text-[#FFD700] tracking-tighter drop-shadow-xl">
                                 {formatNumber(data.buy)}
                             </span>
@@ -142,7 +188,7 @@ export default function ThaiGoldWidget() {
 
                         {/* Sell Price */}
                         <div className="flex items-baseline gap-3 xl:gap-5">
-                            <span className="text-2xl xl:text-4xl 2xl:text-5xl text-white/70">ขาย/sale</span>
+                            <span className="text-2xl xl:text-4xl 2xl:text-5xl" style={isWebOS ? { color: "rgba(255,255,255,0.9)" } : undefined}>ขาย/sale</span>
                             <span className="text-6xl xl:text-8xl 2xl:text-[10rem] font-black text-[#FFD700] tracking-tighter drop-shadow-xl">
                                 {formatNumber(data.sell)}
                             </span>
@@ -151,7 +197,7 @@ export default function ThaiGoldWidget() {
 
                     {/* Today Change Summary */}
                     <div className="text-right mt-4">
-                        <span className="text-2xl xl:text-4xl 2xl:text-5xl text-white/70">วันนี้ </span>
+                        <span className="text-2xl xl:text-4xl 2xl:text-5xl" style={isWebOS ? { color: "rgba(255,255,255,0.9)" } : undefined}>วันนี้ </span>
                         <span
                             className={`text-3xl xl:text-5xl 2xl:text-6xl font-bold ${isUp ? "text-green-400" : isDown ? "text-red-400" : "text-gray-300"
                                 }`}
@@ -164,8 +210,8 @@ export default function ThaiGoldWidget() {
 
             {/* SMS Announcement Marquee */}
             {data.marketStatus && (
-                <div className="bg-white/90 text-black overflow-hidden border-y-2 border-yellow-500">
-                    <div className="animate-marquee whitespace-nowrap py-3 xl:py-4 2xl:py-5 text-xl xl:text-3xl 2xl:text-4xl font-semibold">
+                <div className="text-black overflow-hidden border-y-2 border-yellow-500" style={isWebOS ? { backgroundColor: "#F5F5F5" } : { backgroundColor: "rgba(255,255,255,0.9)" }}>
+                    <div className={`whitespace-nowrap py-3 xl:py-4 2xl:py-5 text-xl xl:text-3xl 2xl:text-4xl font-semibold ${!isWebOS ? "animate-marquee" : ""}`} style={isWebOS ? { animation: "marquee-slow 30s linear infinite" } : undefined}>
                         {data.marketStatus}
                     </div>
                 </div>

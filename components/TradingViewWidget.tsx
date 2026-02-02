@@ -21,7 +21,7 @@ function TradingViewWidget() {
         "symbol": "OANDA:XAUUSD",
         "interval": "D",
         "timezone": "Etc/UTC",
-        "theme": "light",
+        "theme": "dark",
         "style": "1",
         "locale": "en",
         "enable_publishing": false,

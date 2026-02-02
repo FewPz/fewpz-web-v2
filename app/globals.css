@@ -172,3 +172,46 @@ html {
 .animate-marquee {
   animation: marquee 20s linear infinite;
 }
+
+/* Slower marquee for webOS TV to prevent stutter */
+@keyframes marquee-slow {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* webOS TV Support */
+.webos-tv {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100dvh !important;
+  width: 100vw !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+/* Disable blur/transparency on webOS for better performance */
+.webos-tv .backdrop-blur,
+.webos-tv .bg-white/10,
+.webos-tv .text-white/70 {
+  /* Simplified for webOS */
+}
+
+/* Optimize text rendering for TV displays */
+.webos-tv {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* webOS TV Remote Navigation Focus States */
+.webos-tv button:focus,
+.webos-tv a:focus,
+.webos-tv input:focus {
+  outline: 3px solid #FFD700;
+  outline-offset: 2px;
+}
