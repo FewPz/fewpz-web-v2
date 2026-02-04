@@ -1,19 +1,47 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import TradingViewWidget from "@/components/TradingViewWidget";
 import ThaiGoldWidget from "@/components/ThaiGoldWidget";
 
-export default function TradeGoldPage() {
-    return (
-        <main className="h-screen w-full bg-background overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] h-full w-full">
-                {/* Left Side: TradingView Chart */}
-                <div className="w-full h-full bg-card overflow-hidden">
-                    <TradingViewWidget />
-                </div>
+const ROTATION_INTERVAL = 10000; // 10 seconds
 
-                {/* Right Side: Thai Gold Price */}
-                <div className="w-full h-full">
-                    <ThaiGoldWidget />
-                </div>
+export default function TradeGoldPage() {
+    const [activeView, setActiveView] = useState<"gold" | "chart">("gold");
+
+    // Auto-rotate between views every 10 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveView((current) => (current === "gold" ? "chart" : "gold"));
+        }, ROTATION_INTERVAL);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <main className="h-screen w-full bg-background overflow-hidden relative">
+            {/* Gold Price Widget - Fullscreen */}
+            <div
+                className="absolute inset-0 w-full h-full transition-opacity duration-500"
+                style={{
+                    opacity: activeView === "gold" ? 1 : 0,
+                    pointerEvents: activeView === "gold" ? "auto" : "none",
+                    zIndex: activeView === "gold" ? 10 : 0,
+                }}
+            >
+                <ThaiGoldWidget />
+            </div>
+
+            {/* TradingView Chart - Fullscreen */}
+            <div
+                className="absolute inset-0 w-full h-full transition-opacity duration-500"
+                style={{
+                    opacity: activeView === "chart" ? 1 : 0,
+                    pointerEvents: activeView === "chart" ? "auto" : "none",
+                    zIndex: activeView === "chart" ? 10 : 0,
+                }}
+            >
+                <TradingViewWidget />
             </div>
         </main>
     );

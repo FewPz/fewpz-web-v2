@@ -127,10 +127,10 @@ export default function ThaiGoldWidget() {
         return (
             <div
                 className="w-full h-full flex items-center justify-center text-white"
-                style={{
-                    background: isLegacy ? '#8B0000' : 'linear-gradient(to bottom, #B22222, #8B0000)',
-                    backgroundColor: '#8B0000'
-                }}
+                style={isLegacy
+                    ? { backgroundColor: '#8B0000' }
+                    : { backgroundImage: 'linear-gradient(to bottom, #B22222, #8B0000)' }
+                }
             >
                 <div style={{ fontSize: isLegacy ? '32px' : undefined }} className={isLegacy ? '' : 'animate-pulse text-4xl'}>กำลังโหลดราคาทอง...</div>
             </div>
@@ -152,20 +152,24 @@ export default function ThaiGoldWidget() {
     const isUp = buyChange > 0;
     const isDown = buyChange < 0;
 
-    // Use legacy-safe styles
-    const containerStyle: React.CSSProperties = {
-        background: isLegacy ? '#8B0000' : 'linear-gradient(to bottom, #C41E3A, #8B0000)',
-        backgroundColor: '#8B0000', // Fallback for browsers that don't support gradients
-        ...(isWebOS || isLegacy ? { margin: 0, padding: 0, height: '100vh', minHeight: '100vh' } : {})
-    };
+    // Use legacy-safe styles - avoid mixing background shorthand with backgroundColor
+    const containerStyle: React.CSSProperties = isLegacy
+        ? {
+            backgroundColor: '#8B0000',
+            ...(isWebOS || isLegacy ? { margin: 0, padding: 0, height: '100vh', minHeight: '100vh' } : {})
+        }
+        : {
+            backgroundImage: 'linear-gradient(to bottom, #C41E3A, #8B0000)',
+            ...(isWebOS || isLegacy ? { margin: 0, padding: 0, height: '100vh', minHeight: '100vh' } : {})
+        };
 
     return (
         <div
             className={`w-full h-full text-white flex flex-col overflow-hidden ${isWebOS ? "webos-tv" : ""}`}
             style={containerStyle}
         >
-            {/* Main Content - Optimized for TV */}
-            <div className={`flex-1 grid gap-4 xl:gap-8 p-4 xl:p-8 2xl:p-12 ${isWebOS ? "grid-cols-[200px_1fr] 2xl:grid-cols-[300px_1fr]" : "grid-cols-[180px_1fr] xl:grid-cols-[220px_1fr] 2xl:grid-cols-[280px_1fr]"}`}>
+            {/* Main Content - Optimized for TV, with min-h-0 to allow shrinking */}
+            <div className={`flex-1 min-h-0 grid gap-4 xl:gap-8 p-4 xl:p-8 2xl:p-12 ${isWebOS ? "grid-cols-[200px_1fr] 2xl:grid-cols-[300px_1fr]" : "grid-cols-[180px_1fr] xl:grid-cols-[220px_1fr] 2xl:grid-cols-[280px_1fr]"}`}>
                 {/* Left Column: Logo + Arrow */}
                 <div className="flex flex-col items-center gap-4 xl:gap-6">
                     {/* Logo */}
