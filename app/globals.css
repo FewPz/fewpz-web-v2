@@ -121,6 +121,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-bai-jamjuree), sans-serif;
@@ -140,15 +141,20 @@ html {
 
 /* Floating animation for polaroids */
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px) translateX(0px) rotate(var(--rotate));
   }
+
   25% {
     transform: translateY(-15px) translateX(8px) rotate(var(--rotate));
   }
+
   50% {
     transform: translateY(-8px) translateX(-8px) rotate(var(--rotate));
   }
+
   75% {
     transform: translateY(-20px) translateX(5px) rotate(var(--rotate));
   }
@@ -164,6 +170,7 @@ html {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -178,16 +185,18 @@ html {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
 
-/* webOS TV Support */
+/* webOS TV Support - using 100vh instead of 100dvh for legacy browser compatibility */
 .webos-tv {
   margin: 0 !important;
   padding: 0 !important;
-  height: 100dvh !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
   width: 100vw !important;
   position: fixed !important;
   top: 0 !important;
@@ -195,10 +204,9 @@ html {
 }
 
 /* Disable blur/transparency on webOS for better performance */
-.webos-tv .backdrop-blur,
-.webos-tv .bg-white/10,
-.webos-tv .text-white/70 {
-  /* Simplified for webOS */
+.webos-tv .backdrop-blur {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 /* Optimize text rendering for TV displays */

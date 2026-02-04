@@ -16,11 +16,19 @@ interface GoldData {
     updateTime: string | null;
 }
 
-// Detect if running on webOS TV
+// Detect if running on webOS TV or legacy browser
 function detectWebOS(): boolean {
     if (typeof navigator === "undefined") return false;
     const userAgent = navigator.userAgent || "";
-    return /webos|hbbtv|smarttv|googletv|appletv/i.test(userAgent);
+    return /webos|hbbtv|smarttv|googletv|appletv|netcast|tizen|vidaa|viera|bravia/i.test(userAgent);
+}
+
+// Detect legacy browser that may not support modern CSS
+function detectLegacyBrowser(): boolean {
+    if (typeof navigator === "undefined") return false;
+    const userAgent = navigator.userAgent || "";
+    // Detect old browsers: Opera Mini, old Android, old Samsung, TV browsers, etc.
+    return /opera mini|msie|trident|edge\/\d|samsung|webos|hbbtv|smarttv|googletv|appletv|netcast|tizen|vidaa|viera|bravia|presto/i.test(userAgent);
 }
 
 // Format number with commas
@@ -36,11 +44,14 @@ export default function ThaiGoldWidget() {
     const [loading, setLoading] = useState(true);
     const [currentTime, setCurrentTime] = useState<string>("");
     const [isWebOS, setIsWebOS] = useState(false);
+    const [isLegacy, setIsLegacy] = useState(false);
 
-    // Initialize webOS TV environment
+    // Initialize webOS TV environment and legacy browser detection
     useEffect(() => {
         const isWebOSTV = detectWebOS();
+        const isLegacyBrowser = detectLegacyBrowser();
         setIsWebOS(isWebOSTV);
+        setIsLegacy(isLegacyBrowser || isWebOSTV);
 
         if (isWebOSTV) {
             // Initialize webOS TV
@@ -48,7 +59,7 @@ export default function ThaiGoldWidget() {
                 const webOS = (window as any).webOS;
                 // Request fullscreen on webOS TV
                 if (webOS.platformBack) {
-                    webOS.platformBack = function() {
+                    webOS.platformBack = function () {
                         console.log("Back pressed on webOS TV");
                     };
                 }
@@ -114,15 +125,24 @@ export default function ThaiGoldWidget() {
 
     if (loading) {
         return (
-            <div className="w-full h-full flex items-center justify-center bg-gradient-to-b from-[#B22222] to-[#8B0000] text-white">
-                <div className="animate-pulse text-4xl">กำลังโหลดราคาทอง...</div>
+            <div
+                className="w-full h-full flex items-center justify-center text-white"
+                style={{
+                    background: isLegacy ? '#8B0000' : 'linear-gradient(to bottom, #B22222, #8B0000)',
+                    backgroundColor: '#8B0000'
+                }}
+            >
+                <div style={{ fontSize: isLegacy ? '32px' : undefined }} className={isLegacy ? '' : 'animate-pulse text-4xl'}>กำลังโหลดราคาทอง...</div>
             </div>
         );
     }
 
     if (!data) {
         return (
-            <div className="w-full h-full flex items-center justify-center bg-[#8B0000] text-red-300 text-3xl">
+            <div
+                className="w-full h-full flex items-center justify-center text-3xl"
+                style={{ backgroundColor: '#8B0000', color: '#FCA5A5' }}
+            >
                 ไม่สามารถโหลดข้อมูลได้
             </div>
         );
@@ -132,9 +152,17 @@ export default function ThaiGoldWidget() {
     const isUp = buyChange > 0;
     const isDown = buyChange < 0;
 
+    // Use legacy-safe styles
+    const containerStyle: React.CSSProperties = {
+        background: isLegacy ? '#8B0000' : 'linear-gradient(to bottom, #C41E3A, #8B0000)',
+        backgroundColor: '#8B0000', // Fallback for browsers that don't support gradients
+        ...(isWebOS || isLegacy ? { margin: 0, padding: 0, height: '100vh', minHeight: '100vh' } : {})
+    };
+
     return (
-        <div className={`w-full h-full bg-linear-to-b from-[#C41E3A] to-[#8B0000] text-white font-bai-jamjuree flex flex-col overflow-hidden ${isWebOS ? "webos-tv" : ""}`}
-            style={isWebOS ? { margin: 0, padding: 0, height: "100dvh" } : undefined}
+        <div
+            className={`w-full h-full text-white flex flex-col overflow-hidden ${isWebOS ? "webos-tv" : ""}`}
+            style={containerStyle}
         >
             {/* Main Content - Optimized for TV */}
             <div className={`flex-1 grid gap-4 xl:gap-8 p-4 xl:p-8 2xl:p-12 ${isWebOS ? "grid-cols-[200px_1fr] 2xl:grid-cols-[300px_1fr]" : "grid-cols-[180px_1fr] xl:grid-cols-[220px_1fr] 2xl:grid-cols-[280px_1fr]"}`}>
