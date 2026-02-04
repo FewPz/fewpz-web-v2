@@ -242,7 +242,7 @@ export default function ThaiGoldWidget() {
 
             {/* SMS Announcement Marquee */}
             {data.marketStatus && (
-                <div className="text-black overflow-hidden border-y-2 border-yellow-500" style={isWebOS ? { backgroundColor: "#F5F5F5" } : { backgroundColor: "rgba(255,255,255,0.9)" }}>
+                <div className="shrink-0 text-black overflow-hidden border-y-2 border-yellow-500" style={isWebOS ? { backgroundColor: "#F5F5F5" } : { backgroundColor: "rgba(255,255,255,0.9)" }}>
                     <div className={`whitespace-nowrap py-3 xl:py-4 2xl:py-5 text-xl xl:text-3xl 2xl:text-4xl font-semibold ${!isWebOS ? "animate-marquee" : ""}`} style={isWebOS ? { animation: "marquee-slow 30s linear infinite" } : undefined}>
                         {data.marketStatus}
                     </div>
@@ -250,7 +250,7 @@ export default function ThaiGoldWidget() {
             )}
 
             {/* Bottom Stats Section */}
-            <div className="bg-white text-black">
+            <div className="shrink-0 bg-white text-black">
                 {/* SpotGold and USD/THB Row */}
                 <div className="grid grid-cols-2">
                     <div className="p-3 xl:p-5 border-r border-gray-300">
