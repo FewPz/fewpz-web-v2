@@ -30,6 +30,14 @@ const researchData: Research[] = [
     //     url: 'https://example.com/research',
     //     citation: 'Matsor, P., & Pornavalai, C. (2025). Risk-Adaptive Oral Follow-Up with Instructional Support After Auto-Graded Programming Assignments. Journal Name, 1(1), 1-10.',
     // },
+    {
+        title: 'Performance Evaluation of Distributed Minecraft Server Architectures Under Large-Scale Player Loads',
+        authors: ['Peeranat Matsor'],
+        description: 'This paper evaluates the performance of distributed server architectures built for large-scale Minecraft deployments. We benchmark several scaling strategies such as horizontal pod scaling, world partitioning, and cross-server player migration under loads of up to thousands of concurrent users. By analyzing key metrics like tick rate stability, network latency, memory utilization, and chunk-loading throughput across various configurations, our findings offer practical guidelines for selecting and optimizing architectures to maintain playable performance at scale',
+        status: 'ongoing',
+        year: 2025,
+        tags: ['Horizontal Scaling', 'Game Server Architecture'],
+    }
 ];
 
 const containerVariants: Variants = {
@@ -177,10 +185,10 @@ function ComingSoonCard() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
         >
-            <div className="relative overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-card via-card to-muted/20 p-12 text-center">
+            <div className="relative overflow-hidden rounded-2xl border border-border bg-linear-to-br from-card via-card to-muted/20 p-12 text-center">
                 {/* Background decoration */}
                 <div className="absolute inset-0 bg-grid-white/[0.02] pointer-events-none" />
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-foreground/20 to-transparent" />
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-linear-to-br from-transparent via-foreground/20 to-transparent" />
 
                 {/* Icon */}
                 <motion.div
