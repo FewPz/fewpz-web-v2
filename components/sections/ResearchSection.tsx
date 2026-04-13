@@ -35,7 +35,7 @@ const researchData: Research[] = [
         authors: ['Peeranat Matsor'],
         description: 'This paper evaluates the performance of distributed server architectures built for large-scale Minecraft deployments. We benchmark several scaling strategies such as horizontal pod scaling, world partitioning, and cross-server player migration under loads of up to thousands of concurrent users. By analyzing key metrics like tick rate stability, network latency, memory utilization, and chunk-loading throughput across various configurations, our findings offer practical guidelines for selecting and optimizing architectures to maintain playable performance at scale',
         status: 'ongoing',
-        year: 2025,
+        year: 2026,
         tags: ['Horizontal Scaling', 'Game Server Architecture'],
     }
 ];
