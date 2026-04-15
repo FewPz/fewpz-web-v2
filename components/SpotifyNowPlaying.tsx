@@ -411,7 +411,7 @@ export default function SpotifyNowPlaying() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 100 }}
-            className="fixed bottom-6 right-6 z-50"
+            className="fixed bottom-6 left-1/2 -translate-x-1/2 md:left-auto md:right-6 md:translate-x-0 z-50"
           >
             <motion.div
               layout
