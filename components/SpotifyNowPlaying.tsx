@@ -27,31 +27,29 @@ interface LyricsData {
   synced: boolean;
 }
 
+const SCROLL_GAP = 40; // px gap between the two copies
+
 const ScrollingText = ({ children, className }: { children: string; className?: string }) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const textRef = useRef<HTMLDivElement>(null);
-  const [width, setWidth] = useState(0);
+  const textRef = useRef<HTMLSpanElement>(null);
+  const [textWidth, setTextWidth] = useState(0);
   const [containerWidth, setContainerWidth] = useState(0);
 
   useEffect(() => {
-    if (!containerRef.current || !textRef.current) return;
-
-    const updateWidths = () => {
+    const update = () => {
       if (!containerRef.current || !textRef.current) return;
-      setWidth(textRef.current.scrollWidth);
+      setTextWidth(textRef.current.scrollWidth);
       setContainerWidth(containerRef.current.offsetWidth);
     };
-
-    updateWidths();
-
-    const observer = new ResizeObserver(updateWidths);
-    observer.observe(containerRef.current);
-    observer.observe(textRef.current);
-
+    update();
+    const observer = new ResizeObserver(update);
+    if (containerRef.current) observer.observe(containerRef.current);
     return () => observer.disconnect();
   }, [children]);
 
-  const shouldScroll = width > containerWidth;
+  const shouldScroll = textWidth > 0 && containerWidth > 0 && textWidth > containerWidth;
+  // speed: ~60px/s, min 8s, max 20s
+  const duration = Math.min(20, Math.max(8, textWidth / 60));
 
   return (
     <div
@@ -59,28 +57,27 @@ const ScrollingText = ({ children, className }: { children: string; className?: 
       className={cn('overflow-hidden w-full', className)}
       style={{
         maskImage: shouldScroll
-          ? 'linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)'
+          ? 'linear-gradient(to right, transparent 0%, black 8%, black 88%, transparent 100%)'
+          : 'none',
+        WebkitMaskImage: shouldScroll
+          ? 'linear-gradient(to right, transparent 0%, black 8%, black 88%, transparent 100%)'
           : 'none',
       }}
     >
-      <motion.div
-        className={cn('flex gap-8 w-fit', shouldScroll ? '' : 'truncate')}
-        animate={shouldScroll ? { x: [0, -width - 32] } : { x: 0 }}
-        transition={
-          shouldScroll
-            ? { duration: width * 0.05, ease: 'linear', repeat: Infinity, delay: 2 }
-            : {}
-        }
-      >
-        <div ref={textRef} className="whitespace-nowrap">
-          {children}
-        </div>
-        {shouldScroll && (
-          <div className="whitespace-nowrap" aria-hidden="true">
-            {children}
-          </div>
-        )}
-      </motion.div>
+      {shouldScroll ? (
+        <motion.div
+          key={children}
+          className="flex w-fit"
+          style={{ gap: SCROLL_GAP }}
+          animate={{ x: [0, -(textWidth + SCROLL_GAP)] }}
+          transition={{ duration, ease: 'linear', repeat: Infinity, repeatDelay: 0, delay: 1.5 }}
+        >
+          <span ref={textRef} className="whitespace-nowrap">{children}</span>
+          <span className="whitespace-nowrap" aria-hidden="true">{children}</span>
+        </motion.div>
+      ) : (
+        <span ref={textRef} className="block truncate whitespace-nowrap">{children}</span>
+      )}
     </div>
   );
 };
@@ -141,7 +138,7 @@ function LyricsModal({
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
-      className="fixed inset-0 z-[100] flex flex-col"
+      className="fixed inset-0 z-100 flex flex-col"
     >
       {/* Background: blurred album art + dark overlay */}
       <div className="absolute inset-0 overflow-hidden">
@@ -203,7 +200,7 @@ function LyricsModal({
               ref={isCurrent ? currentLineRef : undefined}
               key={`${line.timeMs}-${i}`}
               className={cn(
-                'text-center py-2.5 transition-all duration-500 ease-out select-none',
+                'text-center px-2 py-2 transition-all duration-500 ease-out select-none',
                 isCurrent
                   ? 'text-xl sm:text-2xl md:text-3xl font-bold text-green-400 scale-100'
                   : distance <= 1
@@ -213,11 +210,14 @@ function LyricsModal({
                       : 'text-sm sm:text-base font-normal text-white',
                 opacityClass
               )}
-              style={
-                isCurrent
+              style={{
+                lineHeight: isCurrent ? '2.25' : '2.05',
+                paddingTop: isCurrent ? '0.24em' : '0.2em',
+                paddingBottom: isCurrent ? '0.34em' : '0.26em',
+                ...(isCurrent
                   ? { textShadow: '0 0 30px rgba(74,222,128,0.5), 0 0 60px rgba(74,222,128,0.2)' }
-                  : undefined
-              }
+                  : {}),
+              }}
             >
               {line.text || '♪'}
             </p>
@@ -410,7 +410,7 @@ export default function SpotifyNowPlaying() {
             <motion.div
               layout
               className="bg-card border border-border rounded-2xl shadow-2xl overflow-hidden backdrop-blur-lg"
-              style={{ minWidth: isExpanded ? '320px' : '64px' }}
+              style={{ width: isExpanded ? '320px' : '64px' }}
             >
               {/* Compact Mode */}
               {!isExpanded && (
@@ -509,7 +509,7 @@ export default function SpotifyNowPlaying() {
                               animate={{ opacity: 1, y: 0 }}
                               exit={{ opacity: 0, y: -4 }}
                               transition={{ duration: 0.22 }}
-                              className="text-[11px] font-medium text-green-400 truncate flex-1 leading-none"
+                              className="text-[11px] font-medium text-green-400 truncate flex-1 leading-[1.5] py-0.5"
                             >
                               {currLine?.text || '♪'}
                             </motion.p>

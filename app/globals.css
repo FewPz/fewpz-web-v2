@@ -216,6 +216,15 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+/* Hide scrollbar */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* webOS TV Remote Navigation Focus States */
 .webos-tv button:focus,
 .webos-tv a:focus,
