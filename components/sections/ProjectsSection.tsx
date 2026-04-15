@@ -22,6 +22,7 @@ interface GitHubRepo {
   fork: boolean;
   created_at: string;
   updated_at: string;
+  archived: boolean;
   topics: string[];
 }
 
@@ -132,7 +133,7 @@ export default function ProjectsSection() {
         
         // Filter out forked repos and profile repo, sort by stars/activity
         const filteredRepos = repos
-          .filter(repo => !repo.fork && repo.name !== 'FewPz' && repo.name !== 'FewPz.github.io')
+          .filter(repo => !repo.fork && repo.name !== 'FewPz' && repo.name !== 'FewPz.github.io' && !repo.archived)
           .sort((a, b) => {
             // Sort by stars first, then by recent update
             if (b.stargazers_count !== a.stargazers_count) {
