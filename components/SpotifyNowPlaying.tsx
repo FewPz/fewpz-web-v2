@@ -97,6 +97,7 @@ function LyricsModal({
   onClose: () => void;
 }) {
   const currentLineRef = useRef<HTMLParagraphElement>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // Lock body scroll
   useEffect(() => {
@@ -109,8 +110,16 @@ function LyricsModal({
 
   // Auto-scroll to current line
   useEffect(() => {
-    if (currentLineRef.current) {
-      currentLineRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (currentLineRef.current && scrollContainerRef.current) {
+      const container = scrollContainerRef.current;
+      const line = currentLineRef.current;
+      
+      const scrollPos = line.offsetTop - container.clientHeight / 2 + line.clientHeight / 2;
+      
+      container.scrollTo({
+        top: scrollPos,
+        behavior: 'smooth',
+      });
     }
   }, [currentLyricIndex]);
 
@@ -173,7 +182,8 @@ function LyricsModal({
 
       {/* Lyrics scroll area */}
       <div
-        className="relative z-10 flex-1 overflow-y-auto scrollbar-hide px-6 sm:px-12 md:px-20"
+        ref={scrollContainerRef}
+        className="relative z-10 flex-1 overflow-y-auto scrollbar-hide px-6 sm:px-12 md:px-20 scroll-smooth"
         style={{
           maskImage:
             'linear-gradient(to bottom, transparent 0%, black 12%, black 85%, transparent 100%)',
