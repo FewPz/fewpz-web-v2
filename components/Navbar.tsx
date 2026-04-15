@@ -41,7 +41,7 @@ export default function Navbar() {
         {/* Logo */}
         <Magnet padding={40} magnetStrength={3}>
           <Link href="/" className="text-lg font-medium text-foreground">
-            Fewpz
+            Few.Pz
           </Link>
         </Magnet>
 

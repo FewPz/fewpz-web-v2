@@ -158,38 +158,7 @@ export default function ProjectsSection() {
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Unknown error');
         // Fallback to static data
-        setProjects([
-          {
-            title: 'mock final webpro',
-            description: 'Web Programming Mock Final Project',
-            tags: ['TypeScript', 'Web'],
-            year: '2025',
-            url: 'https://github.com/FewPz/mock-final-webpro',
-            stars: 3,
-            forks: 0,
-            language: 'TypeScript',
-          },
-          {
-            title: 'K-Dorm',
-            description: 'Intelligence Dormitory Management System for KMITL',
-            tags: ['TypeScript', 'Full-Stack'],
-            year: '2024',
-            url: 'https://github.com/FewPz/K-Dorm',
-            stars: 0,
-            forks: 0,
-            language: 'TypeScript',
-          },
-          {
-            title: 'ITKMITLAuthMC',
-            description: 'Minecraft Plugin Authentication ITKMITL',
-            tags: ['Java', 'Plugin'],
-            year: '2024',
-            url: 'https://github.com/FewPz/ITKMITLAuthMC',
-            stars: 2,
-            forks: 0,
-            language: 'Java',
-          },
-        ]);
+        setProjects([]);
       } finally {
         setLoading(false);
       }

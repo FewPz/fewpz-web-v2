@@ -18,17 +18,25 @@ export async function GET() {
 
   const isPlaying = song.is_playing;
   const title = song.item.name;
-  const artist = song.item.artists.map((_artist: any) => _artist.name).join(', ');
+  const artists: string[] = song.item.artists.map((_artist: { name: string }) => _artist.name);
+  const artist = artists.join(', ');
   const album = song.item.album.name;
   const albumImageUrl = song.item.album.images[0].url;
   const songUrl = song.item.external_urls.spotify;
+  const trackId: string = song.item.id;
+  const progressMs: number = song.progress_ms ?? 0;
+  const durationMs: number = song.item.duration_ms ?? 0;
 
   return NextResponse.json({
     album,
     albumImageUrl,
     artist,
+    artists,
     isPlaying,
     songUrl,
     title,
+    trackId,
+    progressMs,
+    durationMs,
   });
 }

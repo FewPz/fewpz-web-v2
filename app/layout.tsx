@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Bai_Jamjuree, Inter } from "next/font/google";
+import { Bai_Jamjuree, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import SpotifyNowPlaying from "@/components/SpotifyNowPlaying";
