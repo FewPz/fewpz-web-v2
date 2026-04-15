@@ -91,7 +91,7 @@ function LyricsModal({
   onClose,
 }: {
   data: NowPlaying;
-  lyrics: LyricsData;
+  lyrics: LyricsData | null;
   currentLyricIndex: number;
   localProgress: number;
   onClose: () => void;
@@ -165,7 +165,7 @@ function LyricsModal({
         </div>
         <button
           onClick={onClose}
-          className="w-9 h-9 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-colors"
+          className="w-9 h-9 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer"
         >
           <X className="w-4 h-4 text-white" />
         </button>
@@ -182,50 +182,56 @@ function LyricsModal({
         }}
       >
         {/* Top spacer so first line can center */}
-        <div className="h-[40vh]" />
+        {lyrics?.synced && lyrics.lines.length > 0 ? (
+          <>
+            <div className="h-[40vh]" />
+            {lyrics.lines.map((line, i) => {
+              const isCurrent = i === currentLyricIndex;
+              const distance = currentLyricIndex >= 0 ? Math.abs(i - currentLyricIndex) : i;
+              const isPast = currentLyricIndex >= 0 && i < currentLyricIndex;
 
-        {lyrics.lines.map((line, i) => {
-          const isCurrent = i === currentLyricIndex;
-          const distance = currentLyricIndex >= 0 ? Math.abs(i - currentLyricIndex) : i;
-          const isPast = currentLyricIndex >= 0 && i < currentLyricIndex;
+              let opacityClass = 'opacity-[0.12]';
+              if (isCurrent) opacityClass = 'opacity-100';
+              else if (distance === 1) opacityClass = isPast ? 'opacity-[0.3]' : 'opacity-[0.45]';
+              else if (distance === 2) opacityClass = isPast ? 'opacity-[0.15]' : 'opacity-[0.25]';
+              else if (distance === 3) opacityClass = 'opacity-[0.15]';
 
-          let opacityClass = 'opacity-[0.12]';
-          if (isCurrent) opacityClass = 'opacity-100';
-          else if (distance === 1) opacityClass = isPast ? 'opacity-[0.3]' : 'opacity-[0.45]';
-          else if (distance === 2) opacityClass = isPast ? 'opacity-[0.15]' : 'opacity-[0.25]';
-          else if (distance === 3) opacityClass = 'opacity-[0.15]';
-
-          return (
-            <p
-              ref={isCurrent ? currentLineRef : undefined}
-              key={`${line.timeMs}-${i}`}
-              className={cn(
-                'text-center px-2 py-2 transition-all duration-500 ease-out select-none',
-                isCurrent
-                  ? 'text-xl sm:text-2xl md:text-3xl font-bold text-green-400 scale-100'
-                  : distance <= 1
-                    ? 'text-base sm:text-lg md:text-xl font-medium text-white'
-                    : distance <= 3
-                      ? 'text-sm sm:text-base md:text-lg font-normal text-white'
-                      : 'text-sm sm:text-base font-normal text-white',
-                opacityClass
-              )}
-              style={{
-                lineHeight: isCurrent ? '2.25' : '2.05',
-                paddingTop: isCurrent ? '0.24em' : '0.2em',
-                paddingBottom: isCurrent ? '0.34em' : '0.26em',
-                ...(isCurrent
-                  ? { textShadow: '0 0 30px rgba(74,222,128,0.5), 0 0 60px rgba(74,222,128,0.2)' }
-                  : {}),
-              }}
-            >
-              {line.text || '♪'}
-            </p>
-          );
-        })}
-
-        {/* Bottom spacer so last line can center */}
-        <div className="h-[40vh]" />
+              return (
+                <p
+                  ref={isCurrent ? currentLineRef : undefined}
+                  key={`${line.timeMs}-${i}`}
+                  className={cn(
+                    'text-center px-2 py-2 transition-all duration-500 ease-out select-none',
+                    isCurrent
+                      ? 'text-xl sm:text-2xl md:text-3xl font-bold text-green-400 scale-100'
+                      : distance <= 1
+                        ? 'text-base sm:text-lg md:text-xl font-medium text-white'
+                        : distance <= 3
+                          ? 'text-sm sm:text-base md:text-lg font-normal text-white'
+                          : 'text-sm sm:text-base font-normal text-white',
+                    opacityClass
+                  )}
+                  style={{
+                    lineHeight: isCurrent ? '2.25' : '2.05',
+                    paddingTop: isCurrent ? '0.24em' : '0.2em',
+                    paddingBottom: isCurrent ? '0.34em' : '0.26em',
+                    ...(isCurrent
+                      ? { textShadow: '0 0 30px rgba(74,222,128,0.5), 0 0 60px rgba(74,222,128,0.2)' }
+                      : {}),
+                  }}
+                >
+                  {line.text || '♪'}
+                </p>
+              );
+            })}
+            <div className="h-[40vh]" />
+          </>
+        ) : (
+          <div className="flex h-full flex-col items-center justify-center opacity-40">
+            <Music className="w-12 h-12 mb-4 text-white" />
+            <p className="text-white text-sm font-medium tracking-wide uppercase">No live lyrics</p>
+          </div>
+        )}
       </div>
 
       {/* Bottom bar: song info + progress */}
@@ -387,7 +393,7 @@ export default function SpotifyNowPlaying() {
     <>
       {/* Lyrics Modal */}
       <AnimatePresence>
-        {showLyricsModal && hasLyrics && (
+        {showLyricsModal && (
           <LyricsModal
             data={data}
             lyrics={lyrics}
@@ -431,11 +437,9 @@ export default function SpotifyNowPlaying() {
                 >
                   <div className="flex items-start gap-3">
                     {/* Album Art */}
-                    <a
-                      href={data.songUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="relative shrink-0 group/img"
+                    <button
+                      onClick={() => setShowLyricsModal(true)}
+                      className="relative shrink-0 group/img text-left"
                     >
                       <div className="relative w-16 h-16 rounded-lg overflow-hidden">
                         <Image
@@ -448,7 +452,7 @@ export default function SpotifyNowPlaying() {
                       <div className="absolute inset-0 bg-black/0 group-hover/img:bg-black/20 transition-colors rounded-lg flex items-center justify-center">
                         <Music className="w-6 h-6 text-white opacity-0 group-hover/img:opacity-100 transition-opacity" />
                       </div>
-                    </a>
+                    </button>
 
                     {/* Song Info */}
                     <div className="flex-1 min-w-0 overflow-hidden">
@@ -470,19 +474,17 @@ export default function SpotifyNowPlaying() {
                         </button>
                       </div>
 
-                      <a
-                        href={data.songUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block hover:underline"
+                      <button
+                        onClick={() => setShowLyricsModal(true)}
+                        className="block hover:underline text-left w-full text-foreground"
                       >
-                        <ScrollingText className="text-sm font-medium text-foreground">
+                        <ScrollingText className="text-sm font-medium">
                           {data.title}
                         </ScrollingText>
                         <ScrollingText className="text-xs text-muted-foreground">
                           {data.artist}
                         </ScrollingText>
-                      </a>
+                      </button>
                     </div>
                   </div>
 
@@ -509,7 +511,7 @@ export default function SpotifyNowPlaying() {
                               animate={{ opacity: 1, y: 0 }}
                               exit={{ opacity: 0, y: -4 }}
                               transition={{ duration: 0.22 }}
-                              className="text-[11px] font-medium text-green-400 truncate flex-1 leading-[1.5] py-0.5"
+                              className="text-[11px] font-medium text-green-400 truncate flex-1 leading-normal py-0.5"
                             >
                               {currLine?.text || '♪'}
                             </motion.p>
