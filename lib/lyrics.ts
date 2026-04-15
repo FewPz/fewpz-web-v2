@@ -128,7 +128,7 @@ export async function getLyricsAtCurrentTimestamp(
         "User-Agent": "Spotify-Stream/1.0 (https://github.com/harshitkumar9030/spotify-stream)",
       },
       cache: "no-store",
-      signal: AbortSignal.timeout(3500),
+      signal: AbortSignal.timeout(8000),
     });
 
     if (response.status === 404) {

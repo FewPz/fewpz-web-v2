@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
-        <SpotifyNowPlaying />
+        {process.env.NEXT_PUBLIC_DISABLE_SPOTIFY !== "true" && <SpotifyNowPlaying />}
       </body>
     </html>
   );
