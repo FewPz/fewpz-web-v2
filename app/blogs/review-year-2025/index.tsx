@@ -1,5 +1,4 @@
-'use client';
-
+import { createFileRoute } from '@tanstack/react-router';
 import { motion } from 'motion/react';
 import { useState, useEffect, useMemo } from 'react';
 import BlurText from '@/components/BlurText';
@@ -25,8 +24,6 @@ import {
     ArrowLeft,
     Clock
 } from 'lucide-react';
-import Link from 'next/link';
-import Image from 'next/image';
 import MonthStoriesSection from '@/components/sections/MonthStoriesSection';
 
 // Background images array - randomized on each visit
@@ -68,11 +65,10 @@ function Polaroid({
                     className={`bg-white p-2 pb-8 shadow-2xl transition-transform duration-500 hover:scale-110 cursor-pointer ${className}`}
                 >
                     <div className="relative w-32 h-32 overflow-hidden bg-muted">
-                        <Image
+                        <img
                             src={src}
                             alt={alt}
-                            fill
-                            className="object-cover"
+                            className="object-cover absolute inset-0 w-full h-full"
                         />
                     </div>
                 </div>
@@ -81,7 +77,11 @@ function Polaroid({
     );
 }
 
-export default function ReviewYear2025Page() {
+export const Route = createFileRoute('/blogs/review-year-2025/')({
+  component: ReviewYear2025Page,
+})
+
+function ReviewYear2025Page() {
     // Randomize background image on mount
     const [randomBackground, setRandomBackground] = useState(BACKGROUND_IMAGES[0]);
 
@@ -175,13 +175,13 @@ export default function ReviewYear2025Page() {
                     </div>
 
                     {/* Back button */}
-                    <Link
+                    <a
                         href="/"
                         className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
                     >
                         <ArrowLeft className="w-4 h-4" />
                         Back to Home
-                    </Link>
+                    </a>
 
                     {/* Date badge */}
                     <motion.div

@@ -1,10 +1,7 @@
-'use client';
-
 import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
 import { motion, type Variants } from 'motion/react';
 import { FlaskConical, Sparkles, ExternalLink, Calendar, Users, Quote, Check } from 'lucide-react';
-import Link from 'next/link';
 import { useState } from 'react';
 
 interface Research {
@@ -109,10 +106,10 @@ function ResearchCard({ research }: { research: Research }) {
                 {/* Title */}
                 <h3 className="text-lg font-medium text-foreground leading-tight mb-2 group-hover:text-foreground/80 transition-colors">
                     {research.url ? (
-                        <Link href={research.url} target="_blank" className="hover:underline inline-flex items-center gap-2">
+                        <a href={research.url} target="_blank" className="hover:underline inline-flex items-center gap-2">
                             {research.title}
                             <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-                        </Link>
+                        </a>
                     ) : (
                         research.title
                     )}

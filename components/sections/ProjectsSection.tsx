@@ -1,12 +1,9 @@
-'use client';
-
 import { useEffect, useState } from 'react';
 import SpotlightCard from '@/components/SpotlightCard';
 import BlurText from '@/components/BlurText';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { ArrowUpRight, Star, GitFork, Loader2, Github } from 'lucide-react';
-import Link from 'next/link';
 import { motion } from 'motion/react';
 
 interface GitHubRepo {
@@ -60,7 +57,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       viewport={{ once: true }}
       className="h-full"
     >
-      <Link href={project.url} target="_blank" className="block group h-full">
+      <a href={project.url} target="_blank" className="block group h-full">
         <SpotlightCard 
           className="bg-card! border-border! hover:border-foreground/20! transition-all duration-300 p-6! rounded-xl! h-full flex flex-col"
           spotlightColor="rgba(255, 255, 255, 0.1)"
@@ -110,7 +107,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             </div>
           </div>
         </SpotlightCard>
-      </Link>
+      </a>
     </motion.div>
   );
 }
@@ -228,15 +225,15 @@ export default function ProjectsSection() {
             viewport={{ once: true }}
             className="mt-12 text-center"
           >
-            <Link 
-              href="https://github.com/FewPz" 
+            <a
+              href="https://github.com/FewPz"
               target="_blank"
               className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-border bg-card hover:bg-muted transition-colors group"
             >
               <Github className="w-5 h-5" />
               <span className="text-sm font-medium">View all repositories</span>
               <ArrowUpRight className="w-4 h-4 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" />
-            </Link>
+            </a>
           </motion.div>
         )}
       </div>

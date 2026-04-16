@@ -1,8 +1,5 @@
-"use client";
-
 import { useRef } from "react";
 import { motion, useScroll, useTransform, type Variants } from "motion/react";
-import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import SakuraBranch from "./SakuraBranch";
 
@@ -43,13 +40,13 @@ export default function HeroSection() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.3, duration: 0.6 }}
       >
-        <Link
+        <a
           href="/"
           className="inline-flex items-center gap-2 text-sm text-[#8B6F5E]/70 hover:text-[#8B6F5E] transition-colors backdrop-blur-sm bg-white/30 px-4 py-2 rounded-full border border-[#e8a0bf]/20"
         >
           <ArrowLeft className="w-4 h-4" />
           Home
-        </Link>
+        </a>
       </motion.div>
 
       <section

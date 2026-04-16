@@ -1,10 +1,6 @@
-'use client';
-
 import Magnet from '@/components/Magnet';
 import RotatingText from '@/components/RotatingText';
 import { ArrowDown, Download } from 'lucide-react';
-import Link from 'next/link';
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { motion, type Variants } from 'motion/react';
 
@@ -33,11 +29,10 @@ function Polaroid({
           className={`bg-white p-3 pb-12 shadow-2xl transition-transform duration-500 hover:scale-110 cursor-pointer ${className}`}
         >
           <div className="relative w-40 h-40 sm:w-48 sm:h-48 overflow-hidden bg-muted">
-            <Image
+            <img
               src={src}
               alt={alt}
-              fill
-              className="object-cover"
+              className="object-cover absolute inset-0 w-full h-full"
             />
           </div>
         </div>
@@ -150,10 +145,10 @@ export default function HeroSection() {
         {/* Resume Button */}
         <motion.div className="mb-8 sm:mb-12" variants={itemVariants}>
           <Button asChild variant="outline" size="default" className="rounded-full px-6 sm:px-8 text-sm sm:text-base border-foreground/20 hover:bg-foreground/5">
-            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
               <Download className="mr-2 h-4 w-4" />
               <span className="hidden sm:inline">Download </span>Resume
-            </Link>
+            </a>
           </Button>
         </motion.div>
         
@@ -163,30 +158,30 @@ export default function HeroSection() {
           variants={itemVariants}
         >
           <Magnet padding={30} magnetStrength={3}>
-            <Link 
+            <a
               href="#work" 
               className="text-base sm:text-lg text-muted-foreground hover:text-foreground transition-colors"
             >
               Work
-            </Link>
+            </a>
           </Magnet>
           
           <Magnet padding={30} magnetStrength={3}>
-            <Link 
+            <a
               href="#about" 
               className="text-base sm:text-lg text-muted-foreground hover:text-foreground transition-colors"
             >
               About
-            </Link>
+            </a>
           </Magnet>
           
           <Magnet padding={30} magnetStrength={3}>
-            <Link 
+            <a
               href="#contact" 
               className="text-base sm:text-lg text-muted-foreground hover:text-foreground transition-colors"
             >
               Contact
-            </Link>
+            </a>
           </Magnet>
         </motion.nav>
       </motion.div>

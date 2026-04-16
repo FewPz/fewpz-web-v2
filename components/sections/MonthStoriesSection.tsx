@@ -1,4 +1,3 @@
-'use client';
 
 import React, { useState, useEffect, useCallback } from 'react';
 import AnimatedContent from '@/components/AnimatedContent';
@@ -6,7 +5,6 @@ import { Calendar, X } from 'lucide-react';
 import { Stories, StoriesContent, Story, StoryAuthor, StoryAuthorImage, StoryAuthorName, StoryOverlay, StoryVideo, StoryImage } from '@/components/kibo-ui/stories';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from '@/components/ui/carousel';
 import { Dialog, DialogContent, DialogClose, DialogTitle } from '@/components/ui/dialog';
-import Image from 'next/image';
 import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
 import { motion } from 'motion/react';
 
@@ -204,14 +202,11 @@ const MonthStoriesSection: React.FC<MonthStoriesSectionProps> = ({ title, storie
                           />
                         ) : story.image ? (
                           <div className="relative w-full h-full select-none">
-                            <Image
+                            <img
                               src={story.image}
                               alt={story.author}
-                              fill
-                              className="object-contain"
-                              draggable={false} // Prevent native drag which breaks swiping
-                              sizes="(max-width: 768px) 100vw, 600px"
-                              priority={index === selectedStoryIndex}
+                              className="object-contain absolute inset-0 w-full h-full"
+                              draggable={false}
                             />
                           </div>
                         ) : null}

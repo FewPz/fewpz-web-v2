@@ -1,10 +1,7 @@
-'use client';
-
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { usePathname } from 'next/navigation';
+import { useRouterState } from '@tanstack/react-router';
 import { motion, AnimatePresence } from 'motion/react';
 import { Music, X, Mic2 } from 'lucide-react';
-import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 interface NowPlaying {
@@ -151,12 +148,10 @@ function LyricsModal({
     >
       {/* Background: blurred album art + dark overlay */}
       <div className="absolute inset-0 overflow-hidden">
-        <Image
+        <img
           src={data.albumImageUrl}
           alt=""
-          fill
-          className="object-cover scale-110 blur-[80px] brightness-[0.3] saturate-150"
-          priority
+          className="object-cover scale-110 blur-[80px] brightness-[0.3] saturate-150 absolute inset-0 w-full h-full"
         />
         <div className="absolute inset-0 bg-black/60" />
       </div>
@@ -250,11 +245,10 @@ function LyricsModal({
           {/* Song info row */}
           <div className="flex items-center gap-3 mb-3">
             <div className="relative w-12 h-12 rounded-lg overflow-hidden shrink-0 shadow-lg">
-              <Image
+              <img
                 src={data.albumImageUrl}
                 alt={data.album}
-                fill
-                className="object-cover"
+                className="object-cover absolute inset-0 w-full h-full"
               />
             </div>
             <div className="flex-1 min-w-0">
@@ -305,7 +299,7 @@ export default function SpotifyNowPlaying() {
   const [localProgress, setLocalProgress] = useState(0);
   const [showLyricsModal, setShowLyricsModal] = useState(false);
 
-  const pathname = usePathname();
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
   const lastTrackIdRef = useRef<string | null>(null);
   const progressAnchorRef = useRef<{ progressMs: number; wallTime: number } | null>(null);
 
@@ -452,11 +446,10 @@ export default function SpotifyNowPlaying() {
                       className="relative shrink-0 group/img text-left"
                     >
                       <div className="relative w-16 h-16 rounded-lg overflow-hidden">
-                        <Image
+                        <img
                           src={data.albumImageUrl}
                           alt={data.album}
-                          fill
-                          className="object-cover group-hover/img:scale-110 transition-transform duration-300"
+                          className="object-cover group-hover/img:scale-110 transition-transform duration-300 absolute inset-0 w-full h-full"
                         />
                       </div>
                       <div className="absolute inset-0 bg-black/0 group-hover/img:bg-black/20 transition-colors rounded-lg flex items-center justify-center">

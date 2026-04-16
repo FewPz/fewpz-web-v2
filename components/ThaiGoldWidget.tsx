@@ -1,8 +1,5 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import { MoveDown, MoveUp, Minus, Volume2 } from "lucide-react";
-import Image from "next/image";
 
 interface GoldData {
     buy: string | null;
@@ -173,7 +170,7 @@ export default function ThaiGoldWidget() {
                 {/* Left Column: Logo + Arrow */}
                 <div className="flex flex-col items-center gap-4 xl:gap-6">
                     {/* Logo */}
-                    <Image
+                    <img
                         src="/logos/trade-gold-1.png"
                         alt="Trade Gold Logo"
                         width={180}
