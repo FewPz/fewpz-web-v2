@@ -22,7 +22,7 @@ export default defineConfig({
       router: {
         routesDirectory: 'app',
         generatedRouteTree: 'app/routeTree.gen.ts',
-        routeFileIgnorePattern: '^(routeTree\\.gen\\.ts|api)$',
+        routeFileIgnorePattern: '^(routeTree\\.gen\\.ts)$',
       },
     }),
     viteTsConfigPaths({

@@ -1,5 +1,3 @@
-import "server-only";
-
 import type { CurrentPlayback } from "./spotify";
 
 const LRCLIB_GET_ENDPOINT = "https://lrclib.net/api/get";

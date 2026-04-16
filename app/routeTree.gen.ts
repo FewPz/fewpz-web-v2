@@ -13,8 +13,11 @@ import { Route as IndexRouteImport } from './index'
 import { Route as TradeGoldIndexRouteImport } from './trade-gold/index'
 import { Route as EventIndexRouteImport } from './event/index'
 import { Route as BlogsIndexRouteImport } from './blogs/index'
+import { Route as ApiGoldPriceRouteImport } from './api/gold-price'
 import { Route as BlogsReviewYear2025IndexRouteImport } from './blogs/review-year-2025/index'
 import { Route as BlogsItkmitlReview2026IndexRouteImport } from './blogs/itkmitl-review-2026/index'
+import { Route as ApiSpotifyNowPlayingRouteImport } from './api/spotify/now-playing'
+import { Route as ApiSpotifyLyricsRouteImport } from './api/spotify/lyrics'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -36,6 +39,11 @@ const BlogsIndexRoute = BlogsIndexRouteImport.update({
   path: '/blogs/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiGoldPriceRoute = ApiGoldPriceRouteImport.update({
+  id: '/api/gold-price',
+  path: '/api/gold-price',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogsReviewYear2025IndexRoute =
   BlogsReviewYear2025IndexRouteImport.update({
     id: '/blogs/review-year-2025/',
@@ -48,29 +56,48 @@ const BlogsItkmitlReview2026IndexRoute =
     path: '/blogs/itkmitl-review-2026/',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ApiSpotifyNowPlayingRoute = ApiSpotifyNowPlayingRouteImport.update({
+  id: '/api/spotify/now-playing',
+  path: '/api/spotify/now-playing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiSpotifyLyricsRoute = ApiSpotifyLyricsRouteImport.update({
+  id: '/api/spotify/lyrics',
+  path: '/api/spotify/lyrics',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/api/gold-price': typeof ApiGoldPriceRoute
   '/blogs/': typeof BlogsIndexRoute
   '/event/': typeof EventIndexRoute
   '/trade-gold/': typeof TradeGoldIndexRoute
+  '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
+  '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
   '/blogs/itkmitl-review-2026/': typeof BlogsItkmitlReview2026IndexRoute
   '/blogs/review-year-2025/': typeof BlogsReviewYear2025IndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/api/gold-price': typeof ApiGoldPriceRoute
   '/blogs': typeof BlogsIndexRoute
   '/event': typeof EventIndexRoute
   '/trade-gold': typeof TradeGoldIndexRoute
+  '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
+  '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
   '/blogs/itkmitl-review-2026': typeof BlogsItkmitlReview2026IndexRoute
   '/blogs/review-year-2025': typeof BlogsReviewYear2025IndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/api/gold-price': typeof ApiGoldPriceRoute
   '/blogs/': typeof BlogsIndexRoute
   '/event/': typeof EventIndexRoute
   '/trade-gold/': typeof TradeGoldIndexRoute
+  '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
+  '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
   '/blogs/itkmitl-review-2026/': typeof BlogsItkmitlReview2026IndexRoute
   '/blogs/review-year-2025/': typeof BlogsReviewYear2025IndexRoute
 }
@@ -78,34 +105,46 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/api/gold-price'
     | '/blogs/'
     | '/event/'
     | '/trade-gold/'
+    | '/api/spotify/lyrics'
+    | '/api/spotify/now-playing'
     | '/blogs/itkmitl-review-2026/'
     | '/blogs/review-year-2025/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/api/gold-price'
     | '/blogs'
     | '/event'
     | '/trade-gold'
+    | '/api/spotify/lyrics'
+    | '/api/spotify/now-playing'
     | '/blogs/itkmitl-review-2026'
     | '/blogs/review-year-2025'
   id:
     | '__root__'
     | '/'
+    | '/api/gold-price'
     | '/blogs/'
     | '/event/'
     | '/trade-gold/'
+    | '/api/spotify/lyrics'
+    | '/api/spotify/now-playing'
     | '/blogs/itkmitl-review-2026/'
     | '/blogs/review-year-2025/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ApiGoldPriceRoute: typeof ApiGoldPriceRoute
   BlogsIndexRoute: typeof BlogsIndexRoute
   EventIndexRoute: typeof EventIndexRoute
   TradeGoldIndexRoute: typeof TradeGoldIndexRoute
+  ApiSpotifyLyricsRoute: typeof ApiSpotifyLyricsRoute
+  ApiSpotifyNowPlayingRoute: typeof ApiSpotifyNowPlayingRoute
   BlogsItkmitlReview2026IndexRoute: typeof BlogsItkmitlReview2026IndexRoute
   BlogsReviewYear2025IndexRoute: typeof BlogsReviewYear2025IndexRoute
 }
@@ -140,6 +179,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/gold-price': {
+      id: '/api/gold-price'
+      path: '/api/gold-price'
+      fullPath: '/api/gold-price'
+      preLoaderRoute: typeof ApiGoldPriceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blogs/review-year-2025/': {
       id: '/blogs/review-year-2025/'
       path: '/blogs/review-year-2025'
@@ -154,14 +200,31 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogsItkmitlReview2026IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/spotify/now-playing': {
+      id: '/api/spotify/now-playing'
+      path: '/api/spotify/now-playing'
+      fullPath: '/api/spotify/now-playing'
+      preLoaderRoute: typeof ApiSpotifyNowPlayingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/spotify/lyrics': {
+      id: '/api/spotify/lyrics'
+      path: '/api/spotify/lyrics'
+      fullPath: '/api/spotify/lyrics'
+      preLoaderRoute: typeof ApiSpotifyLyricsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ApiGoldPriceRoute: ApiGoldPriceRoute,
   BlogsIndexRoute: BlogsIndexRoute,
   EventIndexRoute: EventIndexRoute,
   TradeGoldIndexRoute: TradeGoldIndexRoute,
+  ApiSpotifyLyricsRoute: ApiSpotifyLyricsRoute,
+  ApiSpotifyNowPlayingRoute: ApiSpotifyNowPlayingRoute,
   BlogsItkmitlReview2026IndexRoute: BlogsItkmitlReview2026IndexRoute,
   BlogsReviewYear2025IndexRoute: BlogsReviewYear2025IndexRoute,
 }
