@@ -19,6 +19,12 @@
 
 # production
 /build
+/dist
+/.output
+/.nitro
+
+# tanstack start
+/.tanstack
 
 # misc
 .DS_Store
