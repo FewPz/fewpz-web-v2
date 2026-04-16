@@ -4,6 +4,7 @@ import viteReact from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import viteTsConfigPaths from 'vite-tsconfig-paths'
 import tsconfigPaths from 'vite-tsconfig-paths'
+import { nitro } from 'nitro/vite'
 import { fileURLToPath } from 'url'
 
 export default defineConfig({
@@ -28,5 +29,8 @@ export default defineConfig({
       projects: ['./tsconfig.json'],
     }),
     viteReact(),
+    nitro({
+      preset: process.env.VERCEL ? 'vercel' : 'node-server',
+    }),
   ],
 })
