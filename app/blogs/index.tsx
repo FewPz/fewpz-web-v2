@@ -220,7 +220,7 @@ function BlogsPage() {
         {/* Empty state if no other posts */}
         {otherPosts.length === 0 && blogPosts.length <= 1 && (
           <AnimatedContent delay={0.2} className="mt-8">
-            <div className="relative overflow-hidden flex flex-col items-center justify-center py-20 px-6 text-center border border-border/40 rounded-3xl bg-gradient-to-b from-card/40 to-card/10 group">
+            <div className="relative overflow-hidden flex flex-col items-center justify-center py-20 px-6 text-center border border-border/40 rounded-3xl bg-linear-to-b from-card/40 to-card/10 group">
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-foreground/5 rounded-full blur-[60px] group-hover:bg-foreground/10 transition-colors duration-700" />
 
               <div className="relative mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-muted/50 ring-1 ring-border/50 shadow-inner">

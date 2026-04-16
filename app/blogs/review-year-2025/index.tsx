@@ -119,14 +119,14 @@ function ReviewYear2025Page() {
                     />
 
                 {/* Orange gradient from top */}
-                <div className="absolute inset-0 bg-gradient-to-b from-orange-300/50 via-orange-from-orange-300/20 to-transparent z-5" />
+                <div className="absolute inset-0 bg-linear-to-b from-orange-300/50 via-orange-from-orange-300/20 to-transparent z-5" />
 
                 {/* Floating shapes - in front of image */}
                 <div className="absolute inset-0 overflow-hidden z-10">
                     {[...Array(6)].map((_, i) => (
                         <motion.div
                             key={i}
-                            className="absolute w-96 h-96 rounded-full bg-gradient-to-br from-orange-300/40 to-pink-500/30 blur-3xl"
+                            className="absolute w-96 h-96 rounded-full bg-linear-to-br from-orange-300/40 to-pink-500/30 blur-3xl"
                             initial={{ opacity: 0 }}
                             animate={{
                                 opacity: [0.6, 0.9, 0.6],
@@ -148,7 +148,7 @@ function ReviewYear2025Page() {
                 </div>
 
                 {/* Transparency overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/50 to-background z-20" />
+                <div className="absolute inset-0 bg-linear-to-b from-background/40 via-background/50 to-background z-20" />
 
                 <div className="relative z-30 max-w-4xl mx-auto px-6 text-center">
                     {/* Floating Polaroids */}
@@ -1159,7 +1159,7 @@ function ReviewYear2025Page() {
                     {[...Array(3)].map((_, i) => (
                         <motion.div
                             key={i}
-                            className="absolute w-64 h-64 rounded-full bg-gradient-to-br from-red-500/10 to-orange-500/10 blur-3xl"
+                            className="absolute w-64 h-64 rounded-full bg-linear-to-br from-red-500/10 to-orange-500/10 blur-3xl"
                             animate={{
                                 x: [0, 30, 0],
                                 y: [0, 20, 0],
