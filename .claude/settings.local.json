@@ -6,7 +6,8 @@
       "WebFetch(domain:github.com)",
       "WebFetch(domain:tanstack.com)",
       "Bash(ls D:/fewpz-web-v2/.env*)",
-      "Bash(pnpm add *)"
+      "Bash(pnpm add *)",
+      "Bash(pnpm dlx *)"
     ]
   }
 }
