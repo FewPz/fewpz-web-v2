@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './__root'
 import { Route as IndexRouteImport } from './index'
 import { Route as TradeGoldIndexRouteImport } from './trade-gold/index'
+import { Route as QrIndexRouteImport } from './qr/index'
 import { Route as EventIndexRouteImport } from './event/index'
 import { Route as BlogsIndexRouteImport } from './blogs/index'
 import { Route as ApiGoldPriceRouteImport } from './api/gold-price'
@@ -27,6 +28,11 @@ const IndexRoute = IndexRouteImport.update({
 const TradeGoldIndexRoute = TradeGoldIndexRouteImport.update({
   id: '/trade-gold/',
   path: '/trade-gold/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QrIndexRoute = QrIndexRouteImport.update({
+  id: '/qr/',
+  path: '/qr/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EventIndexRoute = EventIndexRouteImport.update({
@@ -72,6 +78,7 @@ export interface FileRoutesByFullPath {
   '/api/gold-price': typeof ApiGoldPriceRoute
   '/blogs/': typeof BlogsIndexRoute
   '/event/': typeof EventIndexRoute
+  '/qr/': typeof QrIndexRoute
   '/trade-gold/': typeof TradeGoldIndexRoute
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
   '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
@@ -83,6 +90,7 @@ export interface FileRoutesByTo {
   '/api/gold-price': typeof ApiGoldPriceRoute
   '/blogs': typeof BlogsIndexRoute
   '/event': typeof EventIndexRoute
+  '/qr': typeof QrIndexRoute
   '/trade-gold': typeof TradeGoldIndexRoute
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
   '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
@@ -95,6 +103,7 @@ export interface FileRoutesById {
   '/api/gold-price': typeof ApiGoldPriceRoute
   '/blogs/': typeof BlogsIndexRoute
   '/event/': typeof EventIndexRoute
+  '/qr/': typeof QrIndexRoute
   '/trade-gold/': typeof TradeGoldIndexRoute
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
   '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
@@ -108,6 +117,7 @@ export interface FileRouteTypes {
     | '/api/gold-price'
     | '/blogs/'
     | '/event/'
+    | '/qr/'
     | '/trade-gold/'
     | '/api/spotify/lyrics'
     | '/api/spotify/now-playing'
@@ -119,6 +129,7 @@ export interface FileRouteTypes {
     | '/api/gold-price'
     | '/blogs'
     | '/event'
+    | '/qr'
     | '/trade-gold'
     | '/api/spotify/lyrics'
     | '/api/spotify/now-playing'
@@ -130,6 +141,7 @@ export interface FileRouteTypes {
     | '/api/gold-price'
     | '/blogs/'
     | '/event/'
+    | '/qr/'
     | '/trade-gold/'
     | '/api/spotify/lyrics'
     | '/api/spotify/now-playing'
@@ -142,6 +154,7 @@ export interface RootRouteChildren {
   ApiGoldPriceRoute: typeof ApiGoldPriceRoute
   BlogsIndexRoute: typeof BlogsIndexRoute
   EventIndexRoute: typeof EventIndexRoute
+  QrIndexRoute: typeof QrIndexRoute
   TradeGoldIndexRoute: typeof TradeGoldIndexRoute
   ApiSpotifyLyricsRoute: typeof ApiSpotifyLyricsRoute
   ApiSpotifyNowPlayingRoute: typeof ApiSpotifyNowPlayingRoute
@@ -163,6 +176,13 @@ declare module '@tanstack/react-router' {
       path: '/trade-gold'
       fullPath: '/trade-gold/'
       preLoaderRoute: typeof TradeGoldIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/qr/': {
+      id: '/qr/'
+      path: '/qr'
+      fullPath: '/qr/'
+      preLoaderRoute: typeof QrIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/event/': {
@@ -222,6 +242,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiGoldPriceRoute: ApiGoldPriceRoute,
   BlogsIndexRoute: BlogsIndexRoute,
   EventIndexRoute: EventIndexRoute,
+  QrIndexRoute: QrIndexRoute,
   TradeGoldIndexRoute: TradeGoldIndexRoute,
   ApiSpotifyLyricsRoute: ApiSpotifyLyricsRoute,
   ApiSpotifyNowPlayingRoute: ApiSpotifyNowPlayingRoute,
