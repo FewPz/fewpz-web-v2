@@ -10,10 +10,15 @@
 
 import { Route as rootRouteImport } from './__root'
 import { Route as IndexRouteImport } from './index'
+import { Route as UrldecoderIndexRouteImport } from './urldecoder/index'
 import { Route as TradeGoldIndexRouteImport } from './trade-gold/index'
+import { Route as ToolsIndexRouteImport } from './tools/index'
 import { Route as QrIndexRouteImport } from './qr/index'
+import { Route as McIndexRouteImport } from './mc/index'
 import { Route as EventIndexRouteImport } from './event/index'
+import { Route as ColorIndexRouteImport } from './color/index'
 import { Route as BlogsIndexRouteImport } from './blogs/index'
+import { Route as ApiMcPingRouteImport } from './api/mc-ping'
 import { Route as ApiGoldPriceRouteImport } from './api/gold-price'
 import { Route as BlogsReviewYear2025IndexRouteImport } from './blogs/review-year-2025/index'
 import { Route as BlogsItkmitlReview2026IndexRouteImport } from './blogs/itkmitl-review-2026/index'
@@ -25,9 +30,19 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const UrldecoderIndexRoute = UrldecoderIndexRouteImport.update({
+  id: '/urldecoder/',
+  path: '/urldecoder/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TradeGoldIndexRoute = TradeGoldIndexRouteImport.update({
   id: '/trade-gold/',
   path: '/trade-gold/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsIndexRoute = ToolsIndexRouteImport.update({
+  id: '/tools/',
+  path: '/tools/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const QrIndexRoute = QrIndexRouteImport.update({
@@ -35,14 +50,29 @@ const QrIndexRoute = QrIndexRouteImport.update({
   path: '/qr/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const McIndexRoute = McIndexRouteImport.update({
+  id: '/mc/',
+  path: '/mc/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EventIndexRoute = EventIndexRouteImport.update({
   id: '/event/',
   path: '/event/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ColorIndexRoute = ColorIndexRouteImport.update({
+  id: '/color/',
+  path: '/color/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogsIndexRoute = BlogsIndexRouteImport.update({
   id: '/blogs/',
   path: '/blogs/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiMcPingRoute = ApiMcPingRouteImport.update({
+  id: '/api/mc-ping',
+  path: '/api/mc-ping',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiGoldPriceRoute = ApiGoldPriceRouteImport.update({
@@ -76,10 +106,15 @@ const ApiSpotifyLyricsRoute = ApiSpotifyLyricsRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/api/gold-price': typeof ApiGoldPriceRoute
+  '/api/mc-ping': typeof ApiMcPingRoute
   '/blogs/': typeof BlogsIndexRoute
+  '/color/': typeof ColorIndexRoute
   '/event/': typeof EventIndexRoute
+  '/mc/': typeof McIndexRoute
   '/qr/': typeof QrIndexRoute
+  '/tools/': typeof ToolsIndexRoute
   '/trade-gold/': typeof TradeGoldIndexRoute
+  '/urldecoder/': typeof UrldecoderIndexRoute
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
   '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
   '/blogs/itkmitl-review-2026/': typeof BlogsItkmitlReview2026IndexRoute
@@ -88,10 +123,15 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/api/gold-price': typeof ApiGoldPriceRoute
+  '/api/mc-ping': typeof ApiMcPingRoute
   '/blogs': typeof BlogsIndexRoute
+  '/color': typeof ColorIndexRoute
   '/event': typeof EventIndexRoute
+  '/mc': typeof McIndexRoute
   '/qr': typeof QrIndexRoute
+  '/tools': typeof ToolsIndexRoute
   '/trade-gold': typeof TradeGoldIndexRoute
+  '/urldecoder': typeof UrldecoderIndexRoute
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
   '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
   '/blogs/itkmitl-review-2026': typeof BlogsItkmitlReview2026IndexRoute
@@ -101,10 +141,15 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/api/gold-price': typeof ApiGoldPriceRoute
+  '/api/mc-ping': typeof ApiMcPingRoute
   '/blogs/': typeof BlogsIndexRoute
+  '/color/': typeof ColorIndexRoute
   '/event/': typeof EventIndexRoute
+  '/mc/': typeof McIndexRoute
   '/qr/': typeof QrIndexRoute
+  '/tools/': typeof ToolsIndexRoute
   '/trade-gold/': typeof TradeGoldIndexRoute
+  '/urldecoder/': typeof UrldecoderIndexRoute
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
   '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
   '/blogs/itkmitl-review-2026/': typeof BlogsItkmitlReview2026IndexRoute
@@ -115,10 +160,15 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/api/gold-price'
+    | '/api/mc-ping'
     | '/blogs/'
+    | '/color/'
     | '/event/'
+    | '/mc/'
     | '/qr/'
+    | '/tools/'
     | '/trade-gold/'
+    | '/urldecoder/'
     | '/api/spotify/lyrics'
     | '/api/spotify/now-playing'
     | '/blogs/itkmitl-review-2026/'
@@ -127,10 +177,15 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/api/gold-price'
+    | '/api/mc-ping'
     | '/blogs'
+    | '/color'
     | '/event'
+    | '/mc'
     | '/qr'
+    | '/tools'
     | '/trade-gold'
+    | '/urldecoder'
     | '/api/spotify/lyrics'
     | '/api/spotify/now-playing'
     | '/blogs/itkmitl-review-2026'
@@ -139,10 +194,15 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/api/gold-price'
+    | '/api/mc-ping'
     | '/blogs/'
+    | '/color/'
     | '/event/'
+    | '/mc/'
     | '/qr/'
+    | '/tools/'
     | '/trade-gold/'
+    | '/urldecoder/'
     | '/api/spotify/lyrics'
     | '/api/spotify/now-playing'
     | '/blogs/itkmitl-review-2026/'
@@ -152,10 +212,15 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ApiGoldPriceRoute: typeof ApiGoldPriceRoute
+  ApiMcPingRoute: typeof ApiMcPingRoute
   BlogsIndexRoute: typeof BlogsIndexRoute
+  ColorIndexRoute: typeof ColorIndexRoute
   EventIndexRoute: typeof EventIndexRoute
+  McIndexRoute: typeof McIndexRoute
   QrIndexRoute: typeof QrIndexRoute
+  ToolsIndexRoute: typeof ToolsIndexRoute
   TradeGoldIndexRoute: typeof TradeGoldIndexRoute
+  UrldecoderIndexRoute: typeof UrldecoderIndexRoute
   ApiSpotifyLyricsRoute: typeof ApiSpotifyLyricsRoute
   ApiSpotifyNowPlayingRoute: typeof ApiSpotifyNowPlayingRoute
   BlogsItkmitlReview2026IndexRoute: typeof BlogsItkmitlReview2026IndexRoute
@@ -171,11 +236,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/urldecoder/': {
+      id: '/urldecoder/'
+      path: '/urldecoder'
+      fullPath: '/urldecoder/'
+      preLoaderRoute: typeof UrldecoderIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/trade-gold/': {
       id: '/trade-gold/'
       path: '/trade-gold'
       fullPath: '/trade-gold/'
       preLoaderRoute: typeof TradeGoldIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/': {
+      id: '/tools/'
+      path: '/tools'
+      fullPath: '/tools/'
+      preLoaderRoute: typeof ToolsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/qr/': {
@@ -185,6 +264,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof QrIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/mc/': {
+      id: '/mc/'
+      path: '/mc'
+      fullPath: '/mc/'
+      preLoaderRoute: typeof McIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/event/': {
       id: '/event/'
       path: '/event'
@@ -192,11 +278,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EventIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/color/': {
+      id: '/color/'
+      path: '/color'
+      fullPath: '/color/'
+      preLoaderRoute: typeof ColorIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blogs/': {
       id: '/blogs/'
       path: '/blogs'
       fullPath: '/blogs/'
       preLoaderRoute: typeof BlogsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/mc-ping': {
+      id: '/api/mc-ping'
+      path: '/api/mc-ping'
+      fullPath: '/api/mc-ping'
+      preLoaderRoute: typeof ApiMcPingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/gold-price': {
@@ -240,10 +340,15 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ApiGoldPriceRoute: ApiGoldPriceRoute,
+  ApiMcPingRoute: ApiMcPingRoute,
   BlogsIndexRoute: BlogsIndexRoute,
+  ColorIndexRoute: ColorIndexRoute,
   EventIndexRoute: EventIndexRoute,
+  McIndexRoute: McIndexRoute,
   QrIndexRoute: QrIndexRoute,
+  ToolsIndexRoute: ToolsIndexRoute,
   TradeGoldIndexRoute: TradeGoldIndexRoute,
+  UrldecoderIndexRoute: UrldecoderIndexRoute,
   ApiSpotifyLyricsRoute: ApiSpotifyLyricsRoute,
   ApiSpotifyNowPlayingRoute: ApiSpotifyNowPlayingRoute,
   BlogsItkmitlReview2026IndexRoute: BlogsItkmitlReview2026IndexRoute,

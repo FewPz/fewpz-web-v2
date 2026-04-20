@@ -1,4 +1,4 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, Link } from '@tanstack/react-router'
 import { useState, useEffect, useRef, useCallback } from 'react'
 import QRCode from 'qrcode'
 
@@ -108,7 +108,10 @@ function QRPage() {
   }
 
   return (
-    <main className="min-h-screen bg-background flex flex-col items-center justify-center px-4 py-20">
+    <main className="relative min-h-screen bg-background flex flex-col items-center justify-center px-4 py-20">
+      <Link to="/tools" className="absolute top-6 left-6 flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
+        ← Tools
+      </Link>
       <div className="w-full max-w-md space-y-6">
         <div className="text-center space-y-1">
           <h1 className="text-3xl font-bold tracking-tight">QR Generator</h1>
