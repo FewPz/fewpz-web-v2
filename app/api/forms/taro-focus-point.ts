@@ -25,10 +25,10 @@ type CaseReviewPayload = {
   rankFp3: number | null
   systemTopChoiceOpinion: SystemTopChoiceOpinion | null
   systemTopChoiceReason?: string | null
-  scoreTeachingRelevance: number | null
-  scoreProgramCorrectnessImpact: number | null
-  scoreMisunderstandingRisk: number | null
-  scoreQuestionFitness: number | null
+  scoreTeachingRelevance?: number | null
+  scoreProgramCorrectnessImpact?: number | null
+  scoreMisunderstandingRisk?: number | null
+  scoreQuestionFitness?: number | null
   caseFeedback?: string | null
 }
 
@@ -63,7 +63,7 @@ const allowedCriteriaCoverage = new Set(['fully_covered', 'partially_covered', '
 const allowedWeightPreference = new Set(['rule_based_heavier', 'balanced_50_50', 'ai_heavier', 'no_clear_opinion'])
 
 const isRank = (value: unknown) => value === null || (typeof value === 'number' && Number.isInteger(value) && value >= 1 && value <= 3)
-const isScore = (value: unknown) => value === null || (typeof value === 'number' && Number.isInteger(value) && value >= 1 && value <= 5)
+const isScore = (value: unknown) => value === undefined || value === null || (typeof value === 'number' && Number.isInteger(value) && value >= 1 && value <= 5)
 const toNullableText = (value: unknown) => (typeof value === 'string' && value.trim().length > 0 ? value.trim() : null)
 
 export const Route = createFileRoute('/api/forms/taro-focus-point')({
@@ -156,18 +156,6 @@ export const Route = createFileRoute('/api/forms/taro-focus-point')({
               || !isScore(review.scoreQuestionFitness)
             ) {
               return new Response(JSON.stringify({ error: `Scores in case ${review.caseNumber} must be null or 1-5` }), {
-                status: 400,
-                headers: { 'Content-Type': 'application/json' },
-              })
-            }
-
-            if (
-              review.scoreTeachingRelevance === null
-              || review.scoreProgramCorrectnessImpact === null
-              || review.scoreMisunderstandingRisk === null
-              || review.scoreQuestionFitness === null
-            ) {
-              return new Response(JSON.stringify({ error: `All quality scores are required in case ${review.caseNumber}` }), {
                 status: 400,
                 headers: { 'Content-Type': 'application/json' },
               })
@@ -269,10 +257,10 @@ export const Route = createFileRoute('/api/forms/taro-focus-point')({
                 rankFp3: review.rankFp3,
                 systemTopChoiceOpinion: review.systemTopChoiceOpinion,
                 systemTopChoiceReason: toNullableText(review.systemTopChoiceReason),
-                scoreTeachingRelevance: review.scoreTeachingRelevance,
-                scoreProgramCorrectnessImpact: review.scoreProgramCorrectnessImpact,
-                scoreMisunderstandingRisk: review.scoreMisunderstandingRisk,
-                scoreQuestionFitness: review.scoreQuestionFitness,
+                scoreTeachingRelevance: review.scoreTeachingRelevance ?? null,
+                scoreProgramCorrectnessImpact: review.scoreProgramCorrectnessImpact ?? null,
+                scoreMisunderstandingRisk: review.scoreMisunderstandingRisk ?? null,
+                scoreQuestionFitness: review.scoreQuestionFitness ?? null,
                 caseFeedback: toNullableText(review.caseFeedback),
               })),
             )

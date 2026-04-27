@@ -50,10 +50,6 @@ type CaseFormState = {
   rankFp3: number | null
   systemTopChoiceOpinion: SystemTopChoiceOpinion | null
   systemTopChoiceReason: string
-  scoreTeachingRelevance: number | null
-  scoreProgramCorrectnessImpact: number | null
-  scoreMisunderstandingRisk: number | null
-  scoreQuestionFitness: number | null
   caseFeedback: string
 }
 
@@ -114,10 +110,6 @@ const createEmptyCaseState = (caseNumber: 1 | 2 | 3): CaseFormState => ({
   rankFp3: null,
   systemTopChoiceOpinion: null,
   systemTopChoiceReason: '',
-  scoreTeachingRelevance: null,
-  scoreProgramCorrectnessImpact: null,
-  scoreMisunderstandingRisk: null,
-  scoreQuestionFitness: null,
   caseFeedback: '',
 })
 
@@ -131,7 +123,6 @@ const createInitialFormState = (): SubmissionForm => ({
 })
 
 const rankOptions = [1, 2, 3]
-const scoreOptions = [1, 2, 3, 4, 5]
 const FORM_ACCESS_CODE = 'TARO69'
 const DRAFT_STORAGE_KEY = 'taro-focus-point:draft:v1'
 
@@ -149,7 +140,7 @@ function TaroFocusPointFormPage() {
   const [accessInput, setAccessInput] = useState('')
   const [accessError, setAccessError] = useState<string | null>(null)
   const [sessionAccessCode, setSessionAccessCode] = useState<string | null>(null)
-  const [draftStatus, setDraftStatus] = useState<string>('ยังไม่มีการบันทึกอัตโนมัติ')
+  const [draftStatus, setDraftStatus] = useState<string>('ยังไม่มีการบันทึกฉบับร่างอัตโนมัติ')
 
   const caseByNumber = useMemo(() => {
     return new Map(form.caseReviews.map((item) => [item.caseNumber, item]))
@@ -214,7 +205,7 @@ function TaroFocusPointFormPage() {
       }
 
       if (!review.systemTopChoiceOpinion) {
-        errors.push(`กรุณาเลือกความเห็นต่อ Top Choice ของกรณีที่ ${review.caseNumber}`)
+        errors.push(`กรุณาเลือกความเห็นต่ออันดับที่ระบบเลือกของกรณีที่ ${review.caseNumber}`)
       }
 
       if (
@@ -222,13 +213,6 @@ function TaroFocusPointFormPage() {
         && review.systemTopChoiceReason.trim() === ''
       ) {
         errors.push(`กรุณาระบุเหตุผลในกรณีที่ ${review.caseNumber}`)
-      }
-
-      if (review.scoreTeachingRelevance === null
-        || review.scoreProgramCorrectnessImpact === null
-        || review.scoreMisunderstandingRisk === null
-        || review.scoreQuestionFitness === null) {
-        errors.push(`กรุณาให้คะแนนส่วน C ให้ครบในกรณีที่ ${review.caseNumber}`)
       }
     }
 
@@ -347,7 +331,7 @@ function TaroFocusPointFormPage() {
               type="text"
               value={accessInput}
               onChange={(event) => setAccessInput(event.target.value)}
-              placeholder="Access code"
+              placeholder="กรอกรหัสผ่าน"
               autoFocus
             />
             {accessError && <p className="text-xs text-red-600">{accessError}</p>}
@@ -367,12 +351,6 @@ function TaroFocusPointFormPage() {
 
           <div className="mx-auto w-full max-w-5xl space-y-8">
         <div className="flex items-center justify-between gap-4">
-          <Link
-            to="/tools"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
-            ← Tools
-          </Link>
           <div className="rounded-full border border-border bg-card/70 px-3 py-1 text-xs text-muted-foreground">
             TARO Evaluator Form
           </div>
@@ -381,45 +359,28 @@ function TaroFocusPointFormPage() {
         <div className="space-y-2">
           <h1 className="text-3xl font-bold tracking-tight md:text-4xl">TARO Focus Point Evaluation</h1>
           <p className="max-w-3xl text-sm text-muted-foreground md:text-base">
-            แบบฟอร์มสำหรับผู้สอนเพื่อประเมินว่า Focus Point ที่ระบบ TARO เลือกนั้นสอดคล้องกับวิจารณญาณเชิงการสอนหรือไม่
+            แบบฟอร์มสำหรับผู้สอน เพื่อประเมินว่า Focus Point ที่ระบบ TARO เลือก เหมาะสมต่อการวัดความเข้าใจเชิงเหตุผลของนักศึกษาหรือไม่
           </p>
         </div>
-
-        <Card className="border-blue-400/30 bg-blue-50/60 dark:bg-blue-950/20">
-          <CardHeader>
-            <CardTitle className="text-base">เป้าหมายของแบบประเมิน</CardTitle>
-            <CardDescription>
-              เพื่อยืนยันว่า Focus Point ที่ระบบเลือก สามารถสะท้อนความเข้าใจเชิงเหตุผลของนักศึกษาได้จริง
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-2 text-sm text-foreground/90">
-            <p className="font-medium">สิ่งที่ผู้ประเมินต้องทำในแต่ละกรณี</p>
-            <p>1. อ่านโจทย์และโค้ดนักศึกษาให้ครบก่อนตัดสินใจ</p>
-            <p>2. จัดลำดับความสำคัญของ FP1-FP3 ตามวิจารณญาณของตนเอง</p>
-            <p>3. ระบุความเห็นต่อ Top Choice ของระบบ พร้อมเหตุผลเมื่อจำเป็น</p>
-            <p>4. ให้คะแนนคุณภาพ 4 มิติ (1-5) และให้ข้อเสนอแนะเพิ่มเติม</p>
-          </CardContent>
-        </Card>
 
         <Card className="border-amber-400/40 bg-amber-50/60 dark:bg-amber-950/20">
           <CardHeader>
             <CardTitle className="text-base">คำอธิบายคะแนน Focus Point (สำหรับผู้ประเมิน)</CardTitle>
             <CardDescription>
-              กรณีสงสัยว่าทำไมคะแนน FP ไม่เท่ากัน สามารถอ้างอิงแนวทางนี้ได้
+              หากสงสัยว่าทำไมคะแนนของแต่ละ FP ไม่เท่ากัน สามารถอ้างอิงคำอธิบายนี้ได้
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-2 text-sm text-foreground/90">
             <p>
-              คะแนนที่เห็นในแต่ละ FP เป็น <span className="font-semibold">importance score</span> ช่วง 0-1 และอาจไม่เท่ากันตามธรรมชาติ
-              เพราะมาจากความสำคัญของ construct ที่ต่างกัน
+              คะแนนของแต่ละ FP คือ <span className="font-semibold">importance score</span> ช่วง 0-1 จึงอาจไม่เท่ากัน เพราะแต่ละ construct มีความสำคัญต่างกัน
             </p>
             <p>
-              ขั้นคำนวณโดยย่อ: B1 (AST/rule-based) ให้คะแนนโครงสร้างพื้นฐาน เช่น loop, condition, accumulator จากนั้น B2 (AI-based)
-              ประเมินเชิงความหมายและความเหมาะสมเชิงการสอน แล้วรวมคะแนนด้วยน้ำหนัก
+              วิธีคำนวณโดยย่อ: B1 (AST/rule-based) ให้คะแนนเชิงโครงสร้างพื้นฐาน (เช่น loop, condition, accumulator) จากนั้น B2 (AI-based)
+              ประเมินเชิงความหมายและความเหมาะสมเชิงการสอน แล้วนำมารวมคะแนนด้วยน้ำหนัก
               <span className="font-semibold"> B1 60% + B2 40%</span>
             </p>
             <p>
-              สูตรรวมคะแนน: <span className="font-mono">final_importance = 0.6 * base_score + 0.4 * semantic_importance</span>
+              สูตรรวมคะแนน: <span className="font-mono">importance score = 0.6 * b1_score + 0.4 * b2_score</span>
             </p>
             <p className="text-muted-foreground">
               หมายเหตุ: ลำดับ FP1-FP3 ที่ระบบแสดงเป็น candidate สำหรับการตั้งคำถาม ไม่ได้หมายความว่า FP อื่นไม่มีคุณค่าเชิงการสอน
@@ -448,7 +409,7 @@ function TaroFocusPointFormPage() {
                       </pre>
                     </section>
                     <section className="rounded-lg border border-border bg-background/70 p-4">
-                      <h3 className="text-sm font-semibold">Focus Point ที่ระบบระบุ</h3>
+                      <h3 className="text-sm font-semibold">Focus Point ที่ระบบให้</h3>
                       <div className="mt-3 space-y-2">
                         {caseDef.candidates.map((candidate) => (
                           <div
@@ -471,7 +432,7 @@ function TaroFocusPointFormPage() {
                   </div>
 
                   <section className="space-y-3 rounded-lg border border-border bg-background/70 p-4">
-                    <h3 className="text-sm font-semibold">Part A — ลำดับความสำคัญของท่าน</h3>
+                    <h3 className="text-sm font-semibold">ส่วน ก — ลำดับความสำคัญที่ท่านเลือก</h3>
                     <div className="grid gap-2 md:grid-cols-2">
                       {['FP1', 'FP2', 'FP3', 'OTHER'].map((choice) => (
                         <label key={choice} className="flex items-center gap-2 rounded-md border border-border px-3 py-2 text-sm">
@@ -497,6 +458,9 @@ function TaroFocusPointFormPage() {
                         placeholder="เหตุผลการจัดลำดับ หรือ focus point อื่น"
                       />
                     </Field>
+                    <p className="text-xs text-muted-foreground">
+                      กรุณาจัดอันดับ FP1-FP3 ให้ครบ โดยใช้ตัวเลข 1-3 แบบไม่ซ้ำกัน (1 = สำคัญที่สุด)
+                    </p>
                     <div className="grid gap-3 md:grid-cols-3">
                       <RankField
                         label="ลำดับ FP1"
@@ -517,7 +481,7 @@ function TaroFocusPointFormPage() {
                   </section>
 
                   <section className="space-y-3 rounded-lg border border-border bg-background/70 p-4">
-                    <h3 className="text-sm font-semibold">Part B — ความเห็นต่อ Top Choice ของระบบ ({caseDef.systemTop})</h3>
+                    <h3 className="text-sm font-semibold">ส่วน ข — ความเห็นต่ออันดับของ FP ที่ระบบเลือกให้</h3>
                     <div className="grid gap-2 md:grid-cols-3">
                       <OpinionOption
                         caseNumber={caseDef.caseNumber}
@@ -550,34 +514,8 @@ function TaroFocusPointFormPage() {
                     </Field>
                   </section>
 
-                  <section className="space-y-3 rounded-lg border border-border bg-background/70 p-4">
-                    <h3 className="text-sm font-semibold">Part C — คะแนนคุณภาพ (1-5)</h3>
-                    <div className="grid gap-3 md:grid-cols-2">
-                      <ScoreField
-                        label="ความเกี่ยวข้องเชิงการสอน"
-                        value={caseForm.scoreTeachingRelevance}
-                        onChange={(value) => setCaseField(caseDef.caseNumber, 'scoreTeachingRelevance', value)}
-                      />
-                      <ScoreField
-                        label="ผลต่อความถูกต้องของโปรแกรม"
-                        value={caseForm.scoreProgramCorrectnessImpact}
-                        onChange={(value) => setCaseField(caseDef.caseNumber, 'scoreProgramCorrectnessImpact', value)}
-                      />
-                      <ScoreField
-                        label="ความเสี่ยงต่อความเข้าใจผิด"
-                        value={caseForm.scoreMisunderstandingRisk}
-                        onChange={(value) => setCaseField(caseDef.caseNumber, 'scoreMisunderstandingRisk', value)}
-                      />
-                      <ScoreField
-                        label="ความเหมาะสมในการตั้งคำถาม"
-                        value={caseForm.scoreQuestionFitness}
-                        onChange={(value) => setCaseField(caseDef.caseNumber, 'scoreQuestionFitness', value)}
-                      />
-                    </div>
-                  </section>
-
                   <section className="rounded-lg border border-border bg-background/70 p-4">
-                    <Field label="Part D — ความคิดเห็นเพิ่มเติมสำหรับกรณีนี้">
+                    <Field label="ส่วน ง — ความคิดเห็นเพิ่มเติมสำหรับกรณีนี้">
                       <Textarea
                         value={caseForm.caseFeedback}
                         onChange={(event) => setCaseField(caseDef.caseNumber, 'caseFeedback', event.target.value)}
@@ -660,7 +598,7 @@ function TaroFocusPointFormPage() {
             <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
               <div className="space-y-1">
                 <p className="text-sm font-medium">พร้อมส่งแบบประเมิน</p>
-                <p className="text-xs text-muted-foreground">{draftStatus}</p>
+                <p className="text-xs text-muted-foreground">สถานะฉบับร่าง: {draftStatus}</p>
                 {submitMessage && <p className="text-xs text-emerald-600">{submitMessage}</p>}
                 {submitError && <p className="text-xs text-red-600">{submitError}</p>}
               </div>
@@ -743,32 +681,6 @@ function RankField({
         <option value="">-</option>
         {rankOptions.map((rank) => (
           <option key={rank} value={rank}>{rank}</option>
-        ))}
-      </select>
-    </label>
-  )
-}
-
-function ScoreField({
-  label,
-  value,
-  onChange,
-}: {
-  label: string
-  value: number | null
-  onChange: (value: number | null) => void
-}) {
-  return (
-    <label className="grid gap-2 text-sm">
-      <span className="font-medium">{label}</span>
-      <select
-        value={value ?? ''}
-        onChange={(event) => onChange(event.target.value === '' ? null : Number(event.target.value))}
-        className="h-9 rounded-md border border-input bg-transparent px-3 text-sm outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]"
-      >
-        <option value="">-</option>
-        {scoreOptions.map((score) => (
-          <option key={score} value={score}>{score}</option>
         ))}
       </select>
     </label>
