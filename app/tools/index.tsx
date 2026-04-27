@@ -29,6 +29,12 @@ const TOOLS = [
     name: 'Color Picker',
     desc: 'Pick a color and copy as HEX, RGB, HSL, or OKLCH.',
   },
+  {
+    href: '/forms/taro-focus-point',
+    icon: '🧪',
+    name: 'TARO Focus Form',
+    desc: 'Evaluate Focus Point selection quality for TARO research cases.',
+  },
 ]
 
 function ToolsPage() {

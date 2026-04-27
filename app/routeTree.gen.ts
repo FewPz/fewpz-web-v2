@@ -20,10 +20,12 @@ import { Route as ColorIndexRouteImport } from './color/index'
 import { Route as BlogsIndexRouteImport } from './blogs/index'
 import { Route as ApiMcPingRouteImport } from './api/mc-ping'
 import { Route as ApiGoldPriceRouteImport } from './api/gold-price'
+import { Route as FormsTaroFocusPointIndexRouteImport } from './forms/taro-focus-point/index'
 import { Route as BlogsReviewYear2025IndexRouteImport } from './blogs/review-year-2025/index'
 import { Route as BlogsItkmitlReview2026IndexRouteImport } from './blogs/itkmitl-review-2026/index'
 import { Route as ApiSpotifyNowPlayingRouteImport } from './api/spotify/now-playing'
 import { Route as ApiSpotifyLyricsRouteImport } from './api/spotify/lyrics'
+import { Route as ApiFormsTaroFocusPointRouteImport } from './api/forms/taro-focus-point'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -80,6 +82,12 @@ const ApiGoldPriceRoute = ApiGoldPriceRouteImport.update({
   path: '/api/gold-price',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FormsTaroFocusPointIndexRoute =
+  FormsTaroFocusPointIndexRouteImport.update({
+    id: '/forms/taro-focus-point/',
+    path: '/forms/taro-focus-point/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogsReviewYear2025IndexRoute =
   BlogsReviewYear2025IndexRouteImport.update({
     id: '/blogs/review-year-2025/',
@@ -102,6 +110,11 @@ const ApiSpotifyLyricsRoute = ApiSpotifyLyricsRouteImport.update({
   path: '/api/spotify/lyrics',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiFormsTaroFocusPointRoute = ApiFormsTaroFocusPointRouteImport.update({
+  id: '/api/forms/taro-focus-point',
+  path: '/api/forms/taro-focus-point',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -115,10 +128,12 @@ export interface FileRoutesByFullPath {
   '/tools/': typeof ToolsIndexRoute
   '/trade-gold/': typeof TradeGoldIndexRoute
   '/urldecoder/': typeof UrldecoderIndexRoute
+  '/api/forms/taro-focus-point': typeof ApiFormsTaroFocusPointRoute
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
   '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
   '/blogs/itkmitl-review-2026/': typeof BlogsItkmitlReview2026IndexRoute
   '/blogs/review-year-2025/': typeof BlogsReviewYear2025IndexRoute
+  '/forms/taro-focus-point/': typeof FormsTaroFocusPointIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -132,10 +147,12 @@ export interface FileRoutesByTo {
   '/tools': typeof ToolsIndexRoute
   '/trade-gold': typeof TradeGoldIndexRoute
   '/urldecoder': typeof UrldecoderIndexRoute
+  '/api/forms/taro-focus-point': typeof ApiFormsTaroFocusPointRoute
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
   '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
   '/blogs/itkmitl-review-2026': typeof BlogsItkmitlReview2026IndexRoute
   '/blogs/review-year-2025': typeof BlogsReviewYear2025IndexRoute
+  '/forms/taro-focus-point': typeof FormsTaroFocusPointIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -150,10 +167,12 @@ export interface FileRoutesById {
   '/tools/': typeof ToolsIndexRoute
   '/trade-gold/': typeof TradeGoldIndexRoute
   '/urldecoder/': typeof UrldecoderIndexRoute
+  '/api/forms/taro-focus-point': typeof ApiFormsTaroFocusPointRoute
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
   '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
   '/blogs/itkmitl-review-2026/': typeof BlogsItkmitlReview2026IndexRoute
   '/blogs/review-year-2025/': typeof BlogsReviewYear2025IndexRoute
+  '/forms/taro-focus-point/': typeof FormsTaroFocusPointIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -169,10 +188,12 @@ export interface FileRouteTypes {
     | '/tools/'
     | '/trade-gold/'
     | '/urldecoder/'
+    | '/api/forms/taro-focus-point'
     | '/api/spotify/lyrics'
     | '/api/spotify/now-playing'
     | '/blogs/itkmitl-review-2026/'
     | '/blogs/review-year-2025/'
+    | '/forms/taro-focus-point/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -186,10 +207,12 @@ export interface FileRouteTypes {
     | '/tools'
     | '/trade-gold'
     | '/urldecoder'
+    | '/api/forms/taro-focus-point'
     | '/api/spotify/lyrics'
     | '/api/spotify/now-playing'
     | '/blogs/itkmitl-review-2026'
     | '/blogs/review-year-2025'
+    | '/forms/taro-focus-point'
   id:
     | '__root__'
     | '/'
@@ -203,10 +226,12 @@ export interface FileRouteTypes {
     | '/tools/'
     | '/trade-gold/'
     | '/urldecoder/'
+    | '/api/forms/taro-focus-point'
     | '/api/spotify/lyrics'
     | '/api/spotify/now-playing'
     | '/blogs/itkmitl-review-2026/'
     | '/blogs/review-year-2025/'
+    | '/forms/taro-focus-point/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -221,10 +246,12 @@ export interface RootRouteChildren {
   ToolsIndexRoute: typeof ToolsIndexRoute
   TradeGoldIndexRoute: typeof TradeGoldIndexRoute
   UrldecoderIndexRoute: typeof UrldecoderIndexRoute
+  ApiFormsTaroFocusPointRoute: typeof ApiFormsTaroFocusPointRoute
   ApiSpotifyLyricsRoute: typeof ApiSpotifyLyricsRoute
   ApiSpotifyNowPlayingRoute: typeof ApiSpotifyNowPlayingRoute
   BlogsItkmitlReview2026IndexRoute: typeof BlogsItkmitlReview2026IndexRoute
   BlogsReviewYear2025IndexRoute: typeof BlogsReviewYear2025IndexRoute
+  FormsTaroFocusPointIndexRoute: typeof FormsTaroFocusPointIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -306,6 +333,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiGoldPriceRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/forms/taro-focus-point/': {
+      id: '/forms/taro-focus-point/'
+      path: '/forms/taro-focus-point'
+      fullPath: '/forms/taro-focus-point/'
+      preLoaderRoute: typeof FormsTaroFocusPointIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blogs/review-year-2025/': {
       id: '/blogs/review-year-2025/'
       path: '/blogs/review-year-2025'
@@ -334,6 +368,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiSpotifyLyricsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/forms/taro-focus-point': {
+      id: '/api/forms/taro-focus-point'
+      path: '/api/forms/taro-focus-point'
+      fullPath: '/api/forms/taro-focus-point'
+      preLoaderRoute: typeof ApiFormsTaroFocusPointRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -349,10 +390,12 @@ const rootRouteChildren: RootRouteChildren = {
   ToolsIndexRoute: ToolsIndexRoute,
   TradeGoldIndexRoute: TradeGoldIndexRoute,
   UrldecoderIndexRoute: UrldecoderIndexRoute,
+  ApiFormsTaroFocusPointRoute: ApiFormsTaroFocusPointRoute,
   ApiSpotifyLyricsRoute: ApiSpotifyLyricsRoute,
   ApiSpotifyNowPlayingRoute: ApiSpotifyNowPlayingRoute,
   BlogsItkmitlReview2026IndexRoute: BlogsItkmitlReview2026IndexRoute,
   BlogsReviewYear2025IndexRoute: BlogsReviewYear2025IndexRoute,
+  FormsTaroFocusPointIndexRoute: FormsTaroFocusPointIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

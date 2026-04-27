@@ -1,0 +1,559 @@
+{
+  "id": "7e56ec07-7b3c-42f3-8a25-95e3734a7278",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.taro_focus_point_candidates": {
+      "name": "taro_focus_point_candidates",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "form_path": {
+          "name": "form_path",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'/forms/taro-focus-point'"
+        },
+        "case_number": {
+          "name": "case_number",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "focus_point_id": {
+          "name": "focus_point_id",
+          "type": "focus_point_id",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "code_span": {
+          "name": "code_span",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "construct_type": {
+          "name": "construct_type",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "system_score": {
+          "name": "system_score",
+          "type": "numeric(4, 2)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_system_top": {
+          "name": "is_system_top",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        }
+      },
+      "indexes": {
+        "idx_taro_fp_candidates_case": {
+          "name": "idx_taro_fp_candidates_case",
+          "columns": [
+            {
+              "expression": "case_number",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "focus_point_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "uq_taro_fp_candidates": {
+          "name": "uq_taro_fp_candidates",
+          "nullsNotDistinct": false,
+          "columns": [
+            "form_path",
+            "case_number",
+            "focus_point_id"
+          ]
+        }
+      },
+      "policies": {},
+      "checkConstraints": {
+        "chk_taro_fp_candidates_form_path": {
+          "name": "chk_taro_fp_candidates_form_path",
+          "value": "\"taro_focus_point_candidates\".\"form_path\" = '/forms/taro-focus-point'"
+        },
+        "chk_taro_fp_candidates_case_number_range": {
+          "name": "chk_taro_fp_candidates_case_number_range",
+          "value": "\"taro_focus_point_candidates\".\"case_number\" between 1 and 3"
+        },
+        "chk_taro_fp_candidates_score_range": {
+          "name": "chk_taro_fp_candidates_score_range",
+          "value": "\"taro_focus_point_candidates\".\"system_score\" >= 0 and \"taro_focus_point_candidates\".\"system_score\" <= 1"
+        }
+      },
+      "isRLSEnabled": false
+    },
+    "public.taro_focus_point_case_reviews": {
+      "name": "taro_focus_point_case_reviews",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "submission_id": {
+          "name": "submission_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "case_number": {
+          "name": "case_number",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "primary_focus_choice": {
+          "name": "primary_focus_choice",
+          "type": "primary_focus_choice",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "primary_focus_other_text": {
+          "name": "primary_focus_other_text",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rank_fp1": {
+          "name": "rank_fp1",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rank_fp2": {
+          "name": "rank_fp2",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rank_fp3": {
+          "name": "rank_fp3",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "system_top_choice_opinion": {
+          "name": "system_top_choice_opinion",
+          "type": "system_top_choice_opinion",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "system_top_choice_reason": {
+          "name": "system_top_choice_reason",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "score_teaching_relevance": {
+          "name": "score_teaching_relevance",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "score_program_correctness_impact": {
+          "name": "score_program_correctness_impact",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "score_misunderstanding_risk": {
+          "name": "score_misunderstanding_risk",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "score_question_fitness": {
+          "name": "score_question_fitness",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "case_feedback": {
+          "name": "case_feedback",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "idx_taro_fp_case_reviews_submission": {
+          "name": "idx_taro_fp_case_reviews_submission",
+          "columns": [
+            {
+              "expression": "submission_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_taro_fp_case_reviews_case": {
+          "name": "idx_taro_fp_case_reviews_case",
+          "columns": [
+            {
+              "expression": "case_number",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_taro_fp_case_reviews_opinion": {
+          "name": "idx_taro_fp_case_reviews_opinion",
+          "columns": [
+            {
+              "expression": "system_top_choice_opinion",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "taro_focus_point_case_reviews_submission_id_taro_focus_point_submissions_id_fk": {
+          "name": "taro_focus_point_case_reviews_submission_id_taro_focus_point_submissions_id_fk",
+          "tableFrom": "taro_focus_point_case_reviews",
+          "tableTo": "taro_focus_point_submissions",
+          "columnsFrom": [
+            "submission_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "uq_taro_fp_case_review": {
+          "name": "uq_taro_fp_case_review",
+          "nullsNotDistinct": false,
+          "columns": [
+            "submission_id",
+            "case_number"
+          ]
+        }
+      },
+      "policies": {},
+      "checkConstraints": {
+        "chk_taro_fp_case_reviews_case_number_range": {
+          "name": "chk_taro_fp_case_reviews_case_number_range",
+          "value": "\"taro_focus_point_case_reviews\".\"case_number\" between 1 and 3"
+        },
+        "chk_taro_fp_case_reviews_rank_fp1_range": {
+          "name": "chk_taro_fp_case_reviews_rank_fp1_range",
+          "value": "\"taro_focus_point_case_reviews\".\"rank_fp1\" is null or \"taro_focus_point_case_reviews\".\"rank_fp1\" between 1 and 3"
+        },
+        "chk_taro_fp_case_reviews_rank_fp2_range": {
+          "name": "chk_taro_fp_case_reviews_rank_fp2_range",
+          "value": "\"taro_focus_point_case_reviews\".\"rank_fp2\" is null or \"taro_focus_point_case_reviews\".\"rank_fp2\" between 1 and 3"
+        },
+        "chk_taro_fp_case_reviews_rank_fp3_range": {
+          "name": "chk_taro_fp_case_reviews_rank_fp3_range",
+          "value": "\"taro_focus_point_case_reviews\".\"rank_fp3\" is null or \"taro_focus_point_case_reviews\".\"rank_fp3\" between 1 and 3"
+        },
+        "chk_taro_fp_case_reviews_rank_unique_12": {
+          "name": "chk_taro_fp_case_reviews_rank_unique_12",
+          "value": "\"taro_focus_point_case_reviews\".\"rank_fp1\" is null or \"taro_focus_point_case_reviews\".\"rank_fp2\" is null or \"taro_focus_point_case_reviews\".\"rank_fp1\" <> \"taro_focus_point_case_reviews\".\"rank_fp2\""
+        },
+        "chk_taro_fp_case_reviews_rank_unique_13": {
+          "name": "chk_taro_fp_case_reviews_rank_unique_13",
+          "value": "\"taro_focus_point_case_reviews\".\"rank_fp1\" is null or \"taro_focus_point_case_reviews\".\"rank_fp3\" is null or \"taro_focus_point_case_reviews\".\"rank_fp1\" <> \"taro_focus_point_case_reviews\".\"rank_fp3\""
+        },
+        "chk_taro_fp_case_reviews_rank_unique_23": {
+          "name": "chk_taro_fp_case_reviews_rank_unique_23",
+          "value": "\"taro_focus_point_case_reviews\".\"rank_fp2\" is null or \"taro_focus_point_case_reviews\".\"rank_fp3\" is null or \"taro_focus_point_case_reviews\".\"rank_fp2\" <> \"taro_focus_point_case_reviews\".\"rank_fp3\""
+        },
+        "chk_taro_fp_case_reviews_score_teaching": {
+          "name": "chk_taro_fp_case_reviews_score_teaching",
+          "value": "\"taro_focus_point_case_reviews\".\"score_teaching_relevance\" is null or \"taro_focus_point_case_reviews\".\"score_teaching_relevance\" between 1 and 5"
+        },
+        "chk_taro_fp_case_reviews_score_correctness": {
+          "name": "chk_taro_fp_case_reviews_score_correctness",
+          "value": "\"taro_focus_point_case_reviews\".\"score_program_correctness_impact\" is null or \"taro_focus_point_case_reviews\".\"score_program_correctness_impact\" between 1 and 5"
+        },
+        "chk_taro_fp_case_reviews_score_misunderstanding": {
+          "name": "chk_taro_fp_case_reviews_score_misunderstanding",
+          "value": "\"taro_focus_point_case_reviews\".\"score_misunderstanding_risk\" is null or \"taro_focus_point_case_reviews\".\"score_misunderstanding_risk\" between 1 and 5"
+        },
+        "chk_taro_fp_case_reviews_score_question_fitness": {
+          "name": "chk_taro_fp_case_reviews_score_question_fitness",
+          "value": "\"taro_focus_point_case_reviews\".\"score_question_fitness\" is null or \"taro_focus_point_case_reviews\".\"score_question_fitness\" between 1 and 5"
+        }
+      },
+      "isRLSEnabled": false
+    },
+    "public.taro_focus_point_submissions": {
+      "name": "taro_focus_point_submissions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "form_path": {
+          "name": "form_path",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'/forms/taro-focus-point'"
+        },
+        "evaluator_full_name": {
+          "name": "evaluator_full_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "evaluation_date": {
+          "name": "evaluation_date",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "evaluator_role": {
+          "name": "evaluator_role",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "teaching_experience_years": {
+          "name": "teaching_experience_years",
+          "type": "numeric(4, 1)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "institution_or_department": {
+          "name": "institution_or_department",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "overall_system_assessment": {
+          "name": "overall_system_assessment",
+          "type": "overall_system_assessment",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "criteria_coverage_assessment": {
+          "name": "criteria_coverage_assessment",
+          "type": "criteria_coverage_assessment",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "criteria_adjustment_notes": {
+          "name": "criteria_adjustment_notes",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "scoring_weight_preference": {
+          "name": "scoring_weight_preference",
+          "type": "scoring_weight_preference",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "additional_feedback": {
+          "name": "additional_feedback",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "idx_taro_fp_submissions_created_at": {
+          "name": "idx_taro_fp_submissions_created_at",
+          "columns": [
+            {
+              "expression": "created_at",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_taro_fp_submissions_form_path": {
+          "name": "idx_taro_fp_submissions_form_path",
+          "columns": [
+            {
+              "expression": "form_path",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {
+        "chk_taro_fp_submissions_form_path": {
+          "name": "chk_taro_fp_submissions_form_path",
+          "value": "\"taro_focus_point_submissions\".\"form_path\" = '/forms/taro-focus-point'"
+        },
+        "chk_taro_fp_submissions_teaching_exp_non_negative": {
+          "name": "chk_taro_fp_submissions_teaching_exp_non_negative",
+          "value": "\"taro_focus_point_submissions\".\"teaching_experience_years\" is null or \"taro_focus_point_submissions\".\"teaching_experience_years\" >= 0"
+        }
+      },
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {
+    "public.criteria_coverage_assessment": {
+      "name": "criteria_coverage_assessment",
+      "schema": "public",
+      "values": [
+        "fully_covered",
+        "partially_covered",
+        "not_covered"
+      ]
+    },
+    "public.focus_point_id": {
+      "name": "focus_point_id",
+      "schema": "public",
+      "values": [
+        "FP1",
+        "FP2",
+        "FP3"
+      ]
+    },
+    "public.overall_system_assessment": {
+      "name": "overall_system_assessment",
+      "schema": "public",
+      "values": [
+        "strongly_agree",
+        "mostly_agree",
+        "mixed",
+        "mostly_disagree",
+        "strongly_disagree"
+      ]
+    },
+    "public.primary_focus_choice": {
+      "name": "primary_focus_choice",
+      "schema": "public",
+      "values": [
+        "FP1",
+        "FP2",
+        "FP3",
+        "OTHER"
+      ]
+    },
+    "public.scoring_weight_preference": {
+      "name": "scoring_weight_preference",
+      "schema": "public",
+      "values": [
+        "rule_based_heavier",
+        "balanced_50_50",
+        "ai_heavier",
+        "no_clear_opinion"
+      ]
+    },
+    "public.system_top_choice_opinion": {
+      "name": "system_top_choice_opinion",
+      "schema": "public",
+      "values": [
+        "agree",
+        "partially_agree",
+        "disagree"
+      ]
+    }
+  },
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
