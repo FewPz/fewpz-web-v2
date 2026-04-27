@@ -515,7 +515,7 @@ function TaroFocusPointFormPage() {
                   </section>
 
                   <section className="rounded-lg border border-border bg-background/70 p-4">
-                    <Field label="ส่วน ง — ความคิดเห็นเพิ่มเติมสำหรับกรณีนี้">
+                    <Field label="ส่วน ค — ความคิดเห็นเพิ่มเติมสำหรับกรณีนี้">
                       <Textarea
                         value={caseForm.caseFeedback}
                         onChange={(event) => setCaseField(caseDef.caseNumber, 'caseFeedback', event.target.value)}
