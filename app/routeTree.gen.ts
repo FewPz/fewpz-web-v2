@@ -17,6 +17,7 @@ import { Route as McIndexRouteImport } from './mc/index'
 import { Route as EventIndexRouteImport } from './event/index'
 import { Route as ColorIndexRouteImport } from './color/index'
 import { Route as BlogsIndexRouteImport } from './blogs/index'
+import { Route as ArchiveIndexRouteImport } from './archive/index'
 import { Route as ApiMcPingRouteImport } from './api/mc-ping'
 import { Route as ApiGoldPriceRouteImport } from './api/gold-price'
 import { Route as FormsTaroFocusPointIndexRouteImport } from './forms/taro-focus-point/index'
@@ -64,6 +65,11 @@ const ColorIndexRoute = ColorIndexRouteImport.update({
 const BlogsIndexRoute = BlogsIndexRouteImport.update({
   id: '/blogs/',
   path: '/blogs/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArchiveIndexRoute = ArchiveIndexRouteImport.update({
+  id: '/archive/',
+  path: '/archive/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiMcPingRoute = ApiMcPingRouteImport.update({
@@ -114,6 +120,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/api/gold-price': typeof ApiGoldPriceRoute
   '/api/mc-ping': typeof ApiMcPingRoute
+  '/archive/': typeof ArchiveIndexRoute
   '/blogs/': typeof BlogsIndexRoute
   '/color/': typeof ColorIndexRoute
   '/event/': typeof EventIndexRoute
@@ -132,6 +139,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/api/gold-price': typeof ApiGoldPriceRoute
   '/api/mc-ping': typeof ApiMcPingRoute
+  '/archive': typeof ArchiveIndexRoute
   '/blogs': typeof BlogsIndexRoute
   '/color': typeof ColorIndexRoute
   '/event': typeof EventIndexRoute
@@ -151,6 +159,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/api/gold-price': typeof ApiGoldPriceRoute
   '/api/mc-ping': typeof ApiMcPingRoute
+  '/archive/': typeof ArchiveIndexRoute
   '/blogs/': typeof BlogsIndexRoute
   '/color/': typeof ColorIndexRoute
   '/event/': typeof EventIndexRoute
@@ -171,6 +180,7 @@ export interface FileRouteTypes {
     | '/'
     | '/api/gold-price'
     | '/api/mc-ping'
+    | '/archive/'
     | '/blogs/'
     | '/color/'
     | '/event/'
@@ -189,6 +199,7 @@ export interface FileRouteTypes {
     | '/'
     | '/api/gold-price'
     | '/api/mc-ping'
+    | '/archive'
     | '/blogs'
     | '/color'
     | '/event'
@@ -207,6 +218,7 @@ export interface FileRouteTypes {
     | '/'
     | '/api/gold-price'
     | '/api/mc-ping'
+    | '/archive/'
     | '/blogs/'
     | '/color/'
     | '/event/'
@@ -226,6 +238,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ApiGoldPriceRoute: typeof ApiGoldPriceRoute
   ApiMcPingRoute: typeof ApiMcPingRoute
+  ArchiveIndexRoute: typeof ArchiveIndexRoute
   BlogsIndexRoute: typeof BlogsIndexRoute
   ColorIndexRoute: typeof ColorIndexRoute
   EventIndexRoute: typeof EventIndexRoute
@@ -299,6 +312,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/archive/': {
+      id: '/archive/'
+      path: '/archive'
+      fullPath: '/archive/'
+      preLoaderRoute: typeof ArchiveIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/mc-ping': {
       id: '/api/mc-ping'
       path: '/api/mc-ping'
@@ -362,6 +382,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ApiGoldPriceRoute: ApiGoldPriceRoute,
   ApiMcPingRoute: ApiMcPingRoute,
+  ArchiveIndexRoute: ArchiveIndexRoute,
   BlogsIndexRoute: BlogsIndexRoute,
   ColorIndexRoute: ColorIndexRoute,
   EventIndexRoute: EventIndexRoute,
