@@ -1,0 +1,5976 @@
+[{
+  "_id": {
+    "$oid": "657b2c8ca70cbf63d8337059"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-14T16:25:48.493Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "657b8712fe41c54ec43455c1"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-14T22:52:02.906Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "657b8712fe41c54ec43455c2"
+  },
+  "length": 115,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-14T22:52:02.911Z"
+  },
+  "filename": "Potion.java",
+  "md5": "b1e11aed90b2b276a70ac38901498704"
+},
+{
+  "_id": {
+    "$oid": "657ba070653fda53c0e80824"
+  },
+  "length": 70,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T00:40:16.726Z"
+  },
+  "filename": "Floatable.java",
+  "md5": "a06a122ff5096b8aabc8b45a572492e8"
+},
+{
+  "_id": {
+    "$oid": "657ba070653fda53c0e80825"
+  },
+  "length": 117,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T00:40:16.735Z"
+  },
+  "filename": "Dieselable.java",
+  "md5": "553d0c8eb4b43cc003c94e52d8f36675"
+},
+{
+  "_id": {
+    "$oid": "657ba070653fda53c0e80827"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T00:40:16.738Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "657ba070653fda53c0e80826"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T00:40:16.742Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "657ba5460ee9a36010c347fd"
+  },
+  "length": 70,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T01:00:54.632Z"
+  },
+  "filename": "Floatable.java",
+  "md5": "a06a122ff5096b8aabc8b45a572492e8"
+},
+{
+  "_id": {
+    "$oid": "657ba5460ee9a36010c347ff"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T01:00:54.641Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "657ba5460ee9a36010c347fe"
+  },
+  "length": 117,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T01:00:54.634Z"
+  },
+  "filename": "Dieselable.java",
+  "md5": "553d0c8eb4b43cc003c94e52d8f36675"
+},
+{
+  "_id": {
+    "$oid": "657ba5460ee9a36010c34800"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T01:00:54.643Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "657ba607023d7f1ea0e224df"
+  },
+  "length": 117,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T01:04:07.326Z"
+  },
+  "filename": "Dieselable.java",
+  "md5": "553d0c8eb4b43cc003c94e52d8f36675"
+},
+{
+  "_id": {
+    "$oid": "657ba607023d7f1ea0e224e1"
+  },
+  "length": 70,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T01:04:07.329Z"
+  },
+  "filename": "Floatable.java",
+  "md5": "a06a122ff5096b8aabc8b45a572492e8"
+},
+{
+  "_id": {
+    "$oid": "657ba607023d7f1ea0e224e0"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T01:04:07.333Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "657ba607023d7f1ea0e224e2"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T01:04:07.339Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "657ba6cf1485a838ccccd217"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T01:07:27.795Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "657ba6cf1485a838ccccd218"
+  },
+  "length": 70,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T01:07:27.803Z"
+  },
+  "filename": "Floatable.java",
+  "md5": "a06a122ff5096b8aabc8b45a572492e8"
+},
+{
+  "_id": {
+    "$oid": "657ba6cf1485a838ccccd21a"
+  },
+  "length": 117,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T01:07:27.807Z"
+  },
+  "filename": "Dieselable.java",
+  "md5": "553d0c8eb4b43cc003c94e52d8f36675"
+},
+{
+  "_id": {
+    "$oid": "657ba6cf1485a838ccccd219"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T01:07:27.810Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "657c763cd441115014c1c077"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T15:52:28.174Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "657c763cd441115014c1c076"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T15:52:28.167Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "657c80afe122ec39d4f0435f"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T16:37:03.123Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "657c80afe122ec39d4f04360"
+  },
+  "length": 1386,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T16:37:03.125Z"
+  },
+  "filename": "Pigeon.java",
+  "md5": "06d2613090e971a098b18cd4b951993f"
+},
+{
+  "_id": {
+    "$oid": "657c80afe122ec39d4f04361"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-15T16:37:03.131Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "65801003df43f42274607661"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-18T09:25:23.854Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "658012dd9cfff82578ef9007"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-18T09:37:33.280Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "658014299add0d3af4e312c1"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-18T09:43:05.379Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "65818504db93f256e0cf2e17"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-19T11:56:52.782Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "65818504db93f256e0cf2e18"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-19T11:56:52.782Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "658187dc37f90c67f8fd1454"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-19T12:09:00.129Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "658187dc37f90c67f8fd1453"
+  },
+  "length": 1386,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-19T12:09:00.122Z"
+  },
+  "filename": "Pigeon.java",
+  "md5": "06d2613090e971a098b18cd4b951993f"
+},
+{
+  "_id": {
+    "$oid": "658187dc37f90c67f8fd1455"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-19T12:09:00.133Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "6581956bb6a18e5570d2f83e"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-19T13:06:51.190Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "6581956bb6a18e5570d2f83d"
+  },
+  "length": 117,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-19T13:06:51.177Z"
+  },
+  "filename": "Dieselable.java",
+  "md5": "553d0c8eb4b43cc003c94e52d8f36675"
+},
+{
+  "_id": {
+    "$oid": "6581956bb6a18e5570d2f83f"
+  },
+  "length": 70,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-19T13:06:51.184Z"
+  },
+  "filename": "Floatable.java",
+  "md5": "a06a122ff5096b8aabc8b45a572492e8"
+},
+{
+  "_id": {
+    "$oid": "658255390a3d7762b80c2628"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T02:45:13.698Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "658256d9fcc8835790ed8cd7"
+  },
+  "length": 413,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T02:52:09.078Z"
+  },
+  "filename": "Mage.java",
+  "md5": "26a5e134122e4e597eabc1ef77ad6b1a"
+},
+{
+  "_id": {
+    "$oid": "658256d9fcc8835790ed8cd6"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T02:52:09.079Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "65825858fcc8835790ed8cf0"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T02:58:32.273Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "658258de232b313cc4e375c7"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T03:00:46.844Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "6582592e8a1c0c4d9c39368d"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T03:02:06.816Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "65825b6e63d1703ff08ef281"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T03:11:42.356Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "65825c08404fce15a89853c7"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T03:14:16.104Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "65825cef4a0bfd657cdffa33"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T03:18:07.356Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "658262f2115be20e80d88da8"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T03:43:46.600Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "6582639ea7a3466474329a34"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T03:46:38.840Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "6582646e652cbb61d006b04d"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T03:50:06.289Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "658264a8a5f8581254451e46"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T03:51:04.439Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "658265af15c8a5581c7d062e"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T03:55:27.146Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "658266b9a23543061cfba6d6"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T03:59:53.139Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "658266e65c3b782ed0541dbb"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T04:00:38.775Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "658267018878bc4e00dced3c"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T04:01:05.817Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "6582671ee217a201240bd895"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T04:01:34.416Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "658267971a742c1bec659591"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T04:03:35.072Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "658267d28b0b5c544ce55008"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T04:04:34.104Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "658268a194e54050c0636cbb"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T04:08:01.721Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "65826aa4c52c572c90e8155c"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T04:16:36.747Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "65826b3abba2fc6a1c90a520"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T04:19:06.073Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "65826b4dbba2fc6a1c90a52a"
+  },
+  "length": 413,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T04:19:25.036Z"
+  },
+  "filename": "Mage.java",
+  "md5": "26a5e134122e4e597eabc1ef77ad6b1a"
+},
+{
+  "_id": {
+    "$oid": "65826b4dbba2fc6a1c90a52b"
+  },
+  "length": 1019,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-20T04:19:25.045Z"
+  },
+  "filename": "Player.java",
+  "md5": "e14dfa4d92293b92c063fc19771aa2e5"
+},
+{
+  "_id": {
+    "$oid": "65844cab8f0bcf11bc14c099"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T14:33:15.915Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "65844cab8f0bcf11bc14c098"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T14:33:15.916Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65844ee461c15a63ec669cf9"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T14:42:44.117Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "65844ee461c15a63ec669cf8"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T14:42:44.118Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65844f6d61c15a63ec669d02"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T14:45:01.085Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65844f6d61c15a63ec669d01"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T14:45:01.085Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "6584500f61c15a63ec669d0a"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T14:47:43.569Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "6584500f61c15a63ec669d0b"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T14:47:43.571Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "6584510861c15a63ec669d27"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T14:51:52.151Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "6584510861c15a63ec669d26"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T14:51:52.151Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65845160a801ca0c6c2686f4"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T14:53:20.884Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65845160a801ca0c6c2686f5"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T14:53:20.895Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "658451d282d50661c896ce1c"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T14:55:14.138Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "658451d282d50661c896ce1b"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T14:55:14.148Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "6584551e7685896ae46fe86d"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T15:09:18.188Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "6584551e7685896ae46fe86c"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T15:09:18.187Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "65845637f1f71153cc6207fa"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T15:13:59.745Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "65845637f1f71153cc6207fb"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T15:13:59.753Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "658457042ca375496c75373b"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T15:17:24.141Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "658457042ca375496c75373c"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T15:17:24.150Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "658464f3e91bfc207cad2029"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T16:16:51.351Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "658464f3e91bfc207cad202a"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T16:16:51.353Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65846880678016687c5e7717"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T16:32:00.387Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65846880678016687c5e7716"
+  },
+  "length": 566,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T16:32:00.391Z"
+  },
+  "filename": "Vehicle.java",
+  "md5": "5f5094b058ce23c5e1a8b0dd413be51f"
+},
+{
+  "_id": {
+    "$oid": "658468a4678016687c5e7726"
+  },
+  "length": 566,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T16:32:36.452Z"
+  },
+  "filename": "Vehicle.java",
+  "md5": "5f5094b058ce23c5e1a8b0dd413be51f"
+},
+{
+  "_id": {
+    "$oid": "65846fc6de098826f4ad1fa4"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T17:03:02.566Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "65846fc6de098826f4ad1fa5"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T17:03:02.568Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "658472e3de098826f4ad20cf"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T17:16:19.333Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "658479349c24b5617c9865a0"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T17:43:16.449Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "658479349c24b5617c9865a1"
+  },
+  "length": 115,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T17:43:16.451Z"
+  },
+  "filename": "Potion.java",
+  "md5": "b1e11aed90b2b276a70ac38901498704"
+},
+{
+  "_id": {
+    "$oid": "658491fa339eaf397c0f9459"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T19:28:58.340Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "658491fa339eaf397c0f945a"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T19:28:58.348Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65849206339eaf397c0f9475"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T19:29:10.978Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65849206339eaf397c0f9474"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T19:29:10.979Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "6584a194f462de13d42e07b1"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T20:35:32.659Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "6584a194f462de13d42e07b2"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T20:35:32.662Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "6584a19ef462de13d42e07cc"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T20:35:42.773Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "6584a4c14dbb4d2c902e9d63"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T20:49:05.436Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "6584a4c14dbb4d2c902e9d64"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T20:49:05.443Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "6584a4c94dbb4d2c902e9d7f"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T20:49:13.357Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "6584a54dff961d5eb8b21cff"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T20:51:25.343Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "6584a59eff961d5eb8b21d76"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T20:52:46.134Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "6584a5dc8f4a17229451bcb8"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T20:53:48.885Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "6584ab0e5ae25861d0ee5656"
+  },
+  "length": 91,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T21:15:58.755Z"
+  },
+  "filename": "Sword.java",
+  "md5": "e05fd2c9d33c75c865979e86cb499a6f"
+},
+{
+  "_id": {
+    "$oid": "6584ab195ae25861d0ee566b"
+  },
+  "length": 115,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T21:16:09.204Z"
+  },
+  "filename": "Potion.java",
+  "md5": "b1e11aed90b2b276a70ac38901498704"
+},
+{
+  "_id": {
+    "$oid": "6584be08111d9049ac121aee"
+  },
+  "length": 115,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T22:36:56.292Z"
+  },
+  "filename": "Potion.java",
+  "md5": "b1e11aed90b2b276a70ac38901498704"
+},
+{
+  "_id": {
+    "$oid": "6584be26111d9049ac121b10"
+  },
+  "length": 57,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T22:37:26.174Z"
+  },
+  "filename": "Potion.java",
+  "md5": "d9b13f01ae93c89d54e316110ca945e4"
+},
+{
+  "_id": {
+    "$oid": "6584be41111d9049ac121b32"
+  },
+  "length": 91,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T22:37:53.041Z"
+  },
+  "filename": "Potion.java",
+  "md5": "56904f86b1ddffcd25a9dbec72eb3c23"
+},
+{
+  "_id": {
+    "$oid": "6584be51111d9049ac121b54"
+  },
+  "length": 92,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T22:38:09.779Z"
+  },
+  "filename": "Potion.java",
+  "md5": "12b23531d092336e9c9f0218804ce31d"
+},
+{
+  "_id": {
+    "$oid": "6584c03c39d12c4f7488b70f"
+  },
+  "length": 92,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T22:46:20.951Z"
+  },
+  "filename": "Potion.java",
+  "md5": "12b23531d092336e9c9f0218804ce31d"
+},
+{
+  "_id": {
+    "$oid": "6584c2007137f055040510b8"
+  },
+  "length": 92,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T22:53:52.356Z"
+  },
+  "filename": "Potion.java",
+  "md5": "12b23531d092336e9c9f0218804ce31d"
+},
+{
+  "_id": {
+    "$oid": "6584c23e7137f055040510d6"
+  },
+  "length": 91,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T22:54:54.095Z"
+  },
+  "filename": "Potion.java",
+  "md5": "0fe0a4e893a7f8907138aecbdef8f1c2"
+},
+{
+  "_id": {
+    "$oid": "6584c2617137f05504051102"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T22:55:29.460Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "6584c98da653cc26fcfc4af5"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T23:26:05.734Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "6584c98da653cc26fcfc4af4"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T23:26:05.735Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "6584c9acda82af67d835c667"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T23:26:36.762Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "6584c9acda82af67d835c669"
+  },
+  "length": 1386,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T23:26:36.767Z"
+  },
+  "filename": "Pigeon.java",
+  "md5": "06d2613090e971a098b18cd4b951993f"
+},
+{
+  "_id": {
+    "$oid": "6584c9acda82af67d835c668"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-21T23:26:36.771Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "6584f258ccae8214d454a37b"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:20:08.212Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "6584f258ccae8214d454a37c"
+  },
+  "length": 1386,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:20:08.211Z"
+  },
+  "filename": "Pigeon.java",
+  "md5": "06d2613090e971a098b18cd4b951993f"
+},
+{
+  "_id": {
+    "$oid": "6584f258ccae8214d454a37d"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:20:08.213Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "6584f7faccae8214d454a3ef"
+  },
+  "length": 1386,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:44:10.434Z"
+  },
+  "filename": "Pigeon.java",
+  "md5": "06d2613090e971a098b18cd4b951993f"
+},
+{
+  "_id": {
+    "$oid": "6584f7faccae8214d454a3ee"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:44:10.435Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "6584f7faccae8214d454a3f0"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:44:10.434Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "6584f84f3d5e6432ec4107b9"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:45:35.611Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "6584f84f3d5e6432ec4107ba"
+  },
+  "length": 1386,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:45:35.613Z"
+  },
+  "filename": "Pigeon.java",
+  "md5": "06d2613090e971a098b18cd4b951993f"
+},
+{
+  "_id": {
+    "$oid": "6584f84f3d5e6432ec4107bb"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:45:35.614Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "6584f8f699cf892d8c2394a9"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:48:22.406Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "6584f8f699cf892d8c2394a8"
+  },
+  "length": 1386,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:48:22.406Z"
+  },
+  "filename": "Pigeon.java",
+  "md5": "06d2613090e971a098b18cd4b951993f"
+},
+{
+  "_id": {
+    "$oid": "6584f8f699cf892d8c2394aa"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:48:22.406Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "6584f94999cf892d8c2394e0"
+  },
+  "length": 1386,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:49:45.397Z"
+  },
+  "filename": "Pigeon.java",
+  "md5": "06d2613090e971a098b18cd4b951993f"
+},
+{
+  "_id": {
+    "$oid": "6584f94999cf892d8c2394e2"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:49:45.398Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "6584f94999cf892d8c2394e1"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:49:45.398Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "6584f989c02a0173c4be9793"
+  },
+  "length": 1386,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:50:49.754Z"
+  },
+  "filename": "Pigeon.java",
+  "md5": "06d2613090e971a098b18cd4b951993f"
+},
+{
+  "_id": {
+    "$oid": "6584f989c02a0173c4be9794"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:50:49.755Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "6584f989c02a0173c4be9792"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:50:49.754Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "6584f9ab8d65004a4cba9a86"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:51:23.458Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "6584f9ab8d65004a4cba9a84"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:51:23.459Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "6584f9ab8d65004a4cba9a85"
+  },
+  "length": 1386,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-22T02:51:23.459Z"
+  },
+  "filename": "Pigeon.java",
+  "md5": "06d2613090e971a098b18cd4b951993f"
+},
+{
+  "_id": {
+    "$oid": "658727aae177a24dd4eaa8df"
+  },
+  "length": 766,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-23T18:32:10.382Z"
+  },
+  "filename": "Book.java",
+  "md5": "3180cc7a5205b76c50c50993bef79fec"
+},
+{
+  "_id": {
+    "$oid": "658727aae177a24dd4eaa8e0"
+  },
+  "length": 1526,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-23T18:32:10.385Z"
+  },
+  "filename": "Library.java",
+  "md5": "7edbf6f189622514b504c3136ec8d9dd"
+},
+{
+  "_id": {
+    "$oid": "658727bee177a24dd4eaa8f9"
+  },
+  "length": 766,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-23T18:32:30.523Z"
+  },
+  "filename": "Book.java",
+  "md5": "3180cc7a5205b76c50c50993bef79fec"
+},
+{
+  "_id": {
+    "$oid": "658727bee177a24dd4eaa8fa"
+  },
+  "length": 1526,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-23T18:32:30.524Z"
+  },
+  "filename": "Library.java",
+  "md5": "7edbf6f189622514b504c3136ec8d9dd"
+},
+{
+  "_id": {
+    "$oid": "658727dfe177a24dd4eaa925"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-23T18:33:03.493Z"
+  },
+  "filename": "Book.java",
+  "md5": "c556bb7169034695e10c3c8d8fa7f475"
+},
+{
+  "_id": {
+    "$oid": "658727dfe177a24dd4eaa926"
+  },
+  "length": 1526,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-23T18:33:03.494Z"
+  },
+  "filename": "Library.java",
+  "md5": "7edbf6f189622514b504c3136ec8d9dd"
+},
+{
+  "_id": {
+    "$oid": "658727fbe177a24dd4eaa942"
+  },
+  "length": 1526,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-23T18:33:31.299Z"
+  },
+  "filename": "Library.java",
+  "md5": "7edbf6f189622514b504c3136ec8d9dd"
+},
+{
+  "_id": {
+    "$oid": "658727fbe177a24dd4eaa941"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-23T18:33:31.299Z"
+  },
+  "filename": "Book.java",
+  "md5": "c556bb7169034695e10c3c8d8fa7f475"
+},
+{
+  "_id": {
+    "$oid": "65872822e177a24dd4eaa959"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-23T18:34:10.503Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "65872822e177a24dd4eaa95a"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-23T18:34:10.509Z"
+  },
+  "filename": "Book.java",
+  "md5": "c556bb7169034695e10c3c8d8fa7f475"
+},
+{
+  "_id": {
+    "$oid": "658729f3767c5312a4141d6a"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-23T18:41:55.675Z"
+  },
+  "filename": "Book.java",
+  "md5": "c556bb7169034695e10c3c8d8fa7f475"
+},
+{
+  "_id": {
+    "$oid": "658729f3767c5312a4141d6b"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-23T18:41:55.676Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "65872a48ba2ab10b4c2eb8e1"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-23T18:43:20.509Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "65872a48ba2ab10b4c2eb8e2"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-23T18:43:20.520Z"
+  },
+  "filename": "Book.java",
+  "md5": "c556bb7169034695e10c3c8d8fa7f475"
+},
+{
+  "_id": {
+    "$oid": "6587307089cba51fd0b33638"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-23T19:09:36.088Z"
+  },
+  "filename": "Book.java",
+  "md5": "c556bb7169034695e10c3c8d8fa7f475"
+},
+{
+  "_id": {
+    "$oid": "6587307089cba51fd0b33639"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-23T19:09:36.097Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587b70056e30448c8a5d8c4"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T04:43:44.270Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587b70056e30448c8a5d8c3"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T04:43:44.275Z"
+  },
+  "filename": "Book.java",
+  "md5": "c556bb7169034695e10c3c8d8fa7f475"
+},
+{
+  "_id": {
+    "$oid": "6587b74a526ac61ac05fd433"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T04:44:58.385Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587b74a526ac61ac05fd434"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T04:44:58.394Z"
+  },
+  "filename": "Book.java",
+  "md5": "c556bb7169034695e10c3c8d8fa7f475"
+},
+{
+  "_id": {
+    "$oid": "6587b765be740e6bf0c33ad5"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T04:45:25.598Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587b765be740e6bf0c33ad6"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T04:45:25.606Z"
+  },
+  "filename": "Book.java",
+  "md5": "c556bb7169034695e10c3c8d8fa7f475"
+},
+{
+  "_id": {
+    "$oid": "6587b77e9a32e613d0c2c220"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T04:45:50.485Z"
+  },
+  "filename": "Book.java",
+  "md5": "c556bb7169034695e10c3c8d8fa7f475"
+},
+{
+  "_id": {
+    "$oid": "6587b77e9a32e613d0c2c221"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T04:45:50.494Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587b79c9a32e613d0c2c238"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T04:46:20.269Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587b79c9a32e613d0c2c239"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T04:46:20.270Z"
+  },
+  "filename": "Book.java",
+  "md5": "5073500c257aa70f56cc5c276606eb57"
+},
+{
+  "_id": {
+    "$oid": "6587bb3a67d32c2a6c7e1971"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:01:46.634Z"
+  },
+  "filename": "Book.java",
+  "md5": "5073500c257aa70f56cc5c276606eb57"
+},
+{
+  "_id": {
+    "$oid": "6587bb3a67d32c2a6c7e1972"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:01:46.634Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587bce22795f76b58d988a0"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:08:50.888Z"
+  },
+  "filename": "Book.java",
+  "md5": "5073500c257aa70f56cc5c276606eb57"
+},
+{
+  "_id": {
+    "$oid": "6587bce22795f76b58d988a1"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:08:50.888Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587bd3217a66a535801f245"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:10:10.338Z"
+  },
+  "filename": "Book.java",
+  "md5": "5073500c257aa70f56cc5c276606eb57"
+},
+{
+  "_id": {
+    "$oid": "6587bd3217a66a535801f246"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:10:10.339Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587bd4beba35d3500fad9a0"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:10:35.794Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587bd4beba35d3500fad9a1"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:10:35.801Z"
+  },
+  "filename": "Book.java",
+  "md5": "5073500c257aa70f56cc5c276606eb57"
+},
+{
+  "_id": {
+    "$oid": "6587be5cbde94d48c85e860d"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:15:08.725Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587be5cbde94d48c85e860e"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:15:08.732Z"
+  },
+  "filename": "Book.java",
+  "md5": "5073500c257aa70f56cc5c276606eb57"
+},
+{
+  "_id": {
+    "$oid": "6587be9bd4e09a27944643ea"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:16:11.922Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587be9bd4e09a27944643eb"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:16:11.923Z"
+  },
+  "filename": "Book.java",
+  "md5": "5073500c257aa70f56cc5c276606eb57"
+},
+{
+  "_id": {
+    "$oid": "6587bef13baf6865244f95d0"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:17:37.148Z"
+  },
+  "filename": "Book.java",
+  "md5": "c556bb7169034695e10c3c8d8fa7f475"
+},
+{
+  "_id": {
+    "$oid": "6587bef13baf6865244f95d1"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:17:37.148Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587c5293baf6865244f95f7"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:44:09.433Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587c5293baf6865244f95f6"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:44:09.434Z"
+  },
+  "filename": "Book.java",
+  "md5": "c556bb7169034695e10c3c8d8fa7f475"
+},
+{
+  "_id": {
+    "$oid": "6587c5d03baf6865244f962b"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:46:56.405Z"
+  },
+  "filename": "Book.java",
+  "md5": "5073500c257aa70f56cc5c276606eb57"
+},
+{
+  "_id": {
+    "$oid": "6587c5d03baf6865244f962a"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:46:56.405Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587c671abeac507e80a0b39"
+  },
+  "length": 1526,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:49:37.205Z"
+  },
+  "filename": "Library.java",
+  "md5": "7edbf6f189622514b504c3136ec8d9dd"
+},
+{
+  "_id": {
+    "$oid": "6587c671abeac507e80a0b3a"
+  },
+  "length": 766,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:49:37.206Z"
+  },
+  "filename": "Book.java",
+  "md5": "3180cc7a5205b76c50c50993bef79fec"
+},
+{
+  "_id": {
+    "$oid": "6587c6a6abeac507e80a0b52"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:50:30.377Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587c6a6abeac507e80a0b51"
+  },
+  "length": 736,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:50:30.377Z"
+  },
+  "filename": "Book.java",
+  "md5": "19828b118d6d95929879372526cd47a6"
+},
+{
+  "_id": {
+    "$oid": "6587c6b4abeac507e80a0b69"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:50:44.399Z"
+  },
+  "filename": "Book.java",
+  "md5": "5073500c257aa70f56cc5c276606eb57"
+},
+{
+  "_id": {
+    "$oid": "6587c6b4abeac507e80a0b6a"
+  },
+  "length": 1480,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:50:44.399Z"
+  },
+  "filename": "Library.java",
+  "md5": "d0409171134ab7cdf49951b8d9abd985"
+},
+{
+  "_id": {
+    "$oid": "6587c6cdabeac507e80a0b81"
+  },
+  "length": 738,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:51:09.098Z"
+  },
+  "filename": "Book.java",
+  "md5": "5073500c257aa70f56cc5c276606eb57"
+},
+{
+  "_id": {
+    "$oid": "6587c6cdabeac507e80a0b82"
+  },
+  "length": 1486,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-24T05:51:09.099Z"
+  },
+  "filename": "Library.java",
+  "md5": "9c6c131c5df59bac15bbeedf8403e165"
+},
+{
+  "_id": {
+    "$oid": "658d8a3ac6bcf4368c3ebcf8"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T14:46:18.412Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "658d92417ea9f958586449cf"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:20:33.041Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "658d92417ea9f958586449d1"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:20:33.041Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "658d92417ea9f958586449d0"
+  },
+  "length": 1386,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:20:33.040Z"
+  },
+  "filename": "Pigeon.java",
+  "md5": "06d2613090e971a098b18cd4b951993f"
+},
+{
+  "_id": {
+    "$oid": "658d979a7ea9f95858644a2a"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:43:22.407Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "658d979a7ea9f95858644a28"
+  },
+  "length": 1386,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:43:22.406Z"
+  },
+  "filename": "Pigeon.java",
+  "md5": "06d2613090e971a098b18cd4b951993f"
+},
+{
+  "_id": {
+    "$oid": "658d979a7ea9f95858644a29"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:43:22.407Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "658d97ebab064a67bc9d5718"
+  },
+  "length": 1386,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:44:43.974Z"
+  },
+  "filename": "Pigeon.java",
+  "md5": "06d2613090e971a098b18cd4b951993f"
+},
+{
+  "_id": {
+    "$oid": "658d97ebab064a67bc9d571a"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:44:43.976Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "658d97ebab064a67bc9d5719"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:44:43.978Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "658d9816a76bb550e0acd871"
+  },
+  "length": 138,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:45:26.205Z"
+  },
+  "filename": "Flyable.java",
+  "md5": "4a8273ea2e26c745522938ab6aa7f565"
+},
+{
+  "_id": {
+    "$oid": "658d9816a76bb550e0acd86f"
+  },
+  "length": 1386,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:45:26.205Z"
+  },
+  "filename": "Pigeon.java",
+  "md5": "06d2613090e971a098b18cd4b951993f"
+},
+{
+  "_id": {
+    "$oid": "658d9816a76bb550e0acd870"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:45:26.206Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "658d981ea76bb550e0acd88e"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:45:34.493Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "658d9850a76bb550e0acd8b6"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:46:24.148Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "658d9850a76bb550e0acd8b7"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:46:24.148Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "658d9859a76bb550e0acd8d2"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:46:33.927Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "658d9861a76bb550e0acd8e5"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:46:42.006Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "658d9861a76bb550e0acd8e6"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T15:46:42.007Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "658dc31c2de95e73582f5ec3"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T18:49:00.805Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "658dc31c2de95e73582f5ec4"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-28T18:49:00.812Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "659009fb59d2772d782da0b6"
+  },
+  "length": 883,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:15:55.935Z"
+  },
+  "filename": "Houses.java",
+  "md5": "1125de199cf3e82e1fe0b975006f494a"
+},
+{
+  "_id": {
+    "$oid": "659009fb59d2772d782da0bc"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:15:55.971Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "659009fb59d2772d782da0b4"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:15:55.936Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "659009fb59d2772d782da0b5"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:15:55.960Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "659009fb59d2772d782da0b9"
+  },
+  "length": 941,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:15:55.948Z"
+  },
+  "filename": "Main.java",
+  "md5": "93846eca44505c0b2d677ad6ade3e671"
+},
+{
+  "_id": {
+    "$oid": "659009fb59d2772d782da0b7"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:15:55.943Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "659009fb59d2772d782da0b8"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:15:55.953Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "659009fb59d2772d782da0bb"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:15:55.974Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "659009fb59d2772d782da0ba"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:15:55.963Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "65900a0b59d2772d782da0f2"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:11.301Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "65900a0b59d2772d782da0f3"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:11.302Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "65900a0b59d2772d782da0f6"
+  },
+  "length": 941,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:11.303Z"
+  },
+  "filename": "Main.java",
+  "md5": "93846eca44505c0b2d677ad6ade3e671"
+},
+{
+  "_id": {
+    "$oid": "65900a0b59d2772d782da0f8"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:11.305Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "65900a0b59d2772d782da0f4"
+  },
+  "length": 883,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:11.304Z"
+  },
+  "filename": "Houses.java",
+  "md5": "1125de199cf3e82e1fe0b975006f494a"
+},
+{
+  "_id": {
+    "$oid": "65900a0b59d2772d782da0f9"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:11.306Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "65900a0b59d2772d782da0f5"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:11.306Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "65900a0b59d2772d782da0f7"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:11.307Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "65900a0b59d2772d782da0fa"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:11.307Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "65900a2759d2772d782da133"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:39.328Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "65900a2759d2772d782da132"
+  },
+  "length": 883,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:39.329Z"
+  },
+  "filename": "Houses.java",
+  "md5": "1125de199cf3e82e1fe0b975006f494a"
+},
+{
+  "_id": {
+    "$oid": "65900a2759d2772d782da131"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:39.329Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "65900a2759d2772d782da135"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:39.330Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "65900a2759d2772d782da134"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:39.331Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "65900a2759d2772d782da138"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:39.331Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "65900a2759d2772d782da136"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:39.332Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "65900a2759d2772d782da137"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:16:39.333Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "65900a6259d2772d782da1a8"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:38.698Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "65900a6259d2772d782da1a9"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:38.698Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "65900a6259d2772d782da1a7"
+  },
+  "length": 883,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:38.699Z"
+  },
+  "filename": "Houses.java",
+  "md5": "1125de199cf3e82e1fe0b975006f494a"
+},
+{
+  "_id": {
+    "$oid": "65900a6259d2772d782da1ab"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:38.700Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "65900a6259d2772d782da1aa"
+  },
+  "length": 941,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:38.701Z"
+  },
+  "filename": "Main.java",
+  "md5": "93846eca44505c0b2d677ad6ade3e671"
+},
+{
+  "_id": {
+    "$oid": "65900a6259d2772d782da1ac"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:38.702Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "65900a6259d2772d782da1ad"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:38.702Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "65900a6259d2772d782da1ae"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:38.703Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "65900a6259d2772d782da1af"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:38.703Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "65900a7059d2772d782da207"
+  },
+  "length": 883,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:52.836Z"
+  },
+  "filename": "Houses.java",
+  "md5": "1125de199cf3e82e1fe0b975006f494a"
+},
+{
+  "_id": {
+    "$oid": "65900a7059d2772d782da209"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:52.837Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "65900a7059d2772d782da20a"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:52.838Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "65900a7059d2772d782da20b"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:52.838Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "65900a7059d2772d782da208"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:52.839Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "65900a7059d2772d782da20c"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:52.840Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "65900a7059d2772d782da20e"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:52.840Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "65900a7059d2772d782da20d"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:17:52.841Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "65900a8059d2772d782da23e"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:08.671Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "65900a8059d2772d782da23d"
+  },
+  "length": 883,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:08.672Z"
+  },
+  "filename": "Houses.java",
+  "md5": "1125de199cf3e82e1fe0b975006f494a"
+},
+{
+  "_id": {
+    "$oid": "65900a8059d2772d782da23f"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:08.673Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "65900a8059d2772d782da244"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:08.674Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "65900a8059d2772d782da241"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:08.675Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "65900a8059d2772d782da242"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:08.676Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "65900a8059d2772d782da240"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:08.672Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "65900a8059d2772d782da243"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:08.674Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "65900a9b59d2772d782da275"
+  },
+  "length": 837,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:35.039Z"
+  },
+  "filename": "Houses.java",
+  "md5": "5ed228f0b97d02368715845b36b49bc1"
+},
+{
+  "_id": {
+    "$oid": "65900a9b59d2772d782da274"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:35.041Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "65900a9b59d2772d782da277"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:35.040Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "65900a9b59d2772d782da278"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:35.042Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "65900a9b59d2772d782da276"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:35.043Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "65900a9b59d2772d782da273"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:35.044Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "65900a9b59d2772d782da279"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:35.044Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "65900a9b59d2772d782da27a"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:35.045Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "65900aa159d2772d782da2a9"
+  },
+  "length": 837,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:41.944Z"
+  },
+  "filename": "Houses.java",
+  "md5": "5ed228f0b97d02368715845b36b49bc1"
+},
+{
+  "_id": {
+    "$oid": "65900aa159d2772d782da2aa"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:41.945Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "65900aa159d2772d782da2ac"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:41.945Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "65900aa159d2772d782da2ab"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:41.946Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "65900aa159d2772d782da2ae"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:41.946Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "65900aa159d2772d782da2af"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:41.947Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "65900aa159d2772d782da2b0"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:41.948Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "65900aa159d2772d782da2ad"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:18:41.949Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "65900ad359d2772d782da336"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:19:31.064Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "65900ad359d2772d782da338"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:19:31.066Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "65900ad359d2772d782da33a"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:19:31.067Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "65900ad359d2772d782da337"
+  },
+  "length": 837,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:19:31.068Z"
+  },
+  "filename": "Houses.java",
+  "md5": "5ed228f0b97d02368715845b36b49bc1"
+},
+{
+  "_id": {
+    "$oid": "65900ad359d2772d782da33c"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:19:31.069Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "65900ad359d2772d782da33d"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:19:31.069Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "65900ad359d2772d782da33b"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:19:31.070Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "65900ad359d2772d782da339"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:19:31.071Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "65900adf59d2772d782da36c"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:19:43.066Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "65900adf59d2772d782da36e"
+  },
+  "length": 838,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:19:43.066Z"
+  },
+  "filename": "Houses.java",
+  "md5": "b4db33eba4e7e717ff31231241cbdd5b"
+},
+{
+  "_id": {
+    "$oid": "65900adf59d2772d782da370"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:19:43.067Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "65900adf59d2772d782da36f"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:19:43.068Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "65900adf59d2772d782da371"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:19:43.069Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "65900adf59d2772d782da373"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:19:43.068Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "65900adf59d2772d782da36d"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:19:43.070Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "65900adf59d2772d782da372"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:19:43.071Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "65900b0359d2772d782da3e9"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:20:19.214Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "65900b0359d2772d782da3e7"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:20:19.215Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "65900b0359d2772d782da3e4"
+  },
+  "length": 883,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:20:19.215Z"
+  },
+  "filename": "Houses.java",
+  "md5": "1125de199cf3e82e1fe0b975006f494a"
+},
+{
+  "_id": {
+    "$oid": "65900b0359d2772d782da3e2"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:20:19.216Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "65900b0359d2772d782da3e3"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:20:19.219Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "65900b0359d2772d782da3e5"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:20:19.219Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "65900b0359d2772d782da3e8"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:20:19.219Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "65900b0359d2772d782da3e6"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:20:19.220Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "65900b1859d2772d782da43f"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:20:40.634Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "65900b1859d2772d782da43c"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:20:40.633Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "65900b1859d2772d782da43d"
+  },
+  "length": 838,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:20:40.634Z"
+  },
+  "filename": "Houses.java",
+  "md5": "b4db33eba4e7e717ff31231241cbdd5b"
+},
+{
+  "_id": {
+    "$oid": "65900b1859d2772d782da43e"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:20:40.634Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "65900b1859d2772d782da440"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:20:40.635Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "65900b1859d2772d782da441"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:20:40.635Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "65900b1859d2772d782da443"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:20:40.636Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "65900b1859d2772d782da442"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:20:40.637Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "65900b3e59d2772d782da475"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:21:18.858Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "65900b3e59d2772d782da474"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:21:18.859Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "65900b3e59d2772d782da477"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:21:18.860Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "65900b3e59d2772d782da476"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:21:18.860Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "65900b3e59d2772d782da473"
+  },
+  "length": 838,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:21:18.861Z"
+  },
+  "filename": "Houses.java",
+  "md5": "b4db33eba4e7e717ff31231241cbdd5b"
+},
+{
+  "_id": {
+    "$oid": "65900b3e59d2772d782da478"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:21:18.862Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "65900b3e59d2772d782da472"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:21:18.863Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "65900b3e59d2772d782da479"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:21:18.874Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "65900b8859d2772d782da503"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:22:32.443Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "65900b8859d2772d782da505"
+  },
+  "length": 838,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:22:32.443Z"
+  },
+  "filename": "Houses.java",
+  "md5": "b4db33eba4e7e717ff31231241cbdd5b"
+},
+{
+  "_id": {
+    "$oid": "65900b8859d2772d782da502"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:22:32.444Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "65900b8859d2772d782da507"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:22:32.444Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "65900b8859d2772d782da504"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:22:32.445Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "65900b8859d2772d782da506"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:22:32.446Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "65900b8859d2772d782da509"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:22:32.446Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "65900b8859d2772d782da508"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-30T12:22:32.447Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "65966d17033ab760c40f1e1a"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-04T08:32:23.096Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65966d17033ab760c40f1e19"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-04T08:32:23.097Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "65966d2d033ab760c40f1e40"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-04T08:32:45.290Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "65966d2d033ab760c40f1e41"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-04T08:32:45.289Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65966d6d033ab760c40f1e5c"
+  },
+  "length": 69,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-04T08:33:49.995Z"
+  },
+  "filename": "Sword.java",
+  "md5": "4eee44c118bf7b4ee4e3b670322ef564"
+},
+{
+  "_id": {
+    "$oid": "65966d6d033ab760c40f1e5d"
+  },
+  "length": 63,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-04T08:33:49.996Z"
+  },
+  "filename": "Item.java",
+  "md5": "e0f9526fd297fcc60e382e3cfa0b50bd"
+},
+{
+  "_id": {
+    "$oid": "65966dde63c3c05274840d8d"
+  },
+  "length": 63,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-04T08:35:42.792Z"
+  },
+  "filename": "Item.java",
+  "md5": "e0f9526fd297fcc60e382e3cfa0b50bd"
+},
+{
+  "_id": {
+    "$oid": "65966dde63c3c05274840d8e"
+  },
+  "length": 69,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-04T08:35:42.800Z"
+  },
+  "filename": "Sword.java",
+  "md5": "4eee44c118bf7b4ee4e3b670322ef564"
+},
+{
+  "_id": {
+    "$oid": "6596cc866c9c3457f45ab762"
+  },
+  "length": 838,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-04T15:19:34.832Z"
+  },
+  "filename": "Houses.java",
+  "md5": "b4db33eba4e7e717ff31231241cbdd5b"
+},
+{
+  "_id": {
+    "$oid": "6596cc866c9c3457f45ab75f"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-04T15:19:34.834Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "6596cc866c9c3457f45ab761"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-04T15:19:34.835Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "6596cc866c9c3457f45ab763"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-04T15:19:34.836Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "6596cc866c9c3457f45ab760"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-04T15:19:34.840Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "6596cc866c9c3457f45ab765"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-04T15:19:34.843Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "6596cc866c9c3457f45ab764"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-04T15:19:34.844Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "6596cc866c9c3457f45ab766"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-04T15:19:34.845Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "65a00d4b0c38cb4b9c36bbb4"
+  },
+  "length": 1007,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-11T15:46:19.865Z"
+  },
+  "filename": "Bird.java",
+  "md5": "1dde3f0118a8b44d627ac711f917f608"
+},
+{
+  "_id": {
+    "$oid": "65a00d630c38cb4b9c36bbc7"
+  },
+  "length": 311,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-11T15:46:43.461Z"
+  },
+  "filename": "Bird.java",
+  "md5": "0bcd93ed93c919201ae4abc6e1c8638a"
+},
+{
+  "_id": {
+    "$oid": "65a00d6e0c38cb4b9c36bbda"
+  },
+  "length": 156,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-11T15:46:54.435Z"
+  },
+  "filename": "Bird.java",
+  "md5": "b67bbaa785272bc349e7551c78f131cc"
+},
+{
+  "_id": {
+    "$oid": "65a00d780c38cb4b9c36bbed"
+  },
+  "length": 129,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-11T15:47:04.089Z"
+  },
+  "filename": "Bird.java",
+  "md5": "d8c8a895631b023d20175db2c719c1ea"
+},
+{
+  "_id": {
+    "$oid": "65a2840b0dca0b498c884925"
+  },
+  "length": 883,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-13T12:37:31.962Z"
+  },
+  "filename": "Houses.java",
+  "md5": "1125de199cf3e82e1fe0b975006f494a"
+},
+{
+  "_id": {
+    "$oid": "65a2840b0dca0b498c884926"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-13T12:37:31.965Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "65a2840b0dca0b498c884927"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-13T12:37:31.971Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "65a2840b0dca0b498c884928"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-13T12:37:31.969Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "65a2840b0dca0b498c884929"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-13T12:37:31.974Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "65a2840b0dca0b498c88492b"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-13T12:37:31.985Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "65a2840b0dca0b498c88492a"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-13T12:37:31.984Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "65a2840b0dca0b498c88492c"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-13T12:37:31.984Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "65a2842c0dca0b498c88497c"
+  },
+  "length": 464,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-13T12:38:04.537Z"
+  },
+  "filename": "Expelliarmus.java",
+  "md5": "b313ae68398abf2d65763e903c4d86cd"
+},
+{
+  "_id": {
+    "$oid": "65a2842c0dca0b498c88497a"
+  },
+  "length": 1305,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-13T12:38:04.538Z"
+  },
+  "filename": "Gryffindor.java",
+  "md5": "bf0f2387fefcda40731f061054eb9b29"
+},
+{
+  "_id": {
+    "$oid": "65a2842c0dca0b498c88497d"
+  },
+  "length": 448,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-13T12:38:04.539Z"
+  },
+  "filename": "Incendio.java",
+  "md5": "31839db20bcb15a1e05bed81c4f9b16b"
+},
+{
+  "_id": {
+    "$oid": "65a2842c0dca0b498c88497e"
+  },
+  "length": 647,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-13T12:38:04.541Z"
+  },
+  "filename": "Spell.java",
+  "md5": "079b0d1666034bd47f7170f77eca11be"
+},
+{
+  "_id": {
+    "$oid": "65a2842c0dca0b498c88497f"
+  },
+  "length": 2475,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-13T12:38:04.541Z"
+  },
+  "filename": "Player.java",
+  "md5": "9c3f202c781266e64ca686a7c5680530"
+},
+{
+  "_id": {
+    "$oid": "65a2842c0dca0b498c88497b"
+  },
+  "length": 456,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-13T12:38:04.542Z"
+  },
+  "filename": "Magicable.java",
+  "md5": "a936eb3f34a948b748114b8b44137bae"
+},
+{
+  "_id": {
+    "$oid": "65a2842c0dca0b498c884978"
+  },
+  "length": 1314,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-13T12:38:04.543Z"
+  },
+  "filename": "Hufflepuff.java",
+  "md5": "8d4f5c4e1ba9c55528ebad4a5437380d"
+},
+{
+  "_id": {
+    "$oid": "65a2842c0dca0b498c884979"
+  },
+  "length": 883,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-13T12:38:04.544Z"
+  },
+  "filename": "Houses.java",
+  "md5": "1125de199cf3e82e1fe0b975006f494a"
+},
+{
+  "_id": {
+    "$oid": "65aa3bad26a6153ac8551560"
+  },
+  "length": 1191,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:06:53.446Z"
+  },
+  "filename": "CheckingAccount.java",
+  "md5": "397aa91dcfa443f0de6dd0be1fe37f09"
+},
+{
+  "_id": {
+    "$oid": "65aa3bad26a6153ac8551561"
+  },
+  "length": 1042,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:06:53.449Z"
+  },
+  "filename": "Account.java",
+  "md5": "fcc9b24b9ffc9a6c977d7b080374bb75"
+},
+{
+  "_id": {
+    "$oid": "65aa3bad26a6153ac8551562"
+  },
+  "length": 1246,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:06:53.454Z"
+  },
+  "filename": "Customer.java",
+  "md5": "d6f23f7efb41159b1341b812bf2f837e"
+},
+{
+  "_id": {
+    "$oid": "65aa3d9513d3535fb816f744"
+  },
+  "length": 1460,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:15:01.091Z"
+  },
+  "filename": "CheckingAccount.java",
+  "md5": "2844c7d9be2950b04c8ece42b96defb0"
+},
+{
+  "_id": {
+    "$oid": "65aa3d9513d3535fb816f746"
+  },
+  "length": 1297,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:15:01.107Z"
+  },
+  "filename": "Account.java",
+  "md5": "fec3e3c6617032f22ed5463d5aa1e9e5"
+},
+{
+  "_id": {
+    "$oid": "65aa3d9513d3535fb816f745"
+  },
+  "length": 1425,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:15:01.098Z"
+  },
+  "filename": "Customer.java",
+  "md5": "cbfbe203b9e62de2732a41b97460e7b0"
+},
+{
+  "_id": {
+    "$oid": "65aa41aa13d3535fb816f772"
+  },
+  "length": 1459,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:32:26.050Z"
+  },
+  "filename": "CheckingAccount.java",
+  "md5": "a928045b256ceaff9a96ea8905df1a8f"
+},
+{
+  "_id": {
+    "$oid": "65aa41aa13d3535fb816f773"
+  },
+  "length": 1425,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:32:26.051Z"
+  },
+  "filename": "Customer.java",
+  "md5": "cbfbe203b9e62de2732a41b97460e7b0"
+},
+{
+  "_id": {
+    "$oid": "65aa41aa13d3535fb816f774"
+  },
+  "length": 1297,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:32:26.054Z"
+  },
+  "filename": "Account.java",
+  "md5": "fec3e3c6617032f22ed5463d5aa1e9e5"
+},
+{
+  "_id": {
+    "$oid": "65aa428413d3535fb816f78f"
+  },
+  "length": 1297,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:36:04.438Z"
+  },
+  "filename": "Account.java",
+  "md5": "fec3e3c6617032f22ed5463d5aa1e9e5"
+},
+{
+  "_id": {
+    "$oid": "65aa428413d3535fb816f790"
+  },
+  "length": 1554,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:36:04.438Z"
+  },
+  "filename": "CheckingAccount.java",
+  "md5": "d427bb82fa86dafa211344f6570d81a3"
+},
+{
+  "_id": {
+    "$oid": "65aa428413d3535fb816f791"
+  },
+  "length": 1425,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:36:04.437Z"
+  },
+  "filename": "Customer.java",
+  "md5": "cbfbe203b9e62de2732a41b97460e7b0"
+},
+{
+  "_id": {
+    "$oid": "65aa43ac046d8d3960a6ec0d"
+  },
+  "length": 1554,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:41:00.733Z"
+  },
+  "filename": "CheckingAccount.java",
+  "md5": "d427bb82fa86dafa211344f6570d81a3"
+},
+{
+  "_id": {
+    "$oid": "65aa43ac046d8d3960a6ec0c"
+  },
+  "length": 1425,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:41:00.732Z"
+  },
+  "filename": "Customer.java",
+  "md5": "cbfbe203b9e62de2732a41b97460e7b0"
+},
+{
+  "_id": {
+    "$oid": "65aa43ac046d8d3960a6ec0b"
+  },
+  "length": 1297,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:41:00.733Z"
+  },
+  "filename": "Account.java",
+  "md5": "fec3e3c6617032f22ed5463d5aa1e9e5"
+},
+{
+  "_id": {
+    "$oid": "65aa47ccffa1b66bd4059a8c"
+  },
+  "length": 1425,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:58:36.131Z"
+  },
+  "filename": "Customer.java",
+  "md5": "cbfbe203b9e62de2732a41b97460e7b0"
+},
+{
+  "_id": {
+    "$oid": "65aa47ccffa1b66bd4059a8e"
+  },
+  "length": 1554,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:58:36.150Z"
+  },
+  "filename": "CheckingAccount.java",
+  "md5": "d427bb82fa86dafa211344f6570d81a3"
+},
+{
+  "_id": {
+    "$oid": "65aa47ccffa1b66bd4059a8d"
+  },
+  "length": 1297,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T09:58:36.140Z"
+  },
+  "filename": "Account.java",
+  "md5": "fec3e3c6617032f22ed5463d5aa1e9e5"
+},
+{
+  "_id": {
+    "$oid": "65aa483428869e04947559c0"
+  },
+  "length": 1297,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T10:00:20.347Z"
+  },
+  "filename": "Account.java",
+  "md5": "fec3e3c6617032f22ed5463d5aa1e9e5"
+},
+{
+  "_id": {
+    "$oid": "65aa483428869e04947559c1"
+  },
+  "length": 1425,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T10:00:20.355Z"
+  },
+  "filename": "Customer.java",
+  "md5": "cbfbe203b9e62de2732a41b97460e7b0"
+},
+{
+  "_id": {
+    "$oid": "65aa483428869e04947559c2"
+  },
+  "length": 1554,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T10:00:20.364Z"
+  },
+  "filename": "CheckingAccount.java",
+  "md5": "d427bb82fa86dafa211344f6570d81a3"
+},
+{
+  "_id": {
+    "$oid": "65aa486888b48d69107fea07"
+  },
+  "length": 1554,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T10:01:12.358Z"
+  },
+  "filename": "CheckingAccount.java",
+  "md5": "d427bb82fa86dafa211344f6570d81a3"
+},
+{
+  "_id": {
+    "$oid": "65aa486888b48d69107fea08"
+  },
+  "length": 1425,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T10:01:12.367Z"
+  },
+  "filename": "Customer.java",
+  "md5": "cbfbe203b9e62de2732a41b97460e7b0"
+},
+{
+  "_id": {
+    "$oid": "65aa486888b48d69107fea09"
+  },
+  "length": 1297,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T10:01:12.376Z"
+  },
+  "filename": "Account.java",
+  "md5": "fec3e3c6617032f22ed5463d5aa1e9e5"
+},
+{
+  "_id": {
+    "$oid": "65aa492ba5e1d039848a5c94"
+  },
+  "length": 1297,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T10:04:28.052Z"
+  },
+  "filename": "Account.java",
+  "md5": "fec3e3c6617032f22ed5463d5aa1e9e5"
+},
+{
+  "_id": {
+    "$oid": "65aa492ba5e1d039848a5c96"
+  },
+  "length": 1425,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T10:04:28.059Z"
+  },
+  "filename": "Customer.java",
+  "md5": "cbfbe203b9e62de2732a41b97460e7b0"
+},
+{
+  "_id": {
+    "$oid": "65aa492ba5e1d039848a5c95"
+  },
+  "length": 1554,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T10:04:28.066Z"
+  },
+  "filename": "CheckingAccount.java",
+  "md5": "d427bb82fa86dafa211344f6570d81a3"
+},
+{
+  "_id": {
+    "$oid": "65aa8b4e5aee7968f8105a76"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:46:38.387Z"
+  },
+  "filename": "A.java",
+  "md5": "8f850698a04a1050aaeb0edfcc26eacb"
+},
+{
+  "_id": {
+    "$oid": "65aa8b595aee7968f8105a8a"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:46:49.291Z"
+  },
+  "filename": "A.java",
+  "md5": "8f850698a04a1050aaeb0edfcc26eacb"
+},
+{
+  "_id": {
+    "$oid": "65aa8b735aee7968f8105ab9"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:47:15.143Z"
+  },
+  "filename": "A.java",
+  "md5": "8f850698a04a1050aaeb0edfcc26eacb"
+},
+{
+  "_id": {
+    "$oid": "65aa8b785aee7968f8105acf"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:47:20.252Z"
+  },
+  "filename": "A.java",
+  "md5": "8f850698a04a1050aaeb0edfcc26eacb"
+},
+{
+  "_id": {
+    "$oid": "65aa8cc85aee7968f8105af4"
+  },
+  "length": 253,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:52:56.122Z"
+  },
+  "filename": "B.java",
+  "md5": "24f0e249ffd8489bb68a6059ddb3c8e1"
+},
+{
+  "_id": {
+    "$oid": "65aa8cc85aee7968f8105af5"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:52:56.123Z"
+  },
+  "filename": "A.java",
+  "md5": "8f850698a04a1050aaeb0edfcc26eacb"
+},
+{
+  "_id": {
+    "$oid": "65aa8cc85aee7968f8105af3"
+  },
+  "length": 161,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:52:56.125Z"
+  },
+  "filename": "C.java",
+  "md5": "c78cc872b4e6a90d82a992ebd06f02c4"
+},
+{
+  "_id": {
+    "$oid": "65aa8cd05aee7968f8105b13"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:53:04.253Z"
+  },
+  "filename": "A.java",
+  "md5": "8f850698a04a1050aaeb0edfcc26eacb"
+},
+{
+  "_id": {
+    "$oid": "65aa8cd05aee7968f8105b14"
+  },
+  "length": 161,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:53:04.254Z"
+  },
+  "filename": "C.java",
+  "md5": "c78cc872b4e6a90d82a992ebd06f02c4"
+},
+{
+  "_id": {
+    "$oid": "65aa8cd05aee7968f8105b15"
+  },
+  "length": 253,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:53:04.255Z"
+  },
+  "filename": "B.java",
+  "md5": "24f0e249ffd8489bb68a6059ddb3c8e1"
+},
+{
+  "_id": {
+    "$oid": "65aa8d4f5aee7968f8105b4d"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:55:11.182Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65aa8d4f5aee7968f8105b4f"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:55:11.188Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65aa8d4f5aee7968f8105b4e"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:55:11.189Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65aa8d555aee7968f8105b73"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:55:17.700Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65aa8d555aee7968f8105b74"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:55:17.701Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65aa8d555aee7968f8105b75"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:55:17.702Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65aa8d8b5aee7968f8105bae"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:56:11.163Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65aa8d8b5aee7968f8105bad"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:56:11.165Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65aa8d8b5aee7968f8105baf"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:56:11.169Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65aa8d925aee7968f8105bd3"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:56:18.122Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65aa8d925aee7968f8105bd4"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:56:18.122Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65aa8d925aee7968f8105bd5"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-19T14:56:18.122Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65ab80f0b747a11ce42963be"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-20T08:14:40.743Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65ab80f0b747a11ce42963bd"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-20T08:14:40.742Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65ab80f0b747a11ce42963bc"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-20T08:14:40.743Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65ab81e6d37b994390b51330"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-20T08:18:47.002Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65ab81e6d37b994390b51331"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-20T08:18:47.008Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65ab81e6d37b994390b51332"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-20T08:18:47.015Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65ab8ae72bf7c93fbcb9347b"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-20T08:57:11.527Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65ab8ae72bf7c93fbcb9347c"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-20T08:57:11.536Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65ab8ae72bf7c93fbcb9347d"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-20T08:57:11.544Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65ad0ecfb82bfe6844edf2c6"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T12:32:15.436Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65ad0ecfb82bfe6844edf2c7"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T12:32:15.434Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65ad0ecfb82bfe6844edf2c8"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T12:32:15.437Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65ad0f8f0c49ad6838e414cb"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T12:35:27.895Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65ad0f8f0c49ad6838e414cc"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T12:35:27.907Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65ad0f8f0c49ad6838e414cd"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T12:35:27.917Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65ad1128e3142714a87a1a0e"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T12:42:16.771Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65ad1128e3142714a87a1a10"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T12:42:16.769Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65ad1128e3142714a87a1a0f"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T12:42:16.770Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65ad17ab174cd3496864ee9a"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T13:10:04.053Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65ad17ab174cd3496864ee9b"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T13:10:04.053Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65ad17ab174cd3496864ee99"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T13:10:04.052Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65ad184c04ccce43e87f0912"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T13:12:44.561Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65ad184c04ccce43e87f0913"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T13:12:44.578Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65ad184c04ccce43e87f0914"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T13:12:44.570Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65ad18688b7d6f49e825c32a"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T13:13:12.869Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65ad18688b7d6f49e825c32b"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T13:13:12.882Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65ad18688b7d6f49e825c32c"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T13:13:12.891Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65ad1ac01f3e0919b46942ea"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T13:23:13.089Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65ad1ac01f3e0919b46942eb"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T13:23:13.122Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65ad1ac01f3e0919b46942ec"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T13:23:13.133Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65ad23c98c24c93984c58b21"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T14:01:45.091Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65ad23c98c24c93984c58b22"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T14:01:45.099Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65ad23c98c24c93984c58b23"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T14:01:45.101Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65ad245124408d247066168f"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T14:04:01.612Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65ad245124408d2470661690"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T14:04:01.622Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65ad245124408d2470661691"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T14:04:01.632Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65ad247f1f90494ea8728d3a"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T14:04:47.537Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65ad247f1f90494ea8728d3c"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T14:04:47.546Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65ad247f1f90494ea8728d3b"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T14:04:47.548Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65ad24bc83b68e6cb80b3211"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T14:05:48.211Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65ad24bc83b68e6cb80b3212"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T14:05:48.220Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65ad24bc83b68e6cb80b3213"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T14:05:48.223Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65b1868e84757034587e96c7"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-24T21:52:14.232Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65b1868e84757034587e96c6"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-24T21:52:14.221Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65b1868e84757034587e96c8"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-24T21:52:14.238Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65b1961cf27a31427cf5aea2"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-24T22:58:36.474Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65b1961cf27a31427cf5aea3"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-24T22:58:36.480Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65b1961cf27a31427cf5aea4"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-24T22:58:36.493Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65b196c1f27a31427cf5af0a"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-24T23:01:21.551Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65b196c1f27a31427cf5af0b"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-24T23:01:21.552Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65b196c1f27a31427cf5af0c"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-24T23:01:21.552Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65b1b8a23cc84f4d60df9b84"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-25T01:25:55.075Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65b1b8a23cc84f4d60df9b86"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-25T01:25:55.076Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65b1b8a23cc84f4d60df9b85"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-25T01:25:55.076Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65b1b90b9ef2fb7d302570b2"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-25T01:27:39.512Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65b1b90b9ef2fb7d302570b4"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-25T01:27:39.530Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65b1b90b9ef2fb7d302570b3"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-25T01:27:39.520Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65c5fa7ceb8ac5224c6b7c25"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:12:12.263Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "65c5fa7ceb8ac5224c6b7c24"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:12:12.264Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65c5faa8eb8ac5224c6b7c44"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:12:56.155Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65c5faa8eb8ac5224c6b7c45"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:12:56.157Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "65c5fb81eb8ac5224c6b7cac"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:16:33.508Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65c5fb81eb8ac5224c6b7cad"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:16:33.749Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "65c5fbb8a13b6c18ac4a9a99"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:17:28.300Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "65c5fbb8a13b6c18ac4a9a98"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:17:28.300Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65c5fbbda13b6c18ac4a9ab8"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:17:33.717Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65c5fbbda13b6c18ac4a9ab9"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:17:33.720Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "65c5fbc0a13b6c18ac4a9ad9"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:17:36.973Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "65c5fbc0a13b6c18ac4a9ad8"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:17:36.974Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65c5fbc1a13b6c18ac4a9aeb"
+  },
+  "length": 74,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:17:37.434Z"
+  },
+  "filename": "Item.java",
+  "md5": "475c8428aa1d44342afbe0e370eab1fa"
+},
+{
+  "_id": {
+    "$oid": "65c5fbc1a13b6c18ac4a9aec"
+  },
+  "length": 116,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:17:37.435Z"
+  },
+  "filename": "Sword.java",
+  "md5": "7422bac0d3fc07f760177ca7be511d60"
+},
+{
+  "_id": {
+    "$oid": "65c5fcc8dea5363b7c6de57f"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:22:01.011Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65c5fcc8dea5363b7c6de580"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:22:01.014Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65c5fcc8dea5363b7c6de581"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:22:01.018Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65c5fcffcfd5066348437b09"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:22:55.069Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65c5fcffcfd5066348437b08"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:22:55.062Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65c5fcffcfd5066348437b0a"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:22:55.076Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65c5fd10cfd5066348437b44"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:23:12.097Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65c5fd10cfd5066348437b43"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:23:12.096Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65c5fd10cfd5066348437b42"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:23:12.096Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65c5fd17cfd5066348437b7b"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:23:19.766Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+},
+{
+  "_id": {
+    "$oid": "65c5fd17cfd5066348437b7c"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:23:19.768Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65c5fd17cfd5066348437b7d"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T10:23:19.768Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65c60c15a3ebdf5258385a9a"
+  },
+  "length": 290,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T11:27:17.991Z"
+  },
+  "filename": "A.java",
+  "md5": "75ad4caffe43253aafa72a461e516a98"
+},
+{
+  "_id": {
+    "$oid": "65c60c15a3ebdf5258385a99"
+  },
+  "length": 199,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T11:27:17.992Z"
+  },
+  "filename": "C.java",
+  "md5": "1ff986ada9bf570425af98c6d77b9212"
+},
+{
+  "_id": {
+    "$oid": "65c60c15a3ebdf5258385a9b"
+  },
+  "length": 292,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-02-09T11:27:18.014Z"
+  },
+  "filename": "B.java",
+  "md5": "427cad9d72021ff2f8d21cf0485e9c1c"
+}]

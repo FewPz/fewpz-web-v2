@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "658d973c7ea9f95858644a10"
+  },
+  "tags": [],
+  "assignments": [
+    {
+      "$oid": "658d9850a76bb550e0acd8b8"
+    },
+    {
+      "$oid": "659009fb59d2772d782da0bd"
+    },
+    {
+      "$oid": "65967d04e998e72970ed5922"
+    },
+    {
+      "$oid": "65aa3bad26a6153ac8551563"
+    },
+    {
+      "$oid": "65aa8b4e5aee7968f8105a77"
+    }
+  ],
+  "files": [],
+  "type": "lesson",
+  "hide": false,
+  "order": 0,
+  "createAt": {
+    "$date": "2023-12-28T15:12:13.772Z"
+  },
+  "updateAt": {
+    "$date": "2023-12-28T15:12:13.772Z"
+  },
+  "deleteAt": null,
+  "title": "ทดสอบ",
+  "description": "",
+  "classroomId": {
+    "$oid": "656f2ded7ce90e1ff4a011c9"
+  },
+  "__v": 0
+}]

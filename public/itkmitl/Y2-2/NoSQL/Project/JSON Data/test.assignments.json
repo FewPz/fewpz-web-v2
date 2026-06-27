@@ -1,0 +1,2310 @@
+[{
+  "_id": {
+    "$oid": "658d9816a76bb550e0acd872"
+  },
+  "lastUpdater": null,
+  "tags": [],
+  "files": [],
+  "type": "Assignment",
+  "fullAssignmentScore": {
+    "classes": 26,
+    "relations": 2,
+    "testcases": 0
+  },
+  "createAt": {
+    "$date": "2023-12-28T15:45:26.153Z"
+  },
+  "updateAt": {
+    "$date": "2023-12-28T15:45:21.096Z"
+  },
+  "deleteAt": {
+    "$date": "2024-01-01T13:29:16.920Z"
+  },
+  "title": "นก",
+  "testcases": [],
+  "VeSON": {
+    "classes": [
+      {
+        "name": "Bird",
+        "stereotype": "abstract class",
+        "attributes": [
+          {
+            "attributeName": "height",
+            "accessModifier": "private",
+            "type": "double",
+            "isFinal": false,
+            "isStatic": false,
+            "score": 1
+          },
+          {
+            "attributeName": "weight",
+            "accessModifier": "private",
+            "type": "double",
+            "isFinal": false,
+            "isStatic": false,
+            "score": 1
+          },
+          {
+            "attributeName": "wingSize",
+            "accessModifier": "private",
+            "type": "double",
+            "isFinal": false,
+            "isStatic": false,
+            "score": 1
+          }
+        ],
+        "methods": [
+          {
+            "methodName": "Bird",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "Bird",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "wingSize",
+                "paramType": "double"
+              },
+              {
+                "paramName": "weight",
+                "paramType": "double"
+              },
+              {
+                "paramName": "height",
+                "paramType": "double"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "getHeight",
+            "accessModifier": "public",
+            "returnType": "double",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "getWeight",
+            "accessModifier": "public",
+            "returnType": "double",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "getWingSize",
+            "accessModifier": "public",
+            "returnType": "double",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "setHeight",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "height",
+                "paramType": "double"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "setWeight",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "weight",
+                "paramType": "double"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "setWingSize",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "wingSize",
+                "paramType": "double"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "eat",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "food",
+                "paramType": "double"
+              }
+            ],
+            "score": 1
+          }
+        ],
+        "score": 1
+      },
+      {
+        "name": "Flyable",
+        "stereotype": "interface",
+        "attributes": [],
+        "methods": [
+          {
+            "methodName": "fly",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": true,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "landing",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": true,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "takeOff",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": true,
+            "parameters": [],
+            "score": 1
+          }
+        ],
+        "score": 1
+      },
+      {
+        "name": "Pigeon",
+        "stereotype": "class",
+        "attributes": [
+          {
+            "attributeName": "numberOfPigeon",
+            "accessModifier": "private",
+            "type": "int",
+            "isFinal": false,
+            "isStatic": true,
+            "score": 1
+          }
+        ],
+        "methods": [
+          {
+            "methodName": "Pigeon",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "Pigeon",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "wingSize",
+                "paramType": "double"
+              },
+              {
+                "paramName": "weight",
+                "paramType": "double"
+              },
+              {
+                "paramName": "height",
+                "paramType": "double"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "eat",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "food",
+                "paramType": "String"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "fly",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "landing",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "takeOff",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "toString",
+            "accessModifier": "public",
+            "returnType": "String",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          }
+        ],
+        "score": 1
+      }
+    ],
+    "relations": [
+      {
+        "target": "Flyable",
+        "source": "Bird",
+        "type": "implements",
+        "score": 1
+      },
+      {
+        "target": "Bird",
+        "source": "Pigeon",
+        "type": "extends",
+        "score": 1
+      }
+    ]
+  },
+  "code": {
+    "file": [
+      {
+        "$oid": "658d9816a76bb550e0acd86f"
+      },
+      {
+        "$oid": "658d9816a76bb550e0acd870"
+      },
+      {
+        "$oid": "658d9816a76bb550e0acd871"
+      }
+    ]
+  },
+  "creator": {
+    "$oid": "656f26c97ce90e1ff4a011b7"
+  },
+  "lessonId": {
+    "$oid": "658d973c7ea9f95858644a10"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "658d9850a76bb550e0acd8b8"
+  },
+  "lastUpdater": {
+    "$oid": "656f26c97ce90e1ff4a011b7"
+  },
+  "tags": [],
+  "files": [],
+  "type": "Assignment",
+  "fullAssignmentScore": {
+    "classes": 4,
+    "relations": 1,
+    "testcases": 1
+  },
+  "createAt": {
+    "$date": "2023-12-28T15:46:24.135Z"
+  },
+  "updateAt": {
+    "$date": "2024-02-09T10:17:37.424Z"
+  },
+  "deleteAt": null,
+  "title": "ดาบ",
+  "testcases": [
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65966d17033ab760c40f1e1b"
+      },
+      "name": "#1",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    System.out.println(\"hello \");\n  }\n}",
+      "expectedOutput": "hello "
+    }
+  ],
+  "VeSON": {
+    "fullScore": 5,
+    "classes": [
+      {
+        "name": "Item",
+        "stereotype": "abstract class",
+        "attributes": [],
+        "methods": [
+          {
+            "methodName": "use",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": true,
+            "parameters": [
+              {
+                "paramName": "P",
+                "paramType": "Player"
+              }
+            ],
+            "score": 1
+          }
+        ],
+        "score": 1,
+        "fullScore": 2
+      },
+      {
+        "name": "Sword",
+        "stereotype": "class",
+        "attributes": [],
+        "methods": [
+          {
+            "methodName": "use",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "P",
+                "paramType": "Player"
+              }
+            ],
+            "score": 1
+          }
+        ],
+        "score": 1,
+        "fullScore": 2
+      }
+    ],
+    "relations": [
+      {
+        "target": "Item",
+        "source": "Sword",
+        "type": "extends",
+        "score": 1
+      }
+    ]
+  },
+  "code": {
+    "type": "file",
+    "file": [
+      {
+        "$oid": "65c5fbc1a13b6c18ac4a9aeb"
+      },
+      {
+        "$oid": "65c5fbc1a13b6c18ac4a9aec"
+      }
+    ]
+  },
+  "creator": {
+    "$oid": "656f26c97ce90e1ff4a011b7"
+  },
+  "lessonId": {
+    "$oid": "658d973c7ea9f95858644a10"
+  },
+  "__v": 0,
+  "description": null,
+  "options": {
+    "validatorStructure": true,
+    "validatorTestcase": true
+  }
+},
+{
+  "_id": {
+    "$oid": "659009fb59d2772d782da0bd"
+  },
+  "lastUpdater": {
+    "$oid": "657b07716498653c708d6e1b"
+  },
+  "tags": [],
+  "files": [],
+  "type": "Assignment",
+  "fullAssignmentScore": {
+    "classes": 53,
+    "relations": 7,
+    "testcases": 1
+  },
+  "createAt": {
+    "$date": "2023-12-30T12:15:55.895Z"
+  },
+  "updateAt": {
+    "$date": "2024-01-13T12:37:31.921Z"
+  },
+  "deleteAt": null,
+  "title": "Mock Exam",
+  "description": "<p>ข้อที่ 1.1 ให้นักศึกษาสร้างอินเตอร์เฟส &lt;&lt;Magicable&gt;&gt; โดยมีรายละเอียดดังต่อไปนี้<br>&bull; &nbsp; &nbsp;ให้เมธอดประกาศ attackSpell(Player player, Player target, Spell spell) แบบไม่สมบูรณ์ดังแสดงในไดอะแกรม<br>&bull; &nbsp; &nbsp;ให้เมธอดประกาศ defense(Player player, Player damager) แบบไม่สมบูรณ์ดังแสดงในไดอะแกรม</p>\n<p>ข้อที่ 1.2 ให้นักศึกษาสร้างคลาสไม่สมบูรณ์ Houses โดยมีรายละเอียดดังต่อไปนี้<br>&bull; &nbsp; &nbsp;ให้นักศึกษาประกาศแอททริบิวท์ name และ color ตามที่กำหนดในไดอะแกรมข้างต้น<br>&bull; &nbsp; &nbsp;ให้นักศึกษาสร้างคอนสตัคเตอร์แบบ Default และแบบรับค่า โดยที่<br>o &nbsp; &nbsp;สำหรับคอนสตัคเตอร์แบบ Default ให้กำหนดค่าของแต่ละแอททริบิวท์เป็นค่าเริ่มต้นของแต่ละ data type ดังตารางต่อไปนี้</p>\n<p>&bull; &nbsp; &nbsp;ให้นักศึกษาสร้างเมธอดประเภท setter() และ getter() แบบปกติของทุกแอททริบิวท์<br>&bull; &nbsp; &nbsp;ให้นักศึกษาสร้างเมธอด toString() ที่ได้รับการ overridden และคืนค่าดังต่อไปนี้</p>",
+  "testcases": [
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "659009fb59d2772d782da0be"
+      },
+      "name": "#1",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n        Player p1 = new Player(\"FewPz\");\n        Player p2 = new Player(\"Few789\");\n        \n        p1.setHouses(new Gryffindor());\n        p2.setHouses(new Hufflepuff());\n        \n        System.out.println(p1);\n        System.out.println(p2);\n        \n        p1.attack(p2, new Incendio());\n        p2.attack(p1, new Expelliarmus());\n        p2.attack(p1, new Incendio());\n        p1.attack(p2, new Incendio());\n        \n        System.out.println(p1);\n        System.out.println(p2);\n        \n        p2.protectFromPlayer(p1);\n        p2.protectFromPlayer(p1);\n        p2.protectFromPlayer(p1);\n        \n        System.out.println(p1);\n        System.out.println(p2);\n\n  }\n}",
+      "expectedOutput": "[Player] : FewPz HP: 20 Mana: 50 || [House] : Gryffindor , Color : RED\n[Player] : Few789 HP: 20 Mana: 50 || [House] : Hufflepuff , Color : YELLOW\n[FewPz]: use spell (Incendio)!\n[Few789]: use spell (Expelliarmus)!\n[Few789]: use spell (Incendio)!\n[FewPz]: use spell (Incendio)!\n[Player] : FewPz HP: 4 Mana: 42 || [House] : Gryffindor , Color : RED\n[Player] : Few789 HP: 6 Mana: 43 || [House] : Hufflepuff , Color : YELLOW\n[Few789]: Protego !\n[Few789]: Protego !\n[Few789]: Protego !\n[Player] : FewPz HP: 4 Mana: 42 || [House] : Gryffindor , Color : RED\n[Player] : Few789 HP: 18 Mana: 50 || [House] : Hufflepuff , Color : YELLOW"
+    }
+  ],
+  "VeSON": {
+    "fullScore": 60,
+    "classes": [
+      {
+        "name": "Houses",
+        "stereotype": "abstract class",
+        "attributes": [
+          {
+            "attributeName": "color",
+            "accessModifier": "private",
+            "type": "String",
+            "isFinal": false,
+            "isStatic": false,
+            "score": 1
+          },
+          {
+            "attributeName": "name",
+            "accessModifier": "private",
+            "type": "String",
+            "isFinal": false,
+            "isStatic": false,
+            "score": 1
+          }
+        ],
+        "methods": [
+          {
+            "methodName": "Houses",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "name",
+                "paramType": "String"
+              },
+              {
+                "paramName": "color",
+                "paramType": "String"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "getColor",
+            "accessModifier": "public",
+            "returnType": "String",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "getName",
+            "accessModifier": "public",
+            "returnType": "String",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "setColor",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "color",
+                "paramType": "String"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "setName",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "name",
+                "paramType": "String"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "toString",
+            "accessModifier": "public",
+            "returnType": "String",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          }
+        ],
+        "score": 1,
+        "fullScore": 9
+      },
+      {
+        "name": "Gryffindor",
+        "stereotype": "class",
+        "attributes": [],
+        "methods": [
+          {
+            "methodName": "Gryffindor",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "attackSpell",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "player",
+                "paramType": "Player"
+              },
+              {
+                "paramName": "target",
+                "paramType": "Player"
+              },
+              {
+                "paramName": "spell",
+                "paramType": "Spell"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "defense",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "player",
+                "paramType": "Player"
+              },
+              {
+                "paramName": "damager",
+                "paramType": "Player"
+              }
+            ],
+            "score": 1
+          }
+        ],
+        "score": 1,
+        "fullScore": 4
+      },
+      {
+        "name": "Hufflepuff",
+        "stereotype": "class",
+        "attributes": [],
+        "methods": [
+          {
+            "methodName": "Hufflepuff",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "attackSpell",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "player",
+                "paramType": "Player"
+              },
+              {
+                "paramName": "target",
+                "paramType": "Player"
+              },
+              {
+                "paramName": "spell",
+                "paramType": "Spell"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "defense",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "player",
+                "paramType": "Player"
+              },
+              {
+                "paramName": "damager",
+                "paramType": "Player"
+              }
+            ],
+            "score": 1
+          }
+        ],
+        "score": 1,
+        "fullScore": 4
+      },
+      {
+        "name": "Incendio",
+        "stereotype": "class",
+        "attributes": [],
+        "methods": [
+          {
+            "methodName": "Incendio",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "getDamage",
+            "accessModifier": "public",
+            "returnType": "int",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          }
+        ],
+        "score": 1,
+        "fullScore": 3
+      },
+      {
+        "name": "Magicable",
+        "stereotype": "interface",
+        "attributes": [],
+        "methods": [
+          {
+            "methodName": "attackSpell",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": true,
+            "parameters": [
+              {
+                "paramName": "player",
+                "paramType": "Player"
+              },
+              {
+                "paramName": "target",
+                "paramType": "Player"
+              },
+              {
+                "paramName": "spell",
+                "paramType": "Spell"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "defense",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": true,
+            "parameters": [
+              {
+                "paramName": "player",
+                "paramType": "Player"
+              },
+              {
+                "paramName": "damager",
+                "paramType": "Player"
+              }
+            ],
+            "score": 1
+          }
+        ],
+        "score": 1,
+        "fullScore": 3
+      },
+      {
+        "name": "Expelliarmus",
+        "stereotype": "class",
+        "attributes": [],
+        "methods": [
+          {
+            "methodName": "Expelliarmus",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "getDamage",
+            "accessModifier": "public",
+            "returnType": "int",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          }
+        ],
+        "score": 1,
+        "fullScore": 3
+      },
+      {
+        "name": "Player",
+        "stereotype": "class",
+        "attributes": [
+          {
+            "attributeName": "houses",
+            "accessModifier": "private",
+            "type": "Houses",
+            "isFinal": false,
+            "isStatic": false,
+            "score": 1
+          },
+          {
+            "attributeName": "hp",
+            "accessModifier": "private",
+            "type": "int",
+            "isFinal": false,
+            "isStatic": false,
+            "value": "20",
+            "score": 1
+          },
+          {
+            "attributeName": "mana",
+            "accessModifier": "private",
+            "type": "int",
+            "isFinal": false,
+            "isStatic": false,
+            "value": "50",
+            "score": 1
+          },
+          {
+            "attributeName": "attackDamage",
+            "accessModifier": "private",
+            "type": "int",
+            "isFinal": true,
+            "isStatic": false,
+            "value": "2",
+            "score": 1
+          },
+          {
+            "attributeName": "name",
+            "accessModifier": "private",
+            "type": "String",
+            "isFinal": true,
+            "isStatic": false,
+            "score": 1
+          }
+        ],
+        "methods": [
+          {
+            "methodName": "Player",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "name",
+                "paramType": "String"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "Player",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "name",
+                "paramType": "String"
+              },
+              {
+                "paramName": "hp",
+                "paramType": "int"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "getAttackDamage",
+            "accessModifier": "public",
+            "returnType": "int",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "getHP",
+            "accessModifier": "public",
+            "returnType": "int",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "getHouses",
+            "accessModifier": "public",
+            "returnType": "Houses",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "getMana",
+            "accessModifier": "public",
+            "returnType": "int",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "getName",
+            "accessModifier": "public",
+            "returnType": "String",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "setHP",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "hp",
+                "paramType": "int"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "setHouses",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "houses",
+                "paramType": "Houses"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "setMana",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "mana",
+                "paramType": "int"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "attack",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "target",
+                "paramType": "Player"
+              },
+              {
+                "paramName": "spell",
+                "paramType": "Spell"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "equals",
+            "accessModifier": "public",
+            "returnType": "boolean",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "player",
+                "paramType": "Player"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "protectFromPlayer",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "target",
+                "paramType": "Player"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "toString",
+            "accessModifier": "public",
+            "returnType": "String",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          }
+        ],
+        "score": 1,
+        "fullScore": 20
+      },
+      {
+        "name": "Spell",
+        "stereotype": "abstract class",
+        "attributes": [
+          {
+            "attributeName": "damage",
+            "accessModifier": "private",
+            "type": "int",
+            "isFinal": false,
+            "isStatic": false,
+            "score": 1
+          },
+          {
+            "attributeName": "name",
+            "accessModifier": "private",
+            "type": "String",
+            "isFinal": true,
+            "isStatic": false,
+            "score": 1
+          }
+        ],
+        "methods": [
+          {
+            "methodName": "Spell",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "name",
+                "paramType": "String"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "getDamage",
+            "accessModifier": "public",
+            "returnType": "int",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "getName",
+            "accessModifier": "public",
+            "returnType": "String",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "setDamage",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "damage",
+                "paramType": "int"
+              }
+            ],
+            "score": 1
+          }
+        ],
+        "score": 1,
+        "fullScore": 7
+      }
+    ],
+    "relations": [
+      {
+        "target": "Houses",
+        "source": "Gryffindor",
+        "type": "extends",
+        "score": 1
+      },
+      {
+        "target": "Magicable",
+        "source": "Gryffindor",
+        "type": "implements",
+        "score": 1
+      },
+      {
+        "target": "Houses",
+        "source": "Hufflepuff",
+        "type": "extends",
+        "score": 1
+      },
+      {
+        "target": "Magicable",
+        "source": "Hufflepuff",
+        "type": "implements",
+        "score": 1
+      },
+      {
+        "target": "Spell",
+        "source": "Incendio",
+        "type": "extends",
+        "score": 1
+      },
+      {
+        "target": "Spell",
+        "source": "Expelliarmus",
+        "type": "extends",
+        "score": 1
+      },
+      {
+        "target": "Houses",
+        "source": "Player",
+        "type": "has",
+        "score": 1
+      }
+    ]
+  },
+  "code": {
+    "type": "file",
+    "file": [
+      {
+        "$oid": "65a2840b0dca0b498c884925"
+      },
+      {
+        "$oid": "65a2840b0dca0b498c884926"
+      },
+      {
+        "$oid": "65a2840b0dca0b498c884927"
+      },
+      {
+        "$oid": "65a2840b0dca0b498c884928"
+      },
+      {
+        "$oid": "65a2840b0dca0b498c884929"
+      },
+      {
+        "$oid": "65a2840b0dca0b498c88492a"
+      },
+      {
+        "$oid": "65a2840b0dca0b498c88492b"
+      },
+      {
+        "$oid": "65a2840b0dca0b498c88492c"
+      }
+    ]
+  },
+  "creator": {
+    "$oid": "657b07716498653c708d6e1b"
+  },
+  "lessonId": {
+    "$oid": "658d973c7ea9f95858644a10"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65967d04e998e72970ed5922"
+  },
+  "lastUpdater": null,
+  "tags": [],
+  "files": [],
+  "type": "Assignment",
+  "createAt": {
+    "$date": "2024-01-04T09:40:20.656Z"
+  },
+  "updateAt": {
+    "$date": "2024-01-04T09:39:33.000Z"
+  },
+  "deleteAt": null,
+  "title": "Display",
+  "description": "<h2>โดยกำหนดให้คลาส Account มีรายละเอียดดังต่อไปนี้</h2>\n<ul>\n<li>ให้นักศึกษาสร้างแอททริบิวท์ตามที่กำหนดในคลาสไดอะแกรม</li>\n<li>เมธอด deposit(&hellip;)ทำหน้าที่เพิ่มค่าแอททริบิวท์ balance ตามค่าในตัวแปร &nbsp;b ที่รับเข้ามา เมื่อตัวแปร &nbsp;b มีค่ามากกว่าหรือเท่ากับ 0 แต่ถ้าไม่ใช่จะแสดงข้อความต่อไปนี้</li>\n</ul>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.9146%;\"></colgroup>\n<tbody>\n<tr>\n<td>The balance variable must be greater than or equal to zero.</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>เมธอด withdraw(&hellip;)ทำหน้าที่ลดค่าแอททริบิวท์ balance ตามค่าในตัวแปร &nbsp;b ที่รับเข้ามา จากนั้น จะดำเนินการคืนค่า (return) เงินที่ถอนออกมา เมื่อตัวแปร &nbsp;b มีค่ามากกว่าหรือเท่ากับ 0 แต่ถ้าไม่ใช่จะคืนค่าเป็น 0 พร้อมแสดงข้อความต่อไปนี้</li>\n</ul>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.9146%;\"></colgroup>\n<tbody>\n<tr>\n<td>The balance variable must be greater than or equal to zero.&nbsp;</td>\n</tr>\n</tbody>\n</table>\n<p>นอกจากนี้ ค่าแอททริบิวท์ balance &nbsp;ต้องไม่ติดลบ แต่ถ้าไม่ใช่ค่าแอททริบิวท์ balance จะไม่ถูกลดพร้อมคืนค่าเป็น 0 และแสดงข้อความต่อไปนี้</p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.9146%;\"></colgroup>\n<tbody>\n<tr>\n<td>Your account balance is insufficient.</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>เมธอด showInfo(&hellip;)ทำหน้าที่แสดงข้อความต่อไปนี้&nbsp;</li>\n</ul>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.9146%;\"></colgroup>\n<tbody>\n<tr>\n<td>In [ค่าแอททริบิวท์ name] account, there is a balance equal to [ค่าแอททริบิวท์ balance] baht.&nbsp;</td>\n</tr>\n</tbody>\n</table>\n<p><br>&nbsp;โดยกำหนดให้คลาส MyDate มีรายละเอียดดังต่อไปนี้</p>\n<ul>\n<li>ให้นักศึกษาสร้างแอททริบิวท์ตามที่กำหนดในคลาสไดอะแกรม</li>\n<li>เมธอด showDate(&hellip;)ทำหน้าที่แสดงข้อความต่อไปนี้&nbsp;</li>\n</ul>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.9146%;\"></colgroup>\n<tbody>\n<tr>\n<td>[ค่าแอททริบิวท์ day]/[ค่าแอททริบิวท์ month]/[ค่าแอททริบิวท์ year].</td>\n</tr>\n</tbody>\n</table>\n<h2>&nbsp;<br>โดยกำหนดให้คลาส Customer มีรายละเอียดดังต่อไปนี้</h2>\n<ul>\n<li>ให้นักศึกษาสร้างแอททริบิวท์ตามที่กำหนดในคลาสไดอะแกรม</li>\n</ul>\n<h3>โค้ดสำหรับเรียกใช้เพื่อทดสอบความถูกต้องของคลาสที่นักศึกษาได้พัฒนาขึ้นมา</h3>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.9146%;\"></colgroup>\n<tbody>\n<tr>\n<td>\n<div>public class Main {</div>\n<div>&nbsp; &nbsp; public static void main(String[] args) {</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; Customer c = new Customer();</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; c.name = \"Taravichet\";</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp;</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; MyDate dob = new MyDate();</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; dob.day = 8;</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; dob.month = 11;</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; dob.year = 2023;</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp;</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; Account acct = new Account();</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; acct.name = c.name;</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; acct.balance = 500;</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp;</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; c.DOB = dob;</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; c.acct = acct;</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp;</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; System.out.println(\"My name is \" + c.name + \".\");</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp;</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; c.acct.showInfo();</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; c.DOB.showDate();</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp;</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; c.acct.deposit(500);</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; c.acct.showInfo();</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; c.acct.withdraw(3000);</div>\n<div>&nbsp; &nbsp; &nbsp; &nbsp; c.acct.showInfo();</div>\n<div>&nbsp; &nbsp; }</div>\n<div>}</div>\n</td>\n</tr>\n</tbody>\n</table>\n<h3>ตัวอย่างผลลัพธ์</h3>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\">\n<tbody>\n<tr>\n<td>My name is Taravichet.<br>In Taravichet account, there is a balance equal to 500.0 baht.&nbsp;<br>8/11/2023<br>In Taravichet account, there is a balance equal to 1000.0 baht.&nbsp;<br>Your account balance is insufficient.<br>In Taravichet account, there is a balance equal to 1000.0 baht.</td>\n</tr>\n</tbody>\n</table>\n<h3>ให้นักศึกษาอธิบายความหมายของคำสั่งต่อไปนี้</h3>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\">\n<tbody>\n<tr>\n<td>c.DOB.showDate();<br>&nbsp;<br>c.acct.deposit(500);<br>c.acct.showInfo();<br>c.acct.withdraw(3000);<br>c.acct.showInfo();</td>\n</tr>\n</tbody>\n</table>",
+  "testcases": [],
+  "VeSON": {
+    "classes": [],
+    "relations": []
+  },
+  "code": {
+    "file": []
+  },
+  "creator": {
+    "$oid": "656f26c97ce90e1ff4a011b7"
+  },
+  "lessonId": {
+    "$oid": "658d973c7ea9f95858644a10"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65aa3bad26a6153ac8551563"
+  },
+  "lastUpdater": null,
+  "tags": [],
+  "files": [],
+  "type": "Assignment",
+  "fullAssignmentScore": {
+    "classes": 35,
+    "relations": 2,
+    "testcases": 6
+  },
+  "createAt": {
+    "$date": "2024-01-19T09:06:53.419Z"
+  },
+  "updateAt": {
+    "$date": "2024-01-19T08:59:28.086Z"
+  },
+  "deleteAt": null,
+  "title": "ข้อที่ 1 คำสั่ง ให้นักศึกษาสร้างคลาส Account, CheckingAccount และ Customer จากคลาสไดอะแกรมต่อไปนี้",
+  "description": "<h2>1.1. &nbsp;ให้นักศึกษาสร้างคลาส Account โดยกำหนดให้แต่ละเมธอดมีรายละเอียดดังต่อไปนี้</h2>\n<ul>\n<li>คอนสตัคเตอร์เมธอด <code>Account(double balance, String name) </code>จะนำค่าพารามิเตอร์ <code>balance</code> ไปกำหนดให้แอททริบิวท์ <code>balance</code> และพารามิเตอร์ <code>name</code> ไปกำหนดให้แอททริบิวท์ <code>name</code></li>\n<li>เมธอด <code>setName()</code> จะนำค่าพารามิเตอร์ <code>name</code> ไปกำหนดให้แอททริบิวท์ <code>name</code> ขณะที่ เมธอด <code>setBalance()</code> จะนำค่าพารามิเตอร์ <code>balance</code> ไปกำหนดให้ค่าเป็นแอททริบิวท์ <code>balance</code></li>\n<li>เมธอด<code> deposit() </code>จะนำค่า <code>a</code> ไปเพิ่มจากแอททริบิวท์ <code>balance (balance + a) </code>ก็ต่อเมื่อ <code>a</code> ต้องมีค่ามากกว่า <code>0</code> ถ้าใช้ให้แสดงข้อความดังต่อไปนี้</li>\n</ul>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.9223%;\"></colgroup>\n<tbody>\n<tr>\n<td>\n<pre><code>[ค่าจากตัวแปร a]</code> baht is deposited to <code>[ค่าจากแอททริวบิวท์ name]</code>.</pre>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp; ถ้าไม่ใช้ให้แสดงข้อความดังต่อไปนี้</p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.9223%;\"></colgroup>\n<tbody>\n<tr>\n<td>\n<pre>Input number must be a positive integer.</pre>\n</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>เมธอด <code>withdraw()</code> จะนำค่า <code>a</code> ไปลดจากแอททริบิวท์ <code>balance (balance - a)</code> ก็ต่อเมื่อ <code>a</code> ต้องมีค่ามากกว่า <code>0</code> และผลลัพธ์ของ <code>balance &ndash; a</code> บิวท์ต้องมากกว่า <code>0</code> ถ้าใช้ให้แสดงข้อความดังต่อไปนี้</li>\n</ul>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.9223%;\"></colgroup>\n<tbody>\n<tr>\n<td>\n<pre><code>[ค่าจากตัวแปร a]</code> baht is withdrawn from <code>[ค่าจากแอททริวบิวท์ name]</code>.</pre>\n</td>\n</tr>\n</tbody>\n</table>\n<p>ถ้าไม่ใช้ให้แสดงข้อความดังต่อไปนี้&nbsp;</p>\n<table style=\"border-collapse: collapse; width: 100%; height: 98.375px;\" border=\"1\"><colgroup><col style=\"width: 37.1018%;\"><col style=\"width: 62.8982%;\"></colgroup>\n<tbody>\n<tr style=\"height: 10px;\">\n<td style=\"text-align: center; height: 10px;\">\n<p><strong>เงื่อนไข</strong></p>\n</td>\n<td style=\"text-align: center; height: 10px;\">\n<p><strong>แสดงข้อความ</strong></p>\n</td>\n</tr>\n<tr style=\"height: 44.1875px;\">\n<td style=\"height: 44.1875px;\"><code>a &lt; 0</code></td>\n<td style=\"height: 44.1875px;\">\n<pre>Input number must be a positive integer.</pre>\n</td>\n</tr>\n<tr style=\"height: 44.1875px;\">\n<td style=\"height: 44.1875px;\"><code>(balance &ndash; a) &lt; 0</code></td>\n<td style=\"height: 44.1875px;\">\n<pre>Not enough money!</pre>\n</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>เมธอด <code>getName() </code>จะคืนค่าเป็นแอททริบิวท์ <code>name</code> ขณะที่ เมธอด <code>getBalance()</code> จะคืนค่าเป็นแอททริบิวท์&nbsp;<code>balance</code></li>\n<li>เมธอด<code> showAccount()</code> จะแสดงค่าของแต่ละแอททริบิวท์ดังตัวอย่าง</li>\n</ul>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.9223%;\"></colgroup>\n<tbody>\n<tr>\n<td>\n<pre><code>[ค่าจากแอททริวบิวท์ name]</code> account has <code>[ค่าจากแอททริวบิวท์ balance]</code> baht.</pre>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>\n<h2>1.2. &nbsp;ให้นักศึกษาสร้างคลาส CheckingAccount โดยกำหนดให้แต่ละเมธอดมีรายละเอียดดังต่อไปนี้</h2>\n<ul>\n<li>คอนสตัคเตอร์เมธอด <code>CheckingAccount()</code> &nbsp;หรือเรียกว่า default constructor จะกำหนดค่าแอททริบิวท์ <code>balance</code> และ <code>name</code> เป็น <code>0</code> และ <code>&ldquo;&rdquo; </code>ตามลำดับ โดยเรียกใช้ constructor ของคลาส <code>Account</code> &nbsp;ได้แก่ <code>Account(double balance, String name) </code>และ <code>credit</code> ให้กำหนดเป็น <code>0</code>&nbsp;</li>\n<li>คอนสตัคเตอร์เมธอด <code>CheckingAccount(double balance, String name, double credit)</code> จะนำค่าพารามิเตอร์ <code>balance</code> ไปกำหนดให้แอททริบิวท์ <code>balance</code> และพารามิเตอร์ <code>name</code> ไปกำหนดให้แอททริบิวท์ <code>name</code> โดยอาศัยเมธอด <code>super()</code> จากนั้นนำค่าพารามิเตอร์&nbsp;<code>credit</code> ไปกำหนดให้แอททริบิวท์ <code>credit</code></li>\n<li>เมธอด <code>setCredit()</code> จะนำค่าพารามิเตอร์ <code>credit</code> ไปกำหนดให้แอททริบิวท์ <code>credit</code> ก็ต่อเมื่อพารามิเตอร์ <code>credit</code> ต้องมีค่ามากกว่า <code>0</code> &nbsp;ถ้าไม่ใช้ให้แสดงข้อความดังต่อไปนี้&nbsp;</li>\n</ul>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.9223%;\"></colgroup>\n<tbody>\n<tr>\n<td>\n<pre>Input number must be a positive integer.</pre>\n</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>เมธอด <code>getCredit()</code> จะคืนค่าเป็นแอททริบิวท์ <code>credit </code></li>\n<li>เมธอด <code>withdraw(double a)</code> และ <code>withdraw(String a)</code> จะถูก overridden โดยการนำค่า <code>a</code> ไปลดจากแอททริบิวท์ <code>balance</code> และ <code>credit</code> ก็ต่อเมื่อ <code>a</code> ต้องมีค่ามากกว่า <code>0</code> และ</li>\n</ul>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 52.7972%;\"><col style=\"width: 47.2028%;\"></colgroup>\n<tbody>\n<tr>\n<td style=\"text-align: center;\"><strong>เงื่อนไข</strong></td>\n<td style=\"text-align: center;\"><strong>การกระทำ</strong></td>\n</tr>\n<tr>\n<td><code>(balance &ndash; a) </code>แล้วยังมียอดเงินคงเหลือไม่ติดลบ</td>\n<td>ให้ทำงานเหมือน <code>withdraw()</code>ของคลาส <code>Account</code>&nbsp;</td>\n</tr>\n<tr>\n<td><code>(balance &ndash; a)</code> แล้วยอดเงินคงเหลือติดลบแต่เมื่อรวมกับ <code>credit</code> แล้วยอดเงินคงเหลือไม่ติดลบ</td>\n<td>เงินใน <code>balance</code> จะกำหนดให้เท่ากับ <code>0</code> และไปหักส่วนต่างจากเครดิตแทน&nbsp;</td>\n</tr>\n<tr>\n<td><code>(balance &ndash; a)</code> แล้วยอดเงินคงเหลือติดลบแล้วเมื่อรวมกับ <code>credit</code> แล้วยอดเงินคงเหลือก็ยังคงติดลบ</td>\n<td>ไม่ดำเนินการใด ๆ</td>\n</tr>\n</tbody>\n</table>\n<p>แสดงข้อความดังต่อไปนี้ กรณีตรงตามเงื่อนไขที่ 1 หรือ 2</p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.9223%;\"></colgroup>\n<tbody>\n<tr>\n<td>\n<pre><code>[ค่าจากตัวแปร a]</code> baht is withdrawn from <code>[ค่าจากแอททริวบิวท์ name]</code> and your credit balance is <code>[ค่าจากแอททริวบิวท์ credit]</code>.</pre>\n</td>\n</tr>\n</tbody>\n</table>\n<p>แสดงข้อความดังต่อไปนี้ กรณีตรงตามเงื่อนไขที่ 3</p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.9223%;\"></colgroup>\n<tbody>\n<tr>\n<td>\n<pre>Not enough money!</pre>\n</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>เมธอด <code>toString()</code> จะถูก overridden ซึ่งจะคืนค่าเป็น &nbsp;</li>\n</ul>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.9223%;\"></colgroup>\n<tbody>\n<tr>\n<td>\n<pre>The <code>[แอททริวบิวท์ name]</code> account has <code>[แอททริวบิวท์ balance]</code> baht and <code>[แอททริวบิวท์ credit]</code> credits.</pre>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>\n<h2><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">1.3. &nbsp;ให้นักศึกษาสร้างคลาส Customer โดยกำหนดให้แต่ละเมธอดมีรายละเอียดดังต่อไปนี้</span></h2>\n<ul>\n<li>คอนสตัคเตอร์เมธอด <code>Customer(String firstName, String lastName, CheckingAccount acct)</code> จะนำค่าพารามิเตอร์ <code>firstName</code> ไปกำหนดให้แอททริบิวท์ <code>firstName</code> และพารามิเตอร์ <code>lastName</code> ไปกำหนดให้แอททริบิวท์ <code>lastName</code> นอกจากนี้ นำค่าพารามิเตอร์ <code>acct</code> ไปกำหนดให้แอททริบิวท์ <code>acct</code>&nbsp;</li>\n<li>คอนสตัคเตอร์เมธอด <code>Customer(String firstName, String lastName)</code> จะนำค่าพารามิเตอร์ <code>firstName</code> ไปกำหนดให้แอททริบิวท์ <code>firstName</code> และพารามิเตอร์ <code>lastName</code> ไปกำหนดให้แอททริบิวท์ <code>lastName</code> นอกจากนี้ นำ <code>null</code> ไปกำหนดให้แอททริบิวท์ <code>acct</code> โดยต้องเรียกใช้งาน <code>Customer(String firstName, String lastName, CheckingAccount acct)</code> ผ่านคำสั่ง <code>this(&hellip;)</code></li>\n<li>คอนสตัคเตอร์เมธอด <code>Customer()</code> &nbsp;หรือเรียกว่า default constructor จะกำหนดค่าแอททริบิวท์ <code>firstName</code>, &nbsp;<code>lastName</code> และ <code>acct</code> เป็น <code>&ldquo;&rdquo;,</code> <code>&ldquo;&rdquo; </code>และ <code>null</code> ตามลำดับ กำหนดให้ต้องเรียกใช้งาน <code>Customer(String firstName, String lastName, CheckingAccount acct)</code></li>\n<li>เมธอด <code>setFirstName()</code> จะนำค่าพารามิเตอร์ <code>firstName</code> ไปกำหนดให้แอททริบิวท์ <code>firstName</code> &nbsp;และเมธอด <code>setLastName()</code> จะนำค่าพารามิเตอร์ <code>lastName</code> ไปกำหนดให้แอททริบิวท์ lastName &nbsp;และเมธอด <code>setAcct()</code> จะนำค่าพารามิเตอร์ <code>acct</code> ไปกำหนดให้แอททริบิวท์ <code>acct</code></li>\n<li>เมธอด <code>getFirstName()</code> จะคืนค่าเป็นแอททริบิวท์ <code>firstName</code> และเมธอด<code> getLastName()</code> จะคืนค่าเป็นแอททริบิวท์ <code>lastName</code> &nbsp;และ เมธอด <code>getAcct()</code> จะคืนค่าเป็นแอททริบิวท์ <code>acct </code></li>\n<li>เมธอด <code>toString()</code> จะถูก overridden ซึ่งจะคืนค่าเป็นข้อความดังต่อไปนี้ กรณีที่ค่าของ <code>acct</code> มีค่าเป็น <code>null</code>&nbsp;</li>\n</ul>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.9223%;\"></colgroup>\n<tbody>\n<tr>\n<td>\n<pre><code>[แอททริวบิวท์ firstName]</code> <code>[แอททริวบิวท์ lastName]</code> doesn&rsquo;t have account.</pre>\n</td>\n</tr>\n</tbody>\n</table>\n<p>ข้อความดังต่อไปนี้ กรณีที่ค่าของ <code>acct</code> มีค่าไม่เป็น <code>null</code>&nbsp;</p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.9223%;\"></colgroup>\n<tbody>\n<tr>\n<td>\n<pre>The [แอททริวบิวท์ firstName] account has [แอททริวบิวท์ balance] baht and [แอททริวบิวท์ credit] &nbsp;credits.</pre>\n</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>เมธอด <code>equals(Customer c)</code> จะถูก overloaded ซึ่งจะคืนค่าเป็น <code>true</code> ก็ต่อเมื่อแอททริบิวท์ <code>firstName</code> และ <code>lastname</code> ของวัตถุทั้ง 2 เหมือนกันถ้าไม่ใช่จะคืนค่าเป็น <code>false</code>&nbsp;</li>\n</ul>\n<p>&nbsp;</p>",
+  "testcases": [
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65aa3bad26a6153ac8551564"
+      },
+      "name": "#1",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    Account a1 = new Account(50000,\"61070033\");\n    a1.showAccount();\n    a1.deposit(500);\n    a1.showAccount();\n    a1.withdraw(40000);\n    a1.showAccount();\n  }\n}\n\n",
+      "expectedOutput": "61070033 account has 50000.0 baht.\n500.0 baht is deposited to 61070033.\n61070033 account has 50500.0 baht.\n40000.0 baht is withdrawn from 61070033.\n61070033 account has 10500.0 baht."
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65aa3bad26a6153ac8551565"
+      },
+      "name": "#2",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    CheckingAccount a1 = new CheckingAccount(50000,\"61070033\",5000);\n    a1.showAccount();\n    a1.deposit(500);\n    System.out.println(a1);\n    a1.withdraw(\"40000.0\");\n    System.out.println(a1.toString()); \n  }\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "expectedOutput": "61070033 account has 50000.0 baht.\n500.0 baht is deposited to 61070033.\nThe 61070033 account has 50500.0 baht and 5000.0 credits.\n40000.0 baht is withdrawn from 61070033 and your credit balance is 5000.0.\nThe 61070033 account has 10500.0 baht and 5000.0 credits."
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65aa3bad26a6153ac8551566"
+      },
+      "name": "#3",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    CheckingAccount a1 = new CheckingAccount();\n    a1.deposit(500);\n    System.out.println(a1);\n    a1.withdraw(40000.0);\n    System.out.println(a1.toString());\n  }\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "expectedOutput": "500.0 baht is deposited to .\nThe  account has 500.0 baht and 0.0 credits.\nNot enough money!\nThe  account has 500.0 baht and 0.0 credits"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65aa3bad26a6153ac8551567"
+      },
+      "name": "#4",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    Account a1 = new CheckingAccount();\n    a1.setName(\"Nook\");\n    System.out.println(a1);\n    ((CheckingAccount)a1).setCredit(1000);\n    System.out.println(a1);\n  }\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "expectedOutput": "The Nook account has 0.0 baht and 0.0 credits.\nThe Nook account has 0.0 baht and 1000.0 credits."
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65aa3bad26a6153ac8551568"
+      },
+      "name": "#5",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    CheckingAccount a1 = new CheckingAccount(1000,\"62070033\",500);\n    Customer c1 = new Customer();\n    Customer c2 = new Customer(\"Harry\",\"Potter\");\n    Customer c3 = new Customer(\"Harry\",\"Potter\",a1);\n    \n    System.out.println(c2);\n    System.out.println(c3); \n  }\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "expectedOutput": "Harry Potter doesn’t have account.\nThe Harry account has 1000.0 baht and 500.0 credits."
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65aa3bad26a6153ac8551569"
+      },
+      "name": "#6",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    CheckingAccount a1 = new CheckingAccount(1000,\"62070033\",500);\n    Customer c1 = new Customer();\n    Customer c2 = new Customer(\"Harry\",\"Potter\");\n    Customer c3 = new Customer(\"Harry\",\"Potter\",a1);\n    System.out.println(c1.equals(c2));\n    System.out.println(c3.equals(c2)); \n  }\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "expectedOutput": "false\ntrue"
+    }
+  ],
+  "VeSON": {
+    "classes": [
+      {
+        "name": "CheckingAccount",
+        "stereotype": "class",
+        "attributes": [
+          {
+            "attributeName": "credit",
+            "accessModifier": "private",
+            "type": "double",
+            "isFinal": false,
+            "isStatic": false,
+            "score": 1
+          }
+        ],
+        "methods": [
+          {
+            "methodName": "CheckingAccount",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "CheckingAccount",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "balance",
+                "paramType": "double"
+              },
+              {
+                "paramName": "name",
+                "paramType": "String"
+              },
+              {
+                "paramName": "credit",
+                "paramType": "double"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "getCredit",
+            "accessModifier": "public",
+            "returnType": "double",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "setCredit",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "credit",
+                "paramType": "double"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "toString",
+            "accessModifier": "public",
+            "returnType": "String",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "withdraw",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "a",
+                "paramType": "double"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "withdraw",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "a",
+                "paramType": "String"
+              }
+            ],
+            "score": 1
+          }
+        ],
+        "score": 1
+      },
+      {
+        "name": "Account",
+        "stereotype": "class",
+        "attributes": [
+          {
+            "attributeName": "balance",
+            "accessModifier": "protected",
+            "type": "double",
+            "isFinal": false,
+            "isStatic": false,
+            "score": 1
+          },
+          {
+            "attributeName": "name",
+            "accessModifier": "protected",
+            "type": "String",
+            "isFinal": false,
+            "isStatic": false,
+            "score": 1
+          }
+        ],
+        "methods": [
+          {
+            "methodName": "Account",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "balance",
+                "paramType": "double"
+              },
+              {
+                "paramName": "name",
+                "paramType": "String"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "getBalance",
+            "accessModifier": "public",
+            "returnType": "double",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "getName",
+            "accessModifier": "public",
+            "returnType": "String",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "setBalance",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "balance",
+                "paramType": "double"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "setName",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "name",
+                "paramType": "String"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "deposit",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "a",
+                "paramType": "double"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "showAccount",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "withdraw",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "a",
+                "paramType": "double"
+              }
+            ],
+            "score": 1
+          }
+        ],
+        "score": 1
+      },
+      {
+        "name": "Customer",
+        "stereotype": "class",
+        "attributes": [
+          {
+            "attributeName": "acct",
+            "accessModifier": "private",
+            "type": "CheckingAccount",
+            "isFinal": false,
+            "isStatic": false,
+            "score": 1
+          },
+          {
+            "attributeName": "firstName",
+            "accessModifier": "private",
+            "type": "String",
+            "isFinal": false,
+            "isStatic": false,
+            "score": 1
+          },
+          {
+            "attributeName": "lastName",
+            "accessModifier": "private",
+            "type": "String",
+            "isFinal": false,
+            "isStatic": false,
+            "score": 1
+          }
+        ],
+        "methods": [
+          {
+            "methodName": "Customer",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "Customer",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "firstName",
+                "paramType": "String"
+              },
+              {
+                "paramName": "lastName",
+                "paramType": "String"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "Customer",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "firstName",
+                "paramType": "String"
+              },
+              {
+                "paramName": "lastName",
+                "paramType": "String"
+              },
+              {
+                "paramName": "acct",
+                "paramType": "CheckingAccount"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "getAcct",
+            "accessModifier": "public",
+            "returnType": "CheckingAccount",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "getFirstName",
+            "accessModifier": "public",
+            "returnType": "String",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "getLastName",
+            "accessModifier": "public",
+            "returnType": "String",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "setAcct",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "acct",
+                "paramType": "CheckingAccount"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "setFirstName",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "firstName",
+                "paramType": "String"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "setLastName",
+            "accessModifier": "public",
+            "returnType": "void",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "lastName",
+                "paramType": "String"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "equals",
+            "accessModifier": "public",
+            "returnType": "boolean",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "c",
+                "paramType": "Customer"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "toString",
+            "accessModifier": "public",
+            "returnType": "String",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          }
+        ],
+        "score": 1
+      }
+    ],
+    "relations": [
+      {
+        "target": "Account",
+        "source": "CheckingAccount",
+        "type": "extends",
+        "score": 1
+      },
+      {
+        "target": "CheckingAccount",
+        "source": "Customer",
+        "type": "has",
+        "score": 1
+      }
+    ]
+  },
+  "code": {
+    "file": [
+      {
+        "$oid": "65aa3bad26a6153ac8551560"
+      },
+      {
+        "$oid": "65aa3bad26a6153ac8551561"
+      },
+      {
+        "$oid": "65aa3bad26a6153ac8551562"
+      }
+    ]
+  },
+  "creator": {
+    "$oid": "656f26c97ce90e1ff4a011b7"
+  },
+  "lessonId": {
+    "$oid": "658d973c7ea9f95858644a10"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65aa8b4e5aee7968f8105a77"
+  },
+  "lastUpdater": {
+    "$oid": "656f26c97ce90e1ff4a011b7"
+  },
+  "tags": [],
+  "files": [],
+  "type": "Assignment",
+  "fullAssignmentScore": {
+    "classes": 16,
+    "relations": 0,
+    "testcases": 17
+  },
+  "createAt": {
+    "$date": "2024-01-19T14:46:38.362Z"
+  },
+  "updateAt": {
+    "$date": "2024-02-09T10:23:12.077Z"
+  },
+  "deleteAt": null,
+  "title": "A",
+  "testcases": [
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65aa8b4e5aee7968f8105a78"
+      },
+      "name": "#1",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    new A();\n  }\n}",
+      "expectedOutput": "A2\nA1"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65aa8b4e5aee7968f8105a79"
+      },
+      "name": "#2",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    new A(1, 1);\n  }\n}",
+      "expectedOutput": "A2"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65aa8cc85aee7968f8105af8"
+      },
+      "name": "#3",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    new B();\n  }\n}",
+      "expectedOutput": "B2\nB1"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65aa8cc85aee7968f8105af9"
+      },
+      "name": "#4",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    new B(10);\n  }\n}",
+      "expectedOutput": "B2"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65aa8cc85aee7968f8105afa"
+      },
+      "name": "#5",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    new B(\"10\");\n  }\n}",
+      "expectedOutput": "B3"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65aa8cc85aee7968f8105afb"
+      },
+      "name": "#6",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    A a = new A();\n    B b = new B(10);\n  }\n}",
+      "expectedOutput": "A2\nA1\nB2"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65aa8cc85aee7968f8105afc"
+      },
+      "name": "#7",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    A a = new A(5, 5);\n    B b = new B(10);\n    int x = C.AddFirst(a, b);\n    System.out.println(x);\n  }\n}",
+      "expectedOutput": "A2\nB2\n15"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65aa8cc85aee7968f8105afd"
+      },
+      "name": "#8",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    A a = new A(5, 5);\n    B b = new B(10);\n    int x = C.AddAll(a, b);\n    System.out.println(x);\n  }\n}",
+      "expectedOutput": "A2\nB2\n20"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65ad0ecfb82bfe6844edf2d1"
+      },
+      "name": "#9",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    A a = new A();\n    B b = new B(10);\n    int x = C.AddAll(a, b);\n    System.out.println(x);\n  }\n}",
+      "expectedOutput": "A2\nA1\nB2\n10"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65ad0ecfb82bfe6844edf2d2"
+      },
+      "name": "#10",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    A a = new A(5, 10);\n    B b = new B(10);\n    int x = C.AddAll(a, b);\n    System.out.println(x);\n  }\n}",
+      "expectedOutput": "A2\nB2\n25"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65ad0ecfb82bfe6844edf2d3"
+      },
+      "name": "#11",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    A a = new A(10, 10);\n    B b = new B(10);\n    int x = C.AddAll(a, b);\n    System.out.println(x);\n  }\n}",
+      "expectedOutput": "A2\nB2\n30"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65ad0ecfb82bfe6844edf2d4"
+      },
+      "name": "#12",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    A a = new A(15, 15);\n    B b = new B(10);\n    int x = C.AddAll(a, b);\n    System.out.println(x);\n  }\n}",
+      "expectedOutput": "A2\nB2\n40"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65ad0ecfb82bfe6844edf2d5"
+      },
+      "name": "#13",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    A a = new A(25, 25);\n    B b = new B(10);\n    int x = C.AddAll(a, b);\n    System.out.println(x);\n  }\n}",
+      "expectedOutput": "A2\nB2\n60"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65ad0ecfb82bfe6844edf2d6"
+      },
+      "name": "#14",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    A a = new A(100, 100);\n    B b = new B(-100);\n    int x = C.AddAll(a, b);\n    System.out.println(x);\n  }\n}",
+      "expectedOutput": "A2\nB2\n100"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65ad0ecfb82bfe6844edf2d7"
+      },
+      "name": "#15",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    A a = new A(1, 1);\n    B b = new B(-2);\n    int x = C.AddAll(a, b);\n    System.out.println(x);\n  }\n}",
+      "expectedOutput": "A2\nB2\n0"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65ad0ecfb82bfe6844edf2d8"
+      },
+      "name": "#16",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    A a = new A(-10, -10);\n    B b = new B(-10);\n    int x = C.AddAll(a, b);\n    System.out.println(x);\n  }\n}",
+      "expectedOutput": "A2\nB2\n-30"
+    },
+    {
+      "score": 1,
+      "_id": {
+        "$oid": "65ad0ecfb82bfe6844edf2d9"
+      },
+      "name": "#17",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    // your code here\n    A a = new A(0, 1);\n    B b = new B(2);\n    int x = C.AddAll(a, b);\n    System.out.println(x);\n  }\n}",
+      "expectedOutput": "A2\nB2\n3"
+    }
+  ],
+  "VeSON": {
+    "fullScore": 16,
+    "classes": [
+      {
+        "name": "A",
+        "stereotype": "class",
+        "attributes": [
+          {
+            "attributeName": "a1",
+            "accessModifier": "private",
+            "type": "int",
+            "isFinal": false,
+            "isStatic": false,
+            "score": 1
+          },
+          {
+            "attributeName": "a2",
+            "accessModifier": "private",
+            "type": "int",
+            "isFinal": false,
+            "isStatic": false,
+            "score": 1
+          }
+        ],
+        "methods": [
+          {
+            "methodName": "A",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "A",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "a1",
+                "paramType": "int"
+              },
+              {
+                "paramName": "a2",
+                "paramType": "int"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "getFirstA",
+            "accessModifier": "public",
+            "returnType": "int",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "getSecondA",
+            "accessModifier": "public",
+            "returnType": "int",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          }
+        ],
+        "score": 1,
+        "fullScore": 7
+      },
+      {
+        "name": "B",
+        "stereotype": "class",
+        "attributes": [
+          {
+            "attributeName": "b",
+            "accessModifier": "private",
+            "type": "int",
+            "isFinal": false,
+            "isStatic": false,
+            "score": 1
+          }
+        ],
+        "methods": [
+          {
+            "methodName": "B",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          },
+          {
+            "methodName": "B",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "b",
+                "paramType": "int"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "B",
+            "accessModifier": "public",
+            "isConstructor": true,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "b",
+                "paramType": "String"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "getB",
+            "accessModifier": "public",
+            "returnType": "int",
+            "isConstructor": false,
+            "isStatic": false,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [],
+            "score": 1
+          }
+        ],
+        "score": 1,
+        "fullScore": 6
+      },
+      {
+        "name": "C",
+        "stereotype": "class",
+        "attributes": [],
+        "methods": [
+          {
+            "methodName": "AddAll",
+            "accessModifier": "public",
+            "returnType": "int",
+            "isConstructor": false,
+            "isStatic": true,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "a",
+                "paramType": "A"
+              },
+              {
+                "paramName": "b",
+                "paramType": "B"
+              }
+            ],
+            "score": 1
+          },
+          {
+            "methodName": "AddFirst",
+            "accessModifier": "public",
+            "returnType": "int",
+            "isConstructor": false,
+            "isStatic": true,
+            "isFinal": false,
+            "isAbstract": false,
+            "parameters": [
+              {
+                "paramName": "a",
+                "paramType": "A"
+              },
+              {
+                "paramName": "b",
+                "paramType": "B"
+              }
+            ],
+            "score": 1
+          }
+        ],
+        "score": 1,
+        "fullScore": 3
+      }
+    ],
+    "relations": []
+  },
+  "code": {
+    "type": "file",
+    "file": [
+      {
+        "$oid": "65c5fd10cfd5066348437b42"
+      },
+      {
+        "$oid": "65c5fd10cfd5066348437b43"
+      },
+      {
+        "$oid": "65c5fd10cfd5066348437b44"
+      }
+    ]
+  },
+  "creator": {
+    "$oid": "656f26c97ce90e1ff4a011b7"
+  },
+  "lessonId": {
+    "$oid": "658d973c7ea9f95858644a10"
+  },
+  "__v": 0,
+  "description": null,
+  "options": {
+    "validatorStructure": false,
+    "validatorTestcase": false
+  }
+}]

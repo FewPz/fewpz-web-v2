@@ -1,0 +1,312 @@
+[{
+  "_id": {
+    "$oid": "656f2e027ce90e1ff4a011d6"
+  },
+  "length": 30918,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-05T14:04:51.030Z"
+  },
+  "filename": "Miniproject NoSQL 2022.pdf",
+  "md5": "7dce8635d9b3571c7981391d386f34a5"
+},
+{
+  "_id": {
+    "$oid": "656f2e027ce90e1ff4a011d7"
+  },
+  "length": 29154,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-05T14:04:51.031Z"
+  },
+  "filename": "Miniproject NoSQL Part 2 2022.pdf",
+  "md5": "fc243210edb41dc5f73d3d72bb8e52c1"
+},
+{
+  "_id": {
+    "$oid": "656f37b9ec256b24549ffc68"
+  },
+  "length": 3931852,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-05T14:46:18.160Z"
+  },
+  "filename": "2010.11929v2.pdf",
+  "md5": "311e18a54074541f5dc3413587865d59"
+},
+{
+  "_id": {
+    "$oid": "656f384ed391f22248abcbfb"
+  },
+  "length": 3931852,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-05T14:48:46.748Z"
+  },
+  "filename": "2010.11929v2.pdf",
+  "md5": "311e18a54074541f5dc3413587865d59"
+},
+{
+  "_id": {
+    "$oid": "657b07c76498653c708d6e3d"
+  },
+  "length": 192944,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-14T13:48:55.129Z"
+  },
+  "filename": "image (8).png",
+  "md5": "df824216a20a78812b30a18372a4dbf4"
+},
+{
+  "_id": {
+    "$oid": "657b08976498653c708d6e88"
+  },
+  "length": 192944,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-14T13:52:23.501Z"
+  },
+  "filename": "image (8).png",
+  "md5": "df824216a20a78812b30a18372a4dbf4"
+},
+{
+  "_id": {
+    "$oid": "657b08d862f7564be8854237"
+  },
+  "length": 192944,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-14T13:53:28.713Z"
+  },
+  "filename": "image (8).png",
+  "md5": "df824216a20a78812b30a18372a4dbf4"
+},
+{
+  "_id": {
+    "$oid": "657b08fbebb8e43abc545d63"
+  },
+  "length": 192944,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-14T13:54:04.004Z"
+  },
+  "filename": "image (8).png",
+  "md5": "df824216a20a78812b30a18372a4dbf4"
+},
+{
+  "_id": {
+    "$oid": "657b090eebb8e43abc545d70"
+  },
+  "length": 238427,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-14T13:54:22.968Z"
+  },
+  "filename": "image (7).png",
+  "md5": "870584b35887e33ae71d57c78116dd4b"
+},
+{
+  "_id": {
+    "$oid": "657b092a6d382f3fdc997de7"
+  },
+  "length": 6335713,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-14T13:54:51.810Z"
+  },
+  "filename": "DSCF8335.JPG",
+  "md5": "11012b4f9da69835be27428230fe570d"
+},
+{
+  "_id": {
+    "$oid": "657b1cb89ef71f70281e1c34"
+  },
+  "length": 611393,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-14T15:18:16.655Z"
+  },
+  "filename": "398300965_905195470965100_5347827838740323945_n.jpg",
+  "md5": "5f0a67921c943ccc5fd78b675f39d3d8"
+},
+{
+  "_id": {
+    "$oid": "657b1d081ad8cf7774690a15"
+  },
+  "length": 400545,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-14T15:19:36.426Z"
+  },
+  "filename": "NoSQL-2-2023-Lab-Sheet-Week3.pdf",
+  "md5": "412dce69a69db11cd41028ddaa24e170"
+},
+{
+  "_id": {
+    "$oid": "657b1d081ad8cf7774690a14"
+  },
+  "length": 758893,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-14T15:19:36.439Z"
+  },
+  "filename": "02_Array and Linkedlist_STD (1).pdf",
+  "md5": "617d44a32fb8e481279b8a3cd75e77cc"
+},
+{
+  "_id": {
+    "$oid": "657b86d20391aa69e4b6f5e2"
+  },
+  "length": 3931852,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-14T22:50:58.327Z"
+  },
+  "filename": "2010.11929v2.pdf",
+  "md5": "311e18a54074541f5dc3413587865d59"
+},
+{
+  "_id": {
+    "$oid": "657b8712fe41c54ec43455c0"
+  },
+  "length": 3931852,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2023-12-14T22:52:03.310Z"
+  },
+  "filename": "2010.11929v2.pdf",
+  "md5": "311e18a54074541f5dc3413587865d59"
+},
+{
+  "_id": {
+    "$oid": "65a6ef23c3e790126c94f6bc"
+  },
+  "length": 611393,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-16T21:03:31.631Z"
+  },
+  "filename": "657b1cb89ef71f70281e1c34",
+  "md5": "5f0a67921c943ccc5fd78b675f39d3d8"
+},
+{
+  "_id": {
+    "$oid": "65a6ef56d1d6aa4084a51349"
+  },
+  "length": 611393,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-16T21:04:22.451Z"
+  },
+  "filename": "65a6ef23c3e790126c94f6bc",
+  "md5": "5f0a67921c943ccc5fd78b675f39d3d8"
+},
+{
+  "_id": {
+    "$oid": "65a6f018d1d6aa4084a5135a"
+  },
+  "length": 611393,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-16T21:07:36.669Z"
+  },
+  "filename": "65a6ef56d1d6aa4084a51349",
+  "md5": "5f0a67921c943ccc5fd78b675f39d3d8"
+},
+{
+  "_id": {
+    "$oid": "65a6f035d1d6aa4084a51370"
+  },
+  "length": 611393,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-16T21:08:05.921Z"
+  },
+  "filename": "65a6f018d1d6aa4084a5135a",
+  "md5": "5f0a67921c943ccc5fd78b675f39d3d8"
+},
+{
+  "_id": {
+    "$oid": "65a6f1b6d1d6aa4084a51385"
+  },
+  "length": 611393,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-16T21:14:30.873Z"
+  },
+  "filename": "65a6f035d1d6aa4084a51370",
+  "md5": "5f0a67921c943ccc5fd78b675f39d3d8"
+},
+{
+  "_id": {
+    "$oid": "65a6f2ea87b72c5f20dadb10"
+  },
+  "length": 611393,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-16T21:19:38.718Z"
+  },
+  "filename": "65a6f1b6d1d6aa4084a51385",
+  "md5": "5f0a67921c943ccc5fd78b675f39d3d8"
+},
+{
+  "_id": {
+    "$oid": "65a97b15ecd9276cf473cd50"
+  },
+  "length": 611393,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-18T19:25:09.120Z"
+  },
+  "filename": "65a6f2ea87b72c5f20dadb10",
+  "md5": "5f0a67921c943ccc5fd78b675f39d3d8"
+},
+{
+  "_id": {
+    "$oid": "65a97c750dcb401640227a03"
+  },
+  "length": 611393,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-18T19:31:01.561Z"
+  },
+  "filename": "65a97b15ecd9276cf473cd50",
+  "md5": "5f0a67921c943ccc5fd78b675f39d3d8"
+},
+{
+  "_id": {
+    "$oid": "65a97c991a777551881e8577"
+  },
+  "length": 611393,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-18T19:31:37.782Z"
+  },
+  "filename": "65a97c750dcb401640227a03",
+  "md5": "5f0a67921c943ccc5fd78b675f39d3d8"
+},
+{
+  "_id": {
+    "$oid": "65ad155d11c9f66eeca0c0f3"
+  },
+  "length": 611393,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T13:00:13.541Z"
+  },
+  "filename": "65a97c991a777551881e8577",
+  "md5": "5f0a67921c943ccc5fd78b675f39d3d8"
+},
+{
+  "_id": {
+    "$oid": "65ad178d174cd3496864ee62"
+  },
+  "length": 611393,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-01-21T13:09:33.165Z"
+  },
+  "filename": "65ad155d11c9f66eeca0c0f3",
+  "md5": "5f0a67921c943ccc5fd78b675f39d3d8"
+}]

@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "656f2ded7ce90e1ff4a011c9"
+  },
+  "lessons": [
+    {
+      "$oid": "658d973c7ea9f95858644a10"
+    }
+  ],
+  "isHide": false,
+  "enroll_password": "",
+  "name": "v1",
+  "description": "",
+  "users": [
+    {
+      "role": "Lecturer",
+      "_id": {
+        "$oid": "656f2ded7ce90e1ff4a011cb"
+      },
+      "user_id": {
+        "$oid": "656f26c97ce90e1ff4a011b7"
+      }
+    },
+    {
+      "role": "Student",
+      "_id": {
+        "$oid": "657b088c6498653c708d6e77"
+      },
+      "user_id": {
+        "$oid": "657b07716498653c708d6e1b"
+      }
+    },
+    {
+      "role": "Student",
+      "_id": {
+        "$oid": "657bb5081485a838ccccd2d8"
+      },
+      "user_id": {
+        "$oid": "657bb4e61485a838ccccd2b6"
+      }
+    }
+  ],
+  "__v": 0,
+  "icon_image": {
+    "$oid": "65ad178d174cd3496864ee62"
+  },
+  "allowedIpAddresses": ""
+}]

@@ -1,0 +1,37 @@
+import net.ruippeixotog.scalascraper.browser.JsoupBrowser
+import net.ruippeixotog.scalascraper.dsl.DSL._
+import com.github.tototoshi.csv._
+
+import java.io.File
+
+object Main {
+
+  case class BlockData(id: String, name: String, textId: String)
+
+  def main(args: Array[String]): Unit = {
+
+    val browser = JsoupBrowser()
+
+    // ดึงจาก URL ฐานข้อมูล Minecraft ID
+    val doc = browser.get("https://minecraft-ids.grahamedgecombe.com/")
+
+    // แยกข้อมูลทั้งหมดในแถวของตารางที่มีข้อมูลของบล็อก
+    val blockRows = doc >> elementList("tr.row")
+
+    // เก็บข้อมูลที่แยกได้ในรายการของอ็อบเจ็กต์ BlockData
+    val blockDataList: List[BlockData] = blockRows.map { blockRow =>
+      val id = blockRow >> element(".id") >> text
+      val name = blockRow >> element(".name") >> text
+      val textId = blockRow >> element(".text-id") >> text
+      BlockData(id, name, textId)
+    }
+
+    // เขียนข้อมูลลงในไฟล์ CSV
+    val outputFile = new File("minecraft_data.csv")
+    val writer = CSVWriter.open(outputFile)
+    writer.writeAll(blockDataList.map(data => List(data.id, data.name, data.textId)))
+    writer.close()
+
+    println("ข้อมูลถูกบันทึกลงในไฟล์ minecraft_data.csv")
+  }
+}
