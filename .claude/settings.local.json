@@ -11,7 +11,8 @@
       "Bash(node -e ' *)",
       "Bash(node \"C:/Users/sharp/AppData/Local/Temp/claude/d--fewpz-web-v2/e3244b0c-2156-4537-acb3-7fe0b604754c/scratchpad/gen-files.js\")",
       "Bash(node \"C:/Users/sharp/AppData/Local/Temp/claude/d--fewpz-web-v2/e3244b0c-2156-4537-acb3-7fe0b604754c/scratchpad/gen-archive.js\")",
-      "Bash(node \"C:/Users/sharp/AppData/Local/Temp/claude/d--fewpz-web-v2/e3244b0c-2156-4537-acb3-7fe0b604754c/scratchpad/replace-data.js\")"
+      "Bash(node \"C:/Users/sharp/AppData/Local/Temp/claude/d--fewpz-web-v2/e3244b0c-2156-4537-acb3-7fe0b604754c/scratchpad/replace-data.js\")",
+      "Bash(node \"C:/Users/sharp/AppData/Local/Temp/claude/d--fewpz-web-v2/e3244b0c-2156-4537-acb3-7fe0b604754c/scratchpad/rename-files.js\")"
     ]
   },
   "enableAllProjectMcpServers": true,
