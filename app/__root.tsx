@@ -5,6 +5,7 @@ import appCss from './globals.css?url'
 import Navbar from '@/components/Navbar'
 import SpotifyNowPlaying from '@/components/SpotifyNowPlaying'
 import DecryptedText from '@/components/DecryptedText'
+import MinecraftEasterEgg from '@/components/MinecraftEasterEgg'
 
 export const Route = createRootRoute({
   notFoundComponent: NotFound,
@@ -84,10 +85,11 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
       <head>
         <HeadContent />
       </head>
-      <body className="antialiased font-bai-jamjuree">
+      <body className="antialiased font-bai-jamjuree pb-[4.5rem] md:pb-0">
         <Navbar />
         {children}
         {import.meta.env.VITE_DISABLE_SPOTIFY !== 'true' && <SpotifyNowPlaying />}
+        <MinecraftEasterEgg />
         <Scripts />
       </body>
     </html>

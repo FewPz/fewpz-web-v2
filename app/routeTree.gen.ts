@@ -11,7 +11,6 @@
 import { Route as rootRouteImport } from './__root'
 import { Route as IndexRouteImport } from './index'
 import { Route as UrldecoderIndexRouteImport } from './urldecoder/index'
-import { Route as TradeGoldIndexRouteImport } from './trade-gold/index'
 import { Route as ToolsIndexRouteImport } from './tools/index'
 import { Route as QrIndexRouteImport } from './qr/index'
 import { Route as McIndexRouteImport } from './mc/index'
@@ -35,11 +34,6 @@ const IndexRoute = IndexRouteImport.update({
 const UrldecoderIndexRoute = UrldecoderIndexRouteImport.update({
   id: '/urldecoder/',
   path: '/urldecoder/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TradeGoldIndexRoute = TradeGoldIndexRouteImport.update({
-  id: '/trade-gold/',
-  path: '/trade-gold/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsIndexRoute = ToolsIndexRouteImport.update({
@@ -126,7 +120,6 @@ export interface FileRoutesByFullPath {
   '/mc/': typeof McIndexRoute
   '/qr/': typeof QrIndexRoute
   '/tools/': typeof ToolsIndexRoute
-  '/trade-gold/': typeof TradeGoldIndexRoute
   '/urldecoder/': typeof UrldecoderIndexRoute
   '/api/forms/taro-focus-point': typeof ApiFormsTaroFocusPointRoute
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
@@ -145,7 +138,6 @@ export interface FileRoutesByTo {
   '/mc': typeof McIndexRoute
   '/qr': typeof QrIndexRoute
   '/tools': typeof ToolsIndexRoute
-  '/trade-gold': typeof TradeGoldIndexRoute
   '/urldecoder': typeof UrldecoderIndexRoute
   '/api/forms/taro-focus-point': typeof ApiFormsTaroFocusPointRoute
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
@@ -165,7 +157,6 @@ export interface FileRoutesById {
   '/mc/': typeof McIndexRoute
   '/qr/': typeof QrIndexRoute
   '/tools/': typeof ToolsIndexRoute
-  '/trade-gold/': typeof TradeGoldIndexRoute
   '/urldecoder/': typeof UrldecoderIndexRoute
   '/api/forms/taro-focus-point': typeof ApiFormsTaroFocusPointRoute
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
@@ -186,7 +177,6 @@ export interface FileRouteTypes {
     | '/mc/'
     | '/qr/'
     | '/tools/'
-    | '/trade-gold/'
     | '/urldecoder/'
     | '/api/forms/taro-focus-point'
     | '/api/spotify/lyrics'
@@ -205,7 +195,6 @@ export interface FileRouteTypes {
     | '/mc'
     | '/qr'
     | '/tools'
-    | '/trade-gold'
     | '/urldecoder'
     | '/api/forms/taro-focus-point'
     | '/api/spotify/lyrics'
@@ -224,7 +213,6 @@ export interface FileRouteTypes {
     | '/mc/'
     | '/qr/'
     | '/tools/'
-    | '/trade-gold/'
     | '/urldecoder/'
     | '/api/forms/taro-focus-point'
     | '/api/spotify/lyrics'
@@ -244,7 +232,6 @@ export interface RootRouteChildren {
   McIndexRoute: typeof McIndexRoute
   QrIndexRoute: typeof QrIndexRoute
   ToolsIndexRoute: typeof ToolsIndexRoute
-  TradeGoldIndexRoute: typeof TradeGoldIndexRoute
   UrldecoderIndexRoute: typeof UrldecoderIndexRoute
   ApiFormsTaroFocusPointRoute: typeof ApiFormsTaroFocusPointRoute
   ApiSpotifyLyricsRoute: typeof ApiSpotifyLyricsRoute
@@ -268,13 +255,6 @@ declare module '@tanstack/react-router' {
       path: '/urldecoder'
       fullPath: '/urldecoder/'
       preLoaderRoute: typeof UrldecoderIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/trade-gold/': {
-      id: '/trade-gold/'
-      path: '/trade-gold'
-      fullPath: '/trade-gold/'
-      preLoaderRoute: typeof TradeGoldIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tools/': {
@@ -388,7 +368,6 @@ const rootRouteChildren: RootRouteChildren = {
   McIndexRoute: McIndexRoute,
   QrIndexRoute: QrIndexRoute,
   ToolsIndexRoute: ToolsIndexRoute,
-  TradeGoldIndexRoute: TradeGoldIndexRoute,
   UrldecoderIndexRoute: UrldecoderIndexRoute,
   ApiFormsTaroFocusPointRoute: ApiFormsTaroFocusPointRoute,
   ApiSpotifyLyricsRoute: ApiSpotifyLyricsRoute,

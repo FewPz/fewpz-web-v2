@@ -27,14 +27,14 @@ const researchData: Research[] = [
     //     url: 'https://example.com/research',
     //     citation: 'Matsor, P., & Pornavalai, C. (2025). Risk-Adaptive Oral Follow-Up with Instructional Support After Auto-Graded Programming Assignments. Journal Name, 1(1), 1-10.',
     // },
-    {
-        title: 'Performance Evaluation of Distributed Minecraft Server Architectures Under Large-Scale Player Loads',
-        authors: ['Peeranat Matsor'],
-        description: 'This paper evaluates the performance of distributed server architectures built for large-scale Minecraft deployments. We benchmark several scaling strategies such as horizontal pod scaling, world partitioning, and cross-server player migration under loads of up to thousands of concurrent users. By analyzing key metrics like tick rate stability, network latency, memory utilization, and chunk-loading throughput across various configurations, our findings offer practical guidelines for selecting and optimizing architectures to maintain playable performance at scale',
-        status: 'ongoing',
-        year: 2026,
-        tags: ['Horizontal Scaling', 'Game Server Architecture'],
-    }
+    // {
+    //     title: 'Performance Evaluation of Distributed Minecraft Server Architectures Under Large-Scale Player Loads',
+    //     authors: ['Peeranat Matsor'],
+    //     description: 'This paper evaluates the performance of distributed server architectures built for large-scale Minecraft deployments. We benchmark several scaling strategies such as horizontal pod scaling, world partitioning, and cross-server player migration under loads of up to thousands of concurrent users. By analyzing key metrics like tick rate stability, network latency, memory utilization, and chunk-loading throughput across various configurations, our findings offer practical guidelines for selecting and optimizing architectures to maintain playable performance at scale',
+    //     status: 'ongoing',
+    //     year: 2026,
+    //     tags: ['Horizontal Scaling', 'Game Server Architecture'],
+    // }
 ];
 
 const containerVariants: Variants = {
@@ -226,7 +226,7 @@ function ComingSoonCard() {
 export default function ResearchSection() {
     return (
         <section id="research" className="py-24 sm:py-32 bg-background">
-            <div className="max-w-3xl mx-auto px-6">
+            <div className="max-w-5xl mx-auto px-6">
                 {/* Section Label */}
                 <div className="flex items-center gap-4 mb-12">
                     <span className="text-xs uppercase tracking-widest text-muted-foreground">My Research</span>

@@ -9,5 +9,9 @@
       "Bash(pnpm add *)",
       "Bash(pnpm dlx *)"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "shadcn"
+  ],
+  "enableAllProjectMcpServers": true
 }
