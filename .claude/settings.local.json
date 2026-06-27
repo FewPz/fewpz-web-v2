@@ -24,7 +24,9 @@
       "Bash(curl -sI \"https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y2-2/NoSQL/Project/Webpage/JLEARN-SCOREBOARD.png\")",
       "Bash(curl -sI \"https://raw.githubusercontent.com/FewPz/fewpz-web-v2/master/public/itkmitl/Y2-2/NoSQL/Project/Webpage/JLEARN-SCOREBOARD.png\")",
       "Bash(node \"C:/Users/sharp/AppData/Local/Temp/claude/d--fewpz-web-v2/e3244b0c-2156-4537-acb3-7fe0b604754c/scratchpad/fix-urls.js\")",
-      "Bash(curl -sI \"https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y1-1/MFIT/Homework/Math-For-IT-Week-12.pdf\")"
+      "Bash(curl -sI \"https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y1-1/MFIT/Homework/Math-For-IT-Week-12.pdf\")",
+      "Bash(curl -sI \"https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Huawei-ICT-Competition/01-Getting-Started-with-openEuler.pdf\")",
+      "Bash(curl -sI \"https://raw.githubusercontent.com/FewPz/fewpz-web-v2/master/public/itkmitl/OPH/OPH67.png\")"
     ]
   },
   "enableAllProjectMcpServers": true,

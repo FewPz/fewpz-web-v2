@@ -737,6 +737,63 @@ const archiveData: DegreeFolder[] = [
     semesters: [
     ],
   },
+  {
+    id: 'huawei',
+    name: 'Huawei ICT Competition',
+    semesters: [
+      {
+        id: 'huawei-openeuler',
+        label: 'openEuler',
+        subjects: [
+          {
+            name: 'openEuler Modules',
+            files: [
+              { name: '01 Getting Started with openEuler', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Huawei-ICT-Competition/01-Getting-Started-with-openEuler.pdf', type: 'pdf' },
+              { name: '02 CLI Basics', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Huawei-ICT-Competition/02-CLI-Basics.pdf', type: 'pdf' },
+              { name: '03 Text Editors and Text Processing', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Huawei-ICT-Competition/03-Text-Editors-and-Text-Processing.pdf', type: 'pdf' },
+              { name: '04 User and Permission Management', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Huawei-ICT-Competition/04-User-and-Permission-Management.pdf', type: 'pdf' },
+              { name: '05 Software Installation and Service Management', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Huawei-ICT-Competition/05-Software-Installation-and-Service-Management.pdf', type: 'pdf' },
+              { name: '06 File System and Storage Management', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Huawei-ICT-Competition/06-File-System-and-Storage-Management.pdf', type: 'pdf' },
+              { name: '07 System Management', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Huawei-ICT-Competition/07-System-Management.pdf', type: 'pdf' },
+              { name: '08 Shell Scripts', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Huawei-ICT-Competition/08-Shell-Scripts.pdf', type: 'pdf' },
+              { name: '09 Samba File Sharing Server Management', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Huawei-ICT-Competition/09-Samba-File-Sharing-Server-Management.pdf', type: 'pdf' },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'others',
+    name: 'Others',
+    semesters: [
+      {
+        id: 'oph',
+        label: 'OPH',
+        subjects: [
+          {
+            name: 'OPH67',
+            files: [
+              { name: 'OPH67', url: 'https://raw.githubusercontent.com/FewPz/fewpz-web-v2/master/public/itkmitl/OPH/OPH67.png', type: 'image' },
+              { name: 'แนะนำการใช้งาน iJudge', url: 'https://raw.githubusercontent.com/FewPz/fewpz-web-v2/master/public/itkmitl/OPH/%E0%B9%81%E0%B8%99%E0%B8%B0%E0%B8%99%E0%B8%B3%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99-iJudge.mp4', type: 'video' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'misc',
+        label: 'Miscellaneous',
+        subjects: [
+          {
+            name: 'Documents',
+            files: [
+              { name: 'ใบลาออก', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/%E0%B9%83%E0%B8%9A%E0%B8%A5%E0%B8%B2%E0%B8%AD%E0%B8%AD%E0%B8%81.pdf', type: 'pdf' },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ]
 
 const README_CONTENT =
