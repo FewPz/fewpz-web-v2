@@ -723,7 +723,15 @@ const archiveData: DegreeFolder[] = [
             name: 'Project 1',
             code: '06016406',
             files: [
-              { name: 'i-Judge_Report_Project_1', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-1/Project-1/i-Judge_Report_Project_1.pdf', type: 'pdf' },
+              { name: 'i-Judge Report Project 1', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-1/Project-1/i-Judge_Report_Project_1.pdf', type: 'pdf' },
+              { name: 'รายงานฉบับขอสอบ (Final Report)', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-1/Project-1/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%82%E0%B8%AD%E0%B8%AA%E0%B8%AD%E0%B8%9A-(Final-report).pdf', type: 'pdf' },
+              { name: 'รายงานความก้าวหน้า (Project Progress Report)', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-1/Project-1/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%81%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2-(Project-progress-report).pdf', type: 'pdf' },
+              { name: 'แบบขอสอบ (คง.104)', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-1/Project-1/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%82%E0%B8%AD%E0%B8%AA%E0%B8%AD%E0%B8%9A-(%E0%B8%84%E0%B8%87.104).pdf', type: 'pdf' },
+              { name: 'แบบฟอร์มให้คำปรึกษา ครั้งที่ 1', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-1/Project-1/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%B3%E0%B8%9B%E0%B8%A3%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2-(%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99)-%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88-1.pdf', type: 'pdf' },
+              { name: 'แบบฟอร์มให้คำปรึกษา ครั้งที่ 2', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-1/Project-1/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%B3%E0%B8%9B%E0%B8%A3%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2-(%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99)-%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88-2.pdf', type: 'pdf' },
+              { name: 'แบบฟอร์มให้คำปรึกษา ครั้งที่ 3', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-1/Project-1/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%B3%E0%B8%9B%E0%B8%A3%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2-(%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99)-%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88-3.pdf', type: 'pdf' },
+              { name: 'แบบเสนอรายงานความก้าวหน้า (คง.102)', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-1/Project-1/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B9%80%E0%B8%AA%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%81%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2-(%E0%B8%84%E0%B8%87.102).pdf', type: 'pdf' },
+              { name: 'แบบเสนอหัวข้อโครงงาน (คง.101)', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-1/Project-1/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B9%80%E0%B8%AA%E0%B8%99%E0%B8%AD%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99-(%E0%B8%84%E0%B8%87.101).pdf', type: 'pdf' },
             ],
           },
           {
@@ -743,7 +751,19 @@ const archiveData: DegreeFolder[] = [
         id: 'y4s2',
         label: 'Year 4 · Semester 2 (2/2568)',
         subjects: [
-          { name: 'Project 2', code: '06016407' },
+          {
+            name: 'Project 2',
+            code: '06016407',
+            files: [
+              { name: 'รายงานฉบับสมบูรณ์', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-2/Project-2/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%A1%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C.pdf', type: 'pdf' },
+              { name: 'รายงานฉบับย่อ 8 หน้า', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-2/Project-2/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%A2%E0%B9%88%E0%B8%AD-8-%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2.pdf', type: 'pdf' },
+              { name: 'รายงานฉบับขอสอบ (Final Report)', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-2/Project-2/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%82%E0%B8%AD%E0%B8%AA%E0%B8%AD%E0%B8%9A-(Final-report).pdf', type: 'pdf' },
+              { name: 'รายงานความก้าวหน้า (Project Progress Report)', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-2/Project-2/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%81%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2-(Project-progress-report).pdf', type: 'pdf' },
+              { name: 'แบบขอสอบ (คง.104)', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-2/Project-2/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%82%E0%B8%AD%E0%B8%AA%E0%B8%AD%E0%B8%9A-(%E0%B8%84%E0%B8%87.104).pdf', type: 'pdf' },
+              { name: 'แบบฟอร์มให้คำปรึกษา ครั้งที่ 1', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-2/Project-2/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%B3%E0%B8%9B%E0%B8%A3%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2-(%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99)-%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88-1.pdf', type: 'pdf' },
+              { name: 'แบบฟอร์มให้คำปรึกษา ครั้งที่ 2', url: 'https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y4-2/Project-2/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%B3%E0%B8%9B%E0%B8%A3%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2-(%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99)-%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88-2.pdf', type: 'pdf' },
+            ],
+          },
         ],
       },
     ],
