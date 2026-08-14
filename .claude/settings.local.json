@@ -26,7 +26,13 @@
       "Bash(node \"C:/Users/sharp/AppData/Local/Temp/claude/d--fewpz-web-v2/e3244b0c-2156-4537-acb3-7fe0b604754c/scratchpad/fix-urls.js\")",
       "Bash(curl -sI \"https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Y1-1/MFIT/Homework/Math-For-IT-Week-12.pdf\")",
       "Bash(curl -sI \"https://media.githubusercontent.com/media/FewPz/fewpz-web-v2/master/public/itkmitl/Huawei-ICT-Competition/01-Getting-Started-with-openEuler.pdf\")",
-      "Bash(curl -sI \"https://raw.githubusercontent.com/FewPz/fewpz-web-v2/master/public/itkmitl/OPH/OPH67.png\")"
+      "Bash(curl -sI \"https://raw.githubusercontent.com/FewPz/fewpz-web-v2/master/public/itkmitl/OPH/OPH67.png\")",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\fewpz-web-v2\\\\public\\\\itkmitl\" -Recurse -File | Where-Object { $_.Name -match ' ' } | Select-Object FullName)",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\fewpz-web-v2\\\\public\\\\itkmitl\\\\Y4-1\\\\Cloud Application Development\" -Recurse | ForEach-Object { $_.Name })",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\fewpz-web-v2\\\\public\\\\itkmitl\" -Recurse | Where-Object { $_.FullName -match 'Project-2|Project 2|Y4-2' } | Select-Object FullName)"
     ]
   },
   "enableAllProjectMcpServers": true,
