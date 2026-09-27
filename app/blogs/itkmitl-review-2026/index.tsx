@@ -61,6 +61,24 @@ function ITKMITLReview2026() {
             </motion.p>
           </div>
 
+          {/* Intro */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="w-full mb-12"
+          >
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              ย้อนกลับไปช่วงต้นปี 2565 ตอนนั้นเป็นช่วง TCAS รอบที่ 1 (Portfolio) ฟิวส์สมัครสัมภาษณ์เข้าคณะเทคโนโลยีสารสนเทศ
+              สจล. (IT KMITL) พอดีเป็นช่วงโควิด ทางคณะเลยจัดสัมภาษณ์ผ่าน Google Meet แทนการเดินทางไปสัมภาษณ์ที่คณะ
+              จำได้ว่าตื่นเต้นมาก ๆ เปิดโน้ตบุ๊กรอตั้งแต่เช้า เช็กสัญญาณเน็ตซ้ำแล้วซ้ำเล่า กลัวหลุดตอนสัมภาษณ์
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              จนกระทั่งพี่ห้องฟ้า เจ้าหน้าที่ที่ดูแลห้องสัมภาษณ์วันนั้น ส่งลิงก์ห้องประชุมมาในแชทกลุ่ม &ldquo;ห้องที่ 5&rdquo;
+              ซึ่งมีทั้งพี่เจ้าหน้าที่ ผู้สมัครอีกคนที่คิวเดียวกันอย่างน้องศิลา แล้วก็ตัวฟิวส์เอง
+            </p>
+          </motion.div>
+
           {/* Chat Interface */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -75,8 +93,8 @@ function ITKMITLReview2026() {
                   type: 'group',
                   name: 'ห้องที่ 5',
                   members: [
-                    { name: 'คนสัมภาษณ์ #1', avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=NoHair&accessoriesType=Prescription02&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light' },
-                    { name: 'คนสัมภาษณ์ #2', avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=NoHair&accessoriesType=Prescription02&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light' },
+                    { name: 'พี่ห้องฟ้า', avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=NoHair&accessoriesType=Prescription02&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light' },
+                    { name: 'น้องศิลา', avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=NoHair&accessoriesType=Prescription02&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light' },
                     { name: 'FewPz', avatar: 'https://github.com/fewpz.png' },
                   ],
                   lastMessage: 'You: ขอบคุณครับ สวัสดีครับ',
@@ -95,16 +113,40 @@ function ITKMITLReview2026() {
               initialMessages={[{
                 id: 1,
                 sender: 'other',
-                text: "สวัสดี! Can you believe it's been 4 years since we graduated from ITKMITL?",
-                name: 'Friend',
-                time: '2026',
+                text: 'To join the video meeting, click this link: meet.google.com/it-kmitl',
+                name: 'พี่ห้องฟ้า',
+                time: '09:00',
                 avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=NoHair&accessoriesType=Prescription02&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light',
               },
               {
                 id: 2,
+                sender: 'other',
+                text: 'Otherwise, to join by phone, dial +66 2 888 8888 and enter this PIN: 471 310 448 8817#',
+                name: 'พี่ห้องฟ้า',
+                time: '09:00',
+                avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=NoHair&accessoriesType=Prescription02&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light',
+              },
+              {
+                id: 3,
+                sender: 'other',
+                text: 'น้องศิลา เข้าห้องสัมภาษณ์ได้เลยค่ะ',
+                name: 'พี่ห้องฟ้า',
+                time: '09:12',
+                avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=NoHair&accessoriesType=Prescription02&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light',
+              },
+              {
+                id: 4,
+                sender: 'other',
+                text: 'น้องพีรณัฐ เข้าห้องสัมภาษณ์ได้เลยค่ะ',
+                name: 'พี่ห้องฟ้า',
+                time: '09:15',
+                avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=NoHair&accessoriesType=Prescription02&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light',
+              },
+              {
+                id: 5,
                 sender: 'me',
-                text: "Yeah, it feels like it was just yesterday. Everything was so new.",
-                time: '2026',
+                text: 'ขอบคุณครับ สวัสดีครับ',
+                time: '09:15',
                 avatar: 'https://github.com/FewPz.png',
               }
               ]}
@@ -112,6 +154,21 @@ function ITKMITLReview2026() {
               title="ณ วันสัมภาษณ์รอบ 1 ของปี 2565"
               readonly
             />
+          </motion.div>
+
+          {/* Reflection */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10% 0px -10% 0px" }}
+            transition={{ duration: 0.6 }}
+            className="w-full mt-12"
+          >
+            <p className="text-muted-foreground leading-relaxed">
+              ตอนนั้นไม่คิดเลยว่าข้อความสั้น ๆ &ldquo;น้องพีรณัฐ เข้าห้องสัมภาษณ์ได้เลยค่ะ&rdquo; จะเป็นจุดเริ่มต้นของเส้นทาง 4 ปี
+              ที่ ITKMITL ผ่านมาทั้งเรียน ทำโครงงาน แข่งขัน และผู้คนมากมายที่ได้เจอ วันนี้กลับมาอ่านแชทวันนั้นอีกครั้ง
+              ยังรู้สึกตื่นเต้นเหมือนเดิม แค่เปลี่ยนจากความกังวลตอนก่อนสอบ มาเป็นความคิดถึงแทน
+            </p>
           </motion.div>
 
           {/* Outro */}

@@ -99,7 +99,7 @@ export default function AboutSection() {
             <GoogleCard className="w-60 lg:w-64 rotate-2 hover:rotate-0 transition-[rotate] duration-500 cursor-pointer p-3 pt-4">
               <div className="aspect-[4/5] overflow-hidden rounded-lg bg-muted">
                 <img
-                  src="/photos/photo1.jpg"
+                  src="/photos/photo2.jpg"
                   alt="Peeranat Matsor"
                   className="size-full object-cover"
                 />
