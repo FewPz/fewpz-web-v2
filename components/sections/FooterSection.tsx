@@ -1,32 +1,47 @@
-import { Separator } from '@/components/ui/separator';
+import ColorDashes from '@/components/google/ColorDashes';
+import LogoMark from '@/components/google/LogoMark';
+import { colorClasses, type GoogleColor } from '@/lib/google-colors';
+import { useI18n } from '@/lib/i18n';
+import { cn } from '@/lib/utils';
 
-const socialLinks = [
-  { label: 'GitHub', href: 'https://github.com/FewPz' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/pfewpz/' },
-  { label: 'Email', href: 'mailto:fewpz.peeranat@gmail.com' },
+const socialLinks: { label: string; href: string; color: GoogleColor }[] = [
+  { label: 'GitHub', href: 'https://github.com/FewPz', color: 'blue' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/pfewpz/', color: 'red' },
+  { label: 'Email', href: 'mailto:fewpz.peeranat@gmail.com', color: 'green' },
 ];
 
 export default function FooterSection() {
+  const { t } = useI18n();
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-10 bg-background">
+    <footer className="pt-16 pb-10">
       <div className="max-w-5xl mx-auto px-6">
-        <Separator className="mb-8" />
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <span>© {currentYear} Peeranat Matsor — FewPz</span>
-          <div className="flex items-center gap-6">
-            {socialLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target={link.href.startsWith('mailto') ? undefined : '_blank'}
-                rel={link.href.startsWith('mailto') ? undefined : 'noopener noreferrer'}
-                className="hover:text-foreground transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
+        <div className="flex flex-col gap-6 border-t border-border pt-8 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center gap-2.5">
+              <LogoMark />
+              <span className="font-semibold text-g-navy">Few.Pz</span>
+              <ColorDashes size="sm" className="ml-1" />
+            </div>
+            <span className="text-sm text-muted-foreground">© {currentYear} {t({ en: 'Peeranat Matsor', th: 'พีรณัฐ หมัดสอ' })}</span>
+          </div>
+          <div className="flex items-center gap-6 text-sm">
+            {socialLinks.map((link) => {
+              const c = colorClasses(link.color);
+              return (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target={link.href.startsWith('mailto') ? undefined : '_blank'}
+                  rel={link.href.startsWith('mailto') ? undefined : 'noopener noreferrer'}
+                  className={cn('flex items-center gap-2 font-medium text-muted-foreground transition-colors', c.hoverInk)}
+                >
+                  <span className={cn('size-1.5 rounded-full', c.bg)} />
+                  {link.label}
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>

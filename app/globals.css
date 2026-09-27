@@ -1,12 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: 'Bai Jamjuree', sans-serif;
+  --font-sans: 'Google Sans', 'Bai Jamjuree', sans-serif;
+  --font-google-sans: 'Google Sans', 'Bai Jamjuree', sans-serif;
   --font-mono: ui-monospace, monospace;
   --font-bai-jamjuree: 'Bai Jamjuree', sans-serif;
   --font-inter: 'Inter', sans-serif;
@@ -39,6 +38,19 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-g-navy: var(--g-navy);
+  --color-g-blue: var(--g-blue);
+  --color-g-blue-ink: var(--g-blue-ink);
+  --color-g-blue-soft: var(--g-blue-soft);
+  --color-g-red: var(--g-red);
+  --color-g-red-ink: var(--g-red-ink);
+  --color-g-red-soft: var(--g-red-soft);
+  --color-g-yellow: var(--g-yellow);
+  --color-g-yellow-ink: var(--g-yellow-ink);
+  --color-g-yellow-soft: var(--g-yellow-soft);
+  --color-g-green: var(--g-green);
+  --color-g-green-ink: var(--g-green-ink);
+  --color-g-green-soft: var(--g-green-soft);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -49,72 +61,57 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-}
+  --radius: 0.75rem;
 
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* Google brand palette */
+  --g-blue: #4285F4;
+  --g-red: #EA4335;
+  --g-yellow: #FBBC05;
+  --g-green: #34A853;
+  /* Text-safe (darker) variants */
+  --g-blue-ink: #1A73E8;
+  --g-red-ink: #D93025;
+  --g-yellow-ink: #E37400;
+  --g-green-ink: #188038;
+  /* Soft tints */
+  --g-blue-soft: #E8F0FE;
+  --g-red-soft: #FCE8E6;
+  --g-yellow-soft: #FEF7E0;
+  --g-green-soft: #E6F4EA;
+  /* Deep navy for display headings */
+  --g-navy: #0B2A8C;
+
+  --background: #FFFFFF;
+  --foreground: #202124;
+  --card: #FFFFFF;
+  --card-foreground: #202124;
+  --popover: #FFFFFF;
+  --popover-foreground: #202124;
+  --primary: #1A73E8;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F1F3F4;
+  --secondary-foreground: #202124;
+  --muted: #F1F3F4;
+  --muted-foreground: #5F6368;
+  --accent: #E8F0FE;
+  --accent-foreground: #1A73E8;
+  --destructive: #D93025;
+  --border: #DADCE0;
+  --input: #DADCE0;
+  --ring: #4285F4;
+  --chart-1: #4285F4;
+  --chart-2: #EA4335;
+  --chart-3: #FBBC05;
+  --chart-4: #34A853;
+  --chart-5: #5F6368;
+  --sidebar: #F8F9FA;
+  --sidebar-foreground: #202124;
+  --sidebar-primary: #1A73E8;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #E8F0FE;
+  --sidebar-accent-foreground: #1A73E8;
+  --sidebar-border: #DADCE0;
+  --sidebar-ring: #4285F4;
 }
 
 @layer base {
@@ -124,7 +121,26 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-bai-jamjuree), sans-serif;
+    font-family: var(--font-google-sans), sans-serif;
+  }
+
+  /* Tailwind v4 no longer sets a pointer cursor on buttons; restore it for everything clickable */
+  button:not(:disabled),
+  [role='button']:not([aria-disabled='true']),
+  [role='tab'],
+  [role='radio'],
+  [role='checkbox'],
+  [role='menuitem'],
+  [role='option'],
+  summary,
+  select,
+  label[for],
+  input[type='checkbox'],
+  input[type='radio'],
+  input[type='file'],
+  input[type='submit'],
+  input[type='button'] {
+    cursor: pointer;
   }
 }
 
@@ -135,8 +151,19 @@ html {
 
 /* Selection colors */
 ::selection {
-  background-color: oklch(0.7 0.15 60);
-  color: white;
+  background-color: #D2E3FC;
+  color: #174EA6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-float,
+  .animate-marquee {
+    animation: none;
+  }
 }
 
 /* Floating animation for polaroids */

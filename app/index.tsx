@@ -1,9 +1,9 @@
 import { createFileRoute } from '@tanstack/react-router'
+import CircuitRails from '@/components/google/CircuitRails'
 import AboutSection from '@/components/sections/AboutSection'
 import FooterSection from '@/components/sections/FooterSection'
 import HeroSection from '@/components/sections/HeroSection'
-import ProjectsSection from '@/components/sections/ProjectsSection'
-import ResearchSection from '@/components/sections/ResearchSection'
+import SkillsSection from '@/components/sections/SkillsSection'
 import TimelineSection from '@/components/sections/TimelineSection'
 
 export const Route = createFileRoute('/')({
@@ -12,12 +12,12 @@ export const Route = createFileRoute('/')({
 
 function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="relative min-h-screen">
+      <CircuitRails />
       <HeroSection />
       <AboutSection />
-      <ProjectsSection />
+      <SkillsSection />
       <TimelineSection />
-      <ResearchSection />
       <FooterSection />
     </main>
   )

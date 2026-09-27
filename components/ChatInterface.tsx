@@ -281,7 +281,7 @@ export default function ChatInterface({
         className
       )}
       style={{
-        fontFamily:            'var(--font-bai-jamjuree), sans-serif',
+        fontFamily:            'var(--font-google-sans), sans-serif',
         '--chat-bg':           'var(--background)',
         '--chat-titlebar':     'var(--sidebar)',
         '--chat-sidebar':      'var(--sidebar)',

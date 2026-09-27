@@ -1,4 +1,6 @@
-import { Separator } from '@/components/ui/separator';
+import GoogleCard from '@/components/google/GoogleCard';
+import GoogleDots from '@/components/google/GoogleDots';
+import SectionHeading from '@/components/google/SectionHeading';
 import { Button } from '@/components/ui/button';
 import { motion, type Variants } from 'motion/react';
 import { FlaskConical, Sparkles, ExternalLink, Calendar, Users, Quote, Check } from 'lucide-react';
@@ -57,9 +59,9 @@ const itemVariants: Variants = {
 };
 
 const statusColors: Record<Research['status'], string> = {
-    ongoing: 'bg-yellow-500/10 text-yellow-600 dark:text-yellow-400',
-    completed: 'bg-green-500/10 text-green-600 dark:text-green-400',
-    published: 'bg-blue-500/10 text-blue-600 dark:text-blue-400',
+    ongoing: 'bg-g-yellow-soft text-g-yellow-ink',
+    completed: 'bg-g-green-soft text-g-green-ink',
+    published: 'bg-g-blue-soft text-g-blue-ink',
 };
 
 const statusLabels: Record<Research['status'], string> = {
@@ -87,12 +89,15 @@ function ResearchCard({ research }: { research: Research }) {
     };
 
     return (
-        <motion.div variants={itemVariants} className="group">
-            <div className="p-6 rounded-2xl bg-card border border-border hover:border-foreground/20 transition-all duration-300">
+        <motion.div variants={itemVariants}>
+            <GoogleCard
+                strip="hover"
+                className="p-6 transition-[translate,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_1px_3px_rgba(60,64,67,0.2),0_6px_16px_rgba(60,64,67,0.12)]"
+            >
                 {/* Header */}
                 <div className="flex items-start justify-between gap-4 mb-3">
                     <div className="flex items-center gap-3">
-                        <FlaskConical className="w-5 h-5 text-muted-foreground shrink-0" />
+                        <FlaskConical className="w-5 h-5 text-g-yellow-ink shrink-0" />
                         <span className={`text-xs px-2.5 py-1 rounded-full font-medium ${statusColors[research.status]}`}>
                             {statusLabels[research.status]}
                         </span>
@@ -104,7 +109,7 @@ function ResearchCard({ research }: { research: Research }) {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg font-medium text-foreground leading-tight mb-2 group-hover:text-foreground/80 transition-colors">
+                <h3 className="text-lg font-semibold text-foreground leading-tight mb-2">
                     {research.url ? (
                         <a href={research.url} target="_blank" className="hover:underline inline-flex items-center gap-2">
                             {research.title}
@@ -140,7 +145,7 @@ function ResearchCard({ research }: { research: Research }) {
                             {research.tags.map((tag) => (
                                 <span
                                     key={tag}
-                                    className="text-xs px-2 py-0.5 bg-muted text-muted-foreground rounded-full"
+                                    className="text-xs px-2.5 py-0.5 border border-border text-muted-foreground rounded-full"
                                 >
                                     {tag}
                                 </span>
@@ -153,7 +158,7 @@ function ResearchCard({ research }: { research: Research }) {
                             variant="ghost"
                             size="sm"
                             onClick={handleCite}
-                            className="text-xs gap-1.5 h-7"
+                            className="text-xs gap-1.5 h-7 rounded-full text-g-blue-ink hover:bg-g-blue-soft hover:text-g-blue-ink"
                         >
                             {copied ? (
                                 <>
@@ -169,7 +174,7 @@ function ResearchCard({ research }: { research: Research }) {
                         </Button>
                     )}
                 </div>
-            </div>
+            </GoogleCard>
         </motion.div>
     );
 }
@@ -182,24 +187,21 @@ function ComingSoonCard() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
         >
-            <div className="relative overflow-hidden rounded-2xl border border-border bg-linear-to-br from-card via-card to-muted/20 p-12 text-center">
-                {/* Background decoration */}
-                <div className="absolute inset-0 bg-grid-white/[0.02] pointer-events-none" />
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-linear-to-br from-transparent via-foreground/20 to-transparent" />
+            <GoogleCard strip="view" className="px-8 py-12 sm:p-14 text-center">
 
                 {/* Icon */}
                 <motion.div
-                    className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-muted/50 mb-6"
+                    className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-g-yellow-soft mb-6"
                     animate={{ scale: [1, 1.05, 1] }}
                     transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                 >
-                    <FlaskConical className="w-8 h-8 text-muted-foreground" />
+                    <FlaskConical className="w-8 h-8 text-g-yellow-ink" />
                 </motion.div>
 
                 {/* Title */}
-                <h3 className="text-2xl font-semibold text-foreground mb-3 flex items-center justify-center gap-2">
+                <h3 className="text-2xl font-bold tracking-tight text-foreground mb-3 flex items-center justify-center gap-2">
                     Coming Soon
-                    <Sparkles className="w-5 h-5 text-yellow-500/70" />
+                    <Sparkles className="w-5 h-5 text-g-yellow" />
                 </h3>
 
                 {/* Description */}
@@ -208,30 +210,19 @@ function ComingSoonCard() {
                 </p>
 
                 {/* Decorative dots */}
-                <div className="flex items-center justify-center gap-1.5 mt-8">
-                    {[0, 1, 2].map((i) => (
-                        <motion.span
-                            key={i}
-                            className="w-2 h-2 rounded-full bg-muted-foreground/30"
-                            animate={{ opacity: [0.3, 1, 0.3] }}
-                            transition={{ duration: 1.5, repeat: Infinity, delay: i * 0.2 }}
-                        />
-                    ))}
+                <div className="flex items-center justify-center mt-8">
+                    <GoogleDots />
                 </div>
-            </div>
+            </GoogleCard>
         </motion.div>
     );
 }
 
 export default function ResearchSection() {
     return (
-        <section id="research" className="py-24 sm:py-32 bg-background">
+        <section id="research" className="py-24 sm:py-32">
             <div className="max-w-5xl mx-auto px-6">
-                {/* Section Label */}
-                <div className="flex items-center gap-4 mb-12">
-                    <span className="text-xs uppercase tracking-widest text-muted-foreground">My Research</span>
-                    <Separator className="flex-1" />
-                </div>
+                <SectionHeading title="Research" />
 
                 {researchData.length === 0 ? (
                     <ComingSoonCard />

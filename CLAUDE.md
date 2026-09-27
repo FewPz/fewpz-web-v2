@@ -57,4 +57,4 @@ See `.env.example` — Spotify API credentials are required for the now-playing 
 
 - Component registries configured in `components.json`: `@react-bits`, `@aceternity`, `@kibo-ui`
 - `next/image` remote patterns allow `i.scdn.co` (Spotify album art)
-- Package manager is npm (both `package-lock.json` and `pnpm-lock.yaml` exist, but npm is primary)
+- Package manager is pnpm (`pnpm install`, `pnpm dev`, `pnpm build`)

@@ -6,9 +6,14 @@ import Navbar from '@/components/Navbar'
 import SpotifyNowPlaying from '@/components/SpotifyNowPlaying'
 import DecryptedText from '@/components/DecryptedText'
 import MinecraftEasterEgg from '@/components/MinecraftEasterEgg'
+import CircuitRails from '@/components/google/CircuitRails'
+import ColorDashes from '@/components/google/ColorDashes'
+import { PillDot, pillClassName } from '@/components/google/PillLink'
+import { LocaleProvider, getInitialLocale, useI18n } from '@/lib/i18n'
 
 export const Route = createRootRoute({
   notFoundComponent: NotFound,
+  beforeLoad: () => ({ locale: getInitialLocale() }),
   head: () => ({
     meta: [
       { charSet: 'utf-8' },
@@ -21,7 +26,7 @@ export const Route = createRootRoute({
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: 'anonymous' as const },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=Inter:wght@100..900&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Google+Sans:wght@400..700&family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=Inter:wght@100..900&display=swap',
       },
       { rel: 'stylesheet', href: appCss },
     ],
@@ -38,16 +43,18 @@ function RootLayout() {
 }
 
 function NotFound() {
+  const { t } = useI18n()
   return (
-    <main className="min-h-screen bg-background flex flex-col items-center justify-center px-4 select-none">
-      <div className="text-center space-y-6">
-        <p className="text-[10rem] font-bold leading-none tracking-tighter text-foreground/5">
-          404
-        </p>
-        <div className="-mt-8 space-y-2">
+    <main className="relative min-h-screen flex flex-col items-center justify-center px-6 select-none">
+      <CircuitRails />
+      <div className="relative flex flex-col items-center text-center">
+        <p className="text-[7rem] sm:text-[9rem] font-bold leading-none tracking-tighter text-g-navy">404</p>
+        <ColorDashes className="mt-6" delay={0.2} />
+        <div className="mt-8 space-y-2">
           <h1 className="text-2xl font-bold tracking-tight">
             <DecryptedText
-              text="Page not found"
+              key={t({ en: 'Page not found', th: 'ไม่พบหน้านี้' })}
+              text={t({ en: 'Page not found', th: 'ไม่พบหน้านี้' })}
               animateOn="view"
               sequential
               speed={40}
@@ -58,7 +65,8 @@ function NotFound() {
           </h1>
           <p className="text-muted-foreground text-sm">
             <DecryptedText
-              text="The page you're looking for doesn't exist or has been moved."
+              key={t({ en: "The page you're looking for doesn't exist or has been moved.", th: 'หน้าที่คุณกำลังหาไม่มีอยู่ หรืออาจถูกย้ายไปแล้ว' })}
+              text={t({ en: "The page you're looking for doesn't exist or has been moved.", th: 'หน้าที่คุณกำลังหาไม่มีอยู่ หรืออาจถูกย้ายไปแล้ว' })}
               animateOn="view"
               sequential
               speed={20}
@@ -68,11 +76,9 @@ function NotFound() {
             />
           </p>
         </div>
-        <Link
-          to="/"
-          className="inline-flex items-center gap-2 rounded-lg bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:opacity-80 transition-opacity"
-        >
-          ← Back home
+        <Link to="/" className={`${pillClassName} mt-8`}>
+          <PillDot />
+          {t({ en: 'Back home', th: 'กลับหน้าแรก' })}
         </Link>
       </div>
     </main>
@@ -80,16 +86,19 @@ function NotFound() {
 }
 
 function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
+  const { locale } = Route.useRouteContext()
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         <HeadContent />
       </head>
-      <body className="antialiased font-bai-jamjuree pb-[4.5rem] md:pb-0">
-        <Navbar />
-        {children}
-        {import.meta.env.VITE_DISABLE_SPOTIFY !== 'true' && <SpotifyNowPlaying />}
-        <MinecraftEasterEgg />
+      <body className="antialiased font-google-sans pb-[5rem] md:pb-0">
+        <LocaleProvider initialLocale={locale}>
+          <Navbar />
+          {children}
+          {import.meta.env.VITE_DISABLE_SPOTIFY !== 'true' && <SpotifyNowPlaying />}
+          <MinecraftEasterEgg />
+        </LocaleProvider>
         <Scripts />
       </body>
     </html>
