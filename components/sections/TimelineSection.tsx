@@ -42,7 +42,7 @@ const educationData: EducationItem[] = [
     logo: '/logos/kmitl.png',
     institution: KMITL,
     degree: {
-      en: 'M.Sc. Information Technology (Software Engineering)',
+      en: 'M.Sc. Information Technology - Plan 1.1 (Academic Track - Thesis Only) ',
       th: 'วิทยาศาสตรมหาบัณฑิต สาขาเทคโนโลยีสารสนเทศ (Software Engineering)',
     },
     period: { en: '2025 - Present', th: '2025 - ปัจจุบัน' },
@@ -520,50 +520,8 @@ export default function TimelineSection() {
   return (
     <section className="py-24 sm:py-32">
       <div className="max-w-5xl mx-auto px-6">
-        {/* Education */}
-        <div className="mb-28">
-          <SectionHeading title={t({ en: 'Education', th: 'การศึกษา' })} />
-
-          <AnimatePresence mode="wait">
-            <motion.div
-              className="space-y-5"
-              variants={containerVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: '-80px' }}
-              key={showAllEducation ? 'all' : 'partial'}
-            >
-              {visibleEducation.map((item, i) => (
-                <EducationCard key={i} item={item} />
-              ))}
-            </motion.div>
-          </AnimatePresence>
-
-          {educationData.length > 2 && (
-            <div className="mt-8 text-center">
-              <Button
-                variant="outline"
-                onClick={() => setShowAllEducation(!showAllEducation)}
-                className="h-10 rounded-full border-border bg-white px-5 font-medium text-foreground hover:border-g-blue/50 hover:bg-g-blue-soft/50 hover:text-foreground"
-              >
-                {showAllEducation ? (
-                  <>
-                    <ChevronUp className="w-4 h-4 mr-1 text-muted-foreground" />
-                    {t({ en: 'Show Less', th: 'แสดงน้อยลง' })}
-                  </>
-                ) : (
-                  <>
-                    <ChevronDown className="w-4 h-4 mr-1 text-muted-foreground" />
-                    {t({ en: `Show ${hiddenCount} More`, th: `แสดงเพิ่มอีก ${hiddenCount} รายการ` })}
-                  </>
-                )}
-              </Button>
-            </div>
-          )}
-        </div>
-
         {/* Experience (id="work" is the navbar's Work anchor) */}
-        <div id="work" className="scroll-mt-24">
+        <div id="work" className="mb-28 scroll-mt-24 sm:mb-32">
           <SectionHeading title={t({ en: 'Experience', th: 'ประสบการณ์' })} />
 
           {/* Tabs */}
@@ -620,6 +578,48 @@ export default function TimelineSection() {
               )}
             </motion.div>
           </AnimatePresence>
+        </div>
+        
+        {/* Education */}
+        <div>
+          <SectionHeading title={t({ en: 'Education', th: 'การศึกษา' })} />
+
+          <AnimatePresence mode="wait">
+            <motion.div
+              className="space-y-5"
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: '-80px' }}
+              key={showAllEducation ? 'all' : 'partial'}
+            >
+              {visibleEducation.map((item, i) => (
+                <EducationCard key={i} item={item} />
+              ))}
+            </motion.div>
+          </AnimatePresence>
+
+          {educationData.length > 2 && (
+            <div className="mt-8 text-center">
+              <Button
+                variant="outline"
+                onClick={() => setShowAllEducation(!showAllEducation)}
+                className="h-10 rounded-full border-border bg-white px-5 font-medium text-foreground hover:border-g-blue/50 hover:bg-g-blue-soft/50 hover:text-foreground"
+              >
+                {showAllEducation ? (
+                  <>
+                    <ChevronUp className="w-4 h-4 mr-1 text-muted-foreground" />
+                    {t({ en: 'Show Less', th: 'แสดงน้อยลง' })}
+                  </>
+                ) : (
+                  <>
+                    <ChevronDown className="w-4 h-4 mr-1 text-muted-foreground" />
+                    {t({ en: `Show ${hiddenCount} More`, th: `แสดงเพิ่มอีก ${hiddenCount} รายการ` })}
+                  </>
+                )}
+              </Button>
+            </div>
+          )}
         </div>
       </div>
     </section>

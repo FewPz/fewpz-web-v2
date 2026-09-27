@@ -3,8 +3,8 @@ import type { IconType } from 'react-icons';
 import {
   SiApachemaven, SiArgo, SiBun, SiC, SiDjango, SiDocker, SiEjs, SiElasticsearch, SiExpress, SiFigma, SiGit, SiGithubactions, SiGitlab, SiGo,
   SiGooglecloud, SiGradle, SiGrafana, SiHarbor, SiHono, SiHuawei, SiJavascript, SiJenkins, SiKubernetes, SiMinio, SiMongodb, SiMqtt, SiMysql,
-  SiNextdotjs, SiNginx, SiNodedotjs, SiNuxt, SiOpenjdk, SiOpensearch, SiPhp, SiPostgresql, SiProxmox, SiPython, SiRabbitmq, SiRancher, SiReact, SiReactquery,
-  SiRedis, SiSvelte, SiTailwindcss, SiTanstack, SiTypescript, SiVmware,
+  SiNextdotjs, SiNginx, SiNodedotjs, SiNuxt, SiOpenjdk, SiOpensearch, SiPhp, SiPostgresql, SiPrometheus, SiProxmox, SiPython, SiRabbitmq, SiRancher, SiReact, SiReactquery,
+  SiRedis, SiRustfs, SiSvelte, SiTailwindcss, SiTanstack, SiTypescript, SiVmware,
 } from 'react-icons/si';
 import { FaAws } from 'react-icons/fa';
 import { VscVscode } from 'react-icons/vsc';
@@ -95,6 +95,7 @@ const groups: SkillGroup[] = [
           { name: 'Redis', icon: SiRedis, color: '#FF4438' },
           { name: 'Elasticsearch', icon: SiElasticsearch, color: '#005571' },
           { name: 'MinIO', icon: SiMinio, color: '#C72E49' },
+          { name: 'RustFS', icon: SiRustfs, color: '#DEA584' },
         ],
       },
       {
@@ -139,6 +140,7 @@ const groups: SkillGroup[] = [
       {
         skills: [
           { name: 'Grafana', icon: SiGrafana, color: '#F46800' },
+          { name: 'Prometheus', icon: SiPrometheus, color: '#E6522C' },
           { name: 'Loki', icon: ScrollText, color: '#F46800' },
           { name: 'Mimir', icon: ChartLine, color: '#F46800' },
           { name: 'Tempo', icon: Waypoints, color: '#F46800' },
