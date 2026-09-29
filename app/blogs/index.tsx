@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { motion, useReducedMotion } from 'motion/react'
 import { ArrowLeft, ArrowRight, Calendar, Clock, PenLine, Sparkles } from 'lucide-react'
-import CircuitRails from '@/components/google/CircuitRails'
+import MemphisEdges from '@/components/decor/MemphisEdges'
 import ColorDashes from '@/components/google/ColorDashes'
 import FlagIcon from '@/components/google/FlagIcon'
 import GoogleCard from '@/components/google/GoogleCard'
@@ -220,7 +220,7 @@ function BlogsPage() {
 
   return (
     <main className="relative min-h-screen">
-      <CircuitRails />
+      <MemphisEdges />
       <div className="relative mx-auto max-w-4xl px-6 pb-32 pt-28 sm:pt-32">
         <Link
           to="/"

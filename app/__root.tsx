@@ -6,7 +6,7 @@ import Navbar from '@/components/Navbar'
 import SpotifyNowPlaying from '@/components/SpotifyNowPlaying'
 import DecryptedText from '@/components/DecryptedText'
 import MinecraftEasterEgg from '@/components/MinecraftEasterEgg'
-import CircuitRails from '@/components/google/CircuitRails'
+import MemphisEdges from '@/components/decor/MemphisEdges'
 import ColorDashes from '@/components/google/ColorDashes'
 import { PillDot, pillClassName } from '@/components/google/PillLink'
 import { LocaleProvider, getInitialLocale, useI18n } from '@/lib/i18n'
@@ -46,7 +46,7 @@ function NotFound() {
   const { t } = useI18n()
   return (
     <main className="relative min-h-screen flex flex-col items-center justify-center px-6 select-none">
-      <CircuitRails />
+      <MemphisEdges />
       <div className="relative flex flex-col items-center text-center">
         <p className="text-[7rem] sm:text-[9rem] font-bold leading-none tracking-tighter text-g-navy">404</p>
         <ColorDashes className="mt-6" delay={0.2} />

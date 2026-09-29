@@ -161,9 +161,29 @@ html {
   }
 
   .animate-float,
-  .animate-marquee {
+  .animate-marquee,
+  .memphis-float {
     animation: none;
   }
+}
+
+/* Gentle drift for the Memphis edge shapes (MemphisEdges) */
+@keyframes memphis-float {
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-5px) rotate(6deg);
+  }
+}
+
+.memphis-float {
+  animation: memphis-float 7s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 /* Floating animation for polaroids */
