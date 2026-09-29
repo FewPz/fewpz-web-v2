@@ -3,6 +3,7 @@ import LogoMark from '@/components/google/LogoMark';
 import { colorClasses, type GoogleColor } from '@/lib/google-colors';
 import { useI18n } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
+import { ArrowUpRight } from 'lucide-react';
 
 const socialLinks: { label: string; href: string; color: GoogleColor }[] = [
   { label: 'GitHub', href: 'https://github.com/FewPz', color: 'blue' },
@@ -35,10 +36,13 @@ export default function FooterSection() {
                   href={link.href}
                   target={link.href.startsWith('mailto') ? undefined : '_blank'}
                   rel={link.href.startsWith('mailto') ? undefined : 'noopener noreferrer'}
-                  className={cn('flex items-center gap-2 font-medium text-muted-foreground transition-colors', c.hoverInk)}
+                  className={cn('group flex items-center gap-2 font-medium text-muted-foreground transition-colors', c.hoverInk)}
                 >
                   <span className={cn('size-1.5 rounded-full', c.bg)} />
-                  {link.label}
+                  <span className="flex items-center gap-0.5">
+                    {link.label}
+                    <ArrowUpRight className="size-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                  </span>
                 </a>
               );
             })}

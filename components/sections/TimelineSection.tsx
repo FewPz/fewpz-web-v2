@@ -7,6 +7,7 @@ import { colorAt } from '@/lib/google-colors';
 import { useI18n, type Localized, type Text } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { motion, type Variants, AnimatePresence } from 'motion/react';
 import TiltedCard from '@/components/TiltedCard';
 import { Briefcase, ChevronDown, ChevronUp, FolderGit2, Github, Sparkles, Trophy } from 'lucide-react';
@@ -30,6 +31,8 @@ interface ExperienceItem {
   groups?: { label: Text; items: string[] }[];
   /** Extra bullet points under the groups */
   bullets?: Text[];
+  /** Award poster shown as a clickable thumbnail */
+  image?: string;
 }
 
 const KMITL: Localized = {
@@ -207,6 +210,7 @@ const experienceData: ExperienceItem[] = [
     },
     tags: ['Huawei', 'Global Final', 'Computing'],
     type: 'award',
+    image: '/reward/huawei_2025_global_reward.jpg',
   },
   {
     year: '2026',
@@ -220,6 +224,7 @@ const experienceData: ExperienceItem[] = [
     },
     tags: ['Huawei', 'APAC', 'Computing'],
     type: 'award',
+    image: '/reward/huawei_2025_apac_reward.jpg',
   },
   {
     year: '2025',
@@ -233,6 +238,7 @@ const experienceData: ExperienceItem[] = [
     },
     tags: ['Huawei', 'National', 'Computing'],
     type: 'award',
+    image: '/reward/huawei_2025_thailand_reward.jpg',
   },
   {
     year: '2025',
@@ -276,6 +282,7 @@ const experienceData: ExperienceItem[] = [
     },
     tags: ['Huawei', 'Computing Track'],
     type: 'award',
+    image: '/reward/huawei_2024_thailand_reward.jpg',
   },
   {
     year: '2022-2024',
@@ -441,6 +448,28 @@ function ExperienceCard({ item, index, isLast }: { item: ExperienceItem; index: 
               </span>
             ))}
           </div>
+        )}
+        {item.image && (
+          <Dialog>
+            <DialogTrigger asChild>
+              <button
+                type="button"
+                aria-label={t({ en: 'View award photo', th: 'ดูรูปรางวัล' })}
+                className="mt-3 block w-60 overflow-hidden rounded-xl border border-border bg-white transition-[translate,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_1px_3px_rgba(60,64,67,0.2),0_6px_16px_rgba(60,64,67,0.12)] sm:w-64"
+              >
+                <img src={item.image} alt={t(item.title)} loading="lazy" className="h-auto w-full" />
+              </button>
+            </DialogTrigger>
+            <DialogContent className="w-fit gap-3 p-3 sm:max-w-[calc(100%-2rem)]">
+              {/* w-0 min-w-full: title wraps to the image width instead of widening the dialog */}
+              <DialogTitle className="w-0 min-w-full pr-8 text-sm font-semibold leading-snug">{t(item.title)}</DialogTitle>
+              <img
+                src={item.image}
+                alt={t(item.title)}
+                className="max-h-[calc(100dvh-7rem)] w-auto max-w-full rounded-md object-contain"
+              />
+            </DialogContent>
+          </Dialog>
         )}
       </div>
     </motion.div>

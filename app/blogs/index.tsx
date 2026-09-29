@@ -28,6 +28,8 @@ interface BlogPost {
   tags: string[]
   featured?: boolean
   coverImage?: string
+  /** Left out of the listing; the route still exists */
+  hidden?: boolean
 }
 
 const blogPosts: BlogPost[] = [
@@ -41,6 +43,7 @@ const blogPosts: BlogPost[] = [
     lang: 'th',
     tags: ['ITKMITL', 'Student Life', 'Reflection'],
     featured: true,
+    hidden: true,
     coverImage: '/blogs/itkmitl-review-2026/481176889_2070560703458848_6804156811441814737_n.jpg',
   },
   {
@@ -211,8 +214,9 @@ function Reveal({ index, children }: { index: number; children: React.ReactNode 
 
 function BlogsPage() {
   const { t } = useI18n()
-  const featuredPosts = blogPosts.filter((post) => post.featured)
-  const otherPosts = blogPosts.filter((post) => !post.featured)
+  const visiblePosts = blogPosts.filter((post) => !post.hidden)
+  const featuredPosts = visiblePosts.filter((post) => post.featured)
+  const otherPosts = visiblePosts.filter((post) => !post.featured)
 
   return (
     <main className="relative min-h-screen">

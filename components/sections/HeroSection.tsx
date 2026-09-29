@@ -1,15 +1,33 @@
 import RotatingText from '@/components/RotatingText';
-import { Download, MapPin } from 'lucide-react';
-import { motion, type Variants } from 'motion/react';
+import { ChevronDown, Download, MapPin } from 'lucide-react';
+import { motion, useReducedMotion, type Variants } from 'motion/react';
 import ColorDashes from '@/components/google/ColorDashes';
 import GoogleCard from '@/components/google/GoogleCard';
-import GoogleDots from '@/components/google/GoogleDots';
 import PillLink from '@/components/google/PillLink';
-import { colorClasses, type GoogleColor } from '@/lib/google-colors';
+import { GOOGLE_COLORS, colorClasses, type GoogleColor } from '@/lib/google-colors';
 import { useI18n, type Localized } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
 
 const ease = [0.22, 1, 0.36, 1] as const;
+
+/** Four stacked Google-colored chevrons that light up top to bottom, forming a down arrow. */
+function ScrollArrow() {
+  const reduce = useReducedMotion();
+  return (
+    <div className="flex flex-col items-center" role="presentation">
+      {GOOGLE_COLORS.map((c, i) => (
+        <motion.span
+          key={c}
+          className={cn('-my-1.5 block', colorClasses(c).text)}
+          animate={reduce ? undefined : { opacity: [0.25, 1, 0.25], y: [0, 2, 0] }}
+          transition={{ duration: 1.4, repeat: Infinity, ease: 'easeInOut', delay: i * 0.15 }}
+        >
+          <ChevronDown className="size-5" strokeWidth={3} />
+        </motion.span>
+      ))}
+    </div>
+  );
+}
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -35,9 +53,9 @@ const rotatingTexts: Record<'en' | 'th', string[]> = {
 };
 
 const photos = [
-  { src: '/photos/photo1.jpg', x: -68, rotate: -9 },
+  { src: '/photos/photo7.jpg', x: -68, rotate: -9 },
   { src: '/photos/photo2.jpg', x: 68, rotate: 8 },
-  { src: '/photos/photo3.jpg', x: 0, rotate: -2 },
+  { src: '/photos/photo4.jpg', x: 0, rotate: -2 },
 ];
 
 const fanVariants: Variants = {
@@ -60,7 +78,7 @@ function RingAvatar() {
         transition={{ type: 'spring', stiffness: 120, damping: 14 }}
       />
       <span className="absolute inset-[3px] overflow-hidden rounded-full border-[3px] border-white bg-white">
-        <img src="/photos/photo1.jpg" alt="Peeranat Matsor" className="size-full object-cover" />
+        <img src="/photos/photo6.jpg" alt="Peeranat Matsor" className="size-full object-cover" />
       </span>
     </motion.div>
   );
@@ -209,8 +227,8 @@ export default function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2, duration: 0.5 }}
       >
-        <div className="flex flex-col items-center gap-2.5 text-muted-foreground">
-          <GoogleDots size={7} />
+        <div className="flex flex-col items-center gap-2 text-muted-foreground">
+          <ScrollArrow />
           <span className="text-[10px] uppercase tracking-widest">{t({ en: 'Scroll', th: 'เลื่อนลง' })}</span>
         </div>
       </motion.div>
