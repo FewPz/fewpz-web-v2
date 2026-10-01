@@ -23,6 +23,7 @@ import { Route as UrldecoderIndexRouteImport } from './urldecoder/index'
 import { Route as ApiSpotifyLyricsRouteImport } from './api/spotify/lyrics'
 import { Route as ApiSpotifyNowPlayingRouteImport } from './api/spotify/now-playing'
 import { Route as BlogsItkmitlReview2026IndexRouteImport } from './blogs/itkmitl-review-2026/index'
+import { Route as BlogsMinedocsMcpIndexRouteImport } from './blogs/minedocs-mcp/index'
 import { Route as BlogsReviewYear2025IndexRouteImport } from './blogs/review-year-2025/index'
 
 const IndexRoute = IndexRouteImport.update({
@@ -96,6 +97,11 @@ const BlogsItkmitlReview2026IndexRoute =
     path: '/blogs/itkmitl-review-2026/',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogsMinedocsMcpIndexRoute = BlogsMinedocsMcpIndexRouteImport.update({
+  id: '/blogs/minedocs-mcp/',
+  path: '/blogs/minedocs-mcp/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogsReviewYear2025IndexRoute =
   BlogsReviewYear2025IndexRouteImport.update({
     id: '/blogs/review-year-2025/',
@@ -118,6 +124,7 @@ export interface FileRoutesByFullPath {
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
   '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
   '/blogs/itkmitl-review-2026/': typeof BlogsItkmitlReview2026IndexRoute
+  '/blogs/minedocs-mcp/': typeof BlogsMinedocsMcpIndexRoute
   '/blogs/review-year-2025/': typeof BlogsReviewYear2025IndexRoute
 }
 export interface FileRoutesByTo {
@@ -135,6 +142,7 @@ export interface FileRoutesByTo {
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
   '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
   '/blogs/itkmitl-review-2026': typeof BlogsItkmitlReview2026IndexRoute
+  '/blogs/minedocs-mcp': typeof BlogsMinedocsMcpIndexRoute
   '/blogs/review-year-2025': typeof BlogsReviewYear2025IndexRoute
 }
 export interface FileRoutesById {
@@ -153,6 +161,7 @@ export interface FileRoutesById {
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
   '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
   '/blogs/itkmitl-review-2026/': typeof BlogsItkmitlReview2026IndexRoute
+  '/blogs/minedocs-mcp/': typeof BlogsMinedocsMcpIndexRoute
   '/blogs/review-year-2025/': typeof BlogsReviewYear2025IndexRoute
 }
 export interface FileRouteTypes {
@@ -172,6 +181,7 @@ export interface FileRouteTypes {
     | '/api/spotify/lyrics'
     | '/api/spotify/now-playing'
     | '/blogs/itkmitl-review-2026/'
+    | '/blogs/minedocs-mcp/'
     | '/blogs/review-year-2025/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -189,6 +199,7 @@ export interface FileRouteTypes {
     | '/api/spotify/lyrics'
     | '/api/spotify/now-playing'
     | '/blogs/itkmitl-review-2026'
+    | '/blogs/minedocs-mcp'
     | '/blogs/review-year-2025'
   id:
     | '__root__'
@@ -206,6 +217,7 @@ export interface FileRouteTypes {
     | '/api/spotify/lyrics'
     | '/api/spotify/now-playing'
     | '/blogs/itkmitl-review-2026/'
+    | '/blogs/minedocs-mcp/'
     | '/blogs/review-year-2025/'
   fileRoutesById: FileRoutesById
 }
@@ -224,6 +236,7 @@ export interface RootRouteChildren {
   ApiSpotifyLyricsRoute: typeof ApiSpotifyLyricsRoute
   ApiSpotifyNowPlayingRoute: typeof ApiSpotifyNowPlayingRoute
   BlogsItkmitlReview2026IndexRoute: typeof BlogsItkmitlReview2026IndexRoute
+  BlogsMinedocsMcpIndexRoute: typeof BlogsMinedocsMcpIndexRoute
   BlogsReviewYear2025IndexRoute: typeof BlogsReviewYear2025IndexRoute
 }
 
@@ -327,6 +340,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogsItkmitlReview2026IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blogs/minedocs-mcp/': {
+      id: '/blogs/minedocs-mcp/'
+      path: '/blogs/minedocs-mcp'
+      fullPath: '/blogs/minedocs-mcp/'
+      preLoaderRoute: typeof BlogsMinedocsMcpIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blogs/review-year-2025/': {
       id: '/blogs/review-year-2025/'
       path: '/blogs/review-year-2025'
@@ -352,6 +372,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiSpotifyLyricsRoute: ApiSpotifyLyricsRoute,
   ApiSpotifyNowPlayingRoute: ApiSpotifyNowPlayingRoute,
   BlogsItkmitlReview2026IndexRoute: BlogsItkmitlReview2026IndexRoute,
+  BlogsMinedocsMcpIndexRoute: BlogsMinedocsMcpIndexRoute,
   BlogsReviewYear2025IndexRoute: BlogsReviewYear2025IndexRoute,
 }
 export const routeTree = rootRouteImport
