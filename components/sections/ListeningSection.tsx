@@ -492,7 +492,7 @@ export default function ListeningSection() {
   const current = queue.find((track) => track.trackId === selectedId) ?? queue[0];
 
   return (
-    <section className="pb-24 sm:pb-32">
+    <section id="listening" className="scroll-mt-24 pb-24 sm:pb-32">
       <div className="max-w-5xl mx-auto px-6">
         <SectionHeading title={t({ en: "What I'm Listening To", th: 'สิ่งที่ชอบฟังตอนนี้' })} />
 
