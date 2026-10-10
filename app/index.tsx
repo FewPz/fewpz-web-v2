@@ -3,6 +3,7 @@ import MemphisEdges from '@/components/decor/MemphisEdges'
 import AboutSection from '@/components/sections/AboutSection'
 import FooterSection from '@/components/sections/FooterSection'
 import HeroSection from '@/components/sections/HeroSection'
+import ListeningSection from '@/components/sections/ListeningSection'
 import SkillsSection from '@/components/sections/SkillsSection'
 import TimelineSection from '@/components/sections/TimelineSection'
 
@@ -18,6 +19,7 @@ function Home() {
       <AboutSection />
       <SkillsSection />
       <TimelineSection />
+      <ListeningSection />
       <FooterSection />
     </main>
   )

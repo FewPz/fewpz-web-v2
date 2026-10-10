@@ -2,6 +2,7 @@ import { useState } from 'react';
 import GoogleCard from '@/components/google/GoogleCard';
 import GoogleDots from '@/components/google/GoogleDots';
 import SectionHeading from '@/components/google/SectionHeading';
+import GitHubContributions from '@/components/sections/GitHubContributions';
 import OpenSourceProjects from '@/components/sections/OpenSourceProjects';
 import { colorAt } from '@/lib/google-colors';
 import { useI18n, type Localized, type Text } from '@/lib/i18n';
@@ -649,6 +650,11 @@ export default function TimelineSection() {
               </Button>
             </div>
           )}
+        </div>
+
+        {/* GitHub contribution activity */}
+        <div className="mt-16 sm:mt-20">
+          <GitHubContributions />
         </div>
       </div>
     </section>

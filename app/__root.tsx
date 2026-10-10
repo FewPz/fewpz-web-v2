@@ -1,5 +1,6 @@
 /// <reference types="vite/client" />
-import type { ReactNode } from 'react'
+import { useState, type ReactNode } from 'react'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { Outlet, createRootRoute, HeadContent, Scripts, Link } from '@tanstack/react-router'
 import appCss from './globals.css?url'
 import Navbar from '@/components/Navbar'
@@ -87,18 +88,22 @@ function NotFound() {
 
 function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
   const { locale } = Route.useRouteContext()
+  // One client per app instance (and per SSR request), never shared at module scope.
+  const [queryClient] = useState(() => new QueryClient())
   return (
     <html lang={locale}>
       <head>
         <HeadContent />
       </head>
       <body className="antialiased font-google-sans pb-[5rem] md:pb-0">
-        <LocaleProvider initialLocale={locale}>
-          <Navbar />
-          {children}
-          {import.meta.env.VITE_DISABLE_SPOTIFY !== 'true' && <SpotifyNowPlaying />}
-          <MinecraftEasterEgg />
-        </LocaleProvider>
+        <QueryClientProvider client={queryClient}>
+          <LocaleProvider initialLocale={locale}>
+            <Navbar />
+            {children}
+            {import.meta.env.VITE_DISABLE_SPOTIFY !== 'true' && <SpotifyNowPlaying />}
+            <MinecraftEasterEgg />
+          </LocaleProvider>
+        </QueryClientProvider>
         <Scripts />
       </body>
     </html>

@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './__root'
 import { Route as IndexRouteImport } from './index'
+import { Route as ApiGithubContributionsRouteImport } from './api/github-contributions'
 import { Route as ApiGoldPriceRouteImport } from './api/gold-price'
 import { Route as ApiMcPingRouteImport } from './api/mc-ping'
 import { Route as ArchiveIndexRouteImport } from './archive/index'
@@ -20,6 +21,7 @@ import { Route as McIndexRouteImport } from './mc/index'
 import { Route as QrIndexRouteImport } from './qr/index'
 import { Route as ToolsIndexRouteImport } from './tools/index'
 import { Route as UrldecoderIndexRouteImport } from './urldecoder/index'
+import { Route as ApiSpotifyListeningRouteImport } from './api/spotify/listening'
 import { Route as ApiSpotifyLyricsRouteImport } from './api/spotify/lyrics'
 import { Route as ApiSpotifyNowPlayingRouteImport } from './api/spotify/now-playing'
 import { Route as BlogsItkmitlReview2026IndexRouteImport } from './blogs/itkmitl-review-2026/index'
@@ -29,6 +31,11 @@ import { Route as BlogsReviewYear2025IndexRouteImport } from './blogs/review-yea
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiGithubContributionsRoute = ApiGithubContributionsRouteImport.update({
+  id: '/api/github-contributions',
+  path: '/api/github-contributions',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiGoldPriceRoute = ApiGoldPriceRouteImport.update({
@@ -81,6 +88,11 @@ const UrldecoderIndexRoute = UrldecoderIndexRouteImport.update({
   path: '/urldecoder/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiSpotifyListeningRoute = ApiSpotifyListeningRouteImport.update({
+  id: '/api/spotify/listening',
+  path: '/api/spotify/listening',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiSpotifyLyricsRoute = ApiSpotifyLyricsRouteImport.update({
   id: '/api/spotify/lyrics',
   path: '/api/spotify/lyrics',
@@ -111,6 +123,7 @@ const BlogsReviewYear2025IndexRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/api/github-contributions': typeof ApiGithubContributionsRoute
   '/api/gold-price': typeof ApiGoldPriceRoute
   '/api/mc-ping': typeof ApiMcPingRoute
   '/archive/': typeof ArchiveIndexRoute
@@ -121,6 +134,7 @@ export interface FileRoutesByFullPath {
   '/qr/': typeof QrIndexRoute
   '/tools/': typeof ToolsIndexRoute
   '/urldecoder/': typeof UrldecoderIndexRoute
+  '/api/spotify/listening': typeof ApiSpotifyListeningRoute
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
   '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
   '/blogs/itkmitl-review-2026/': typeof BlogsItkmitlReview2026IndexRoute
@@ -129,6 +143,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/api/github-contributions': typeof ApiGithubContributionsRoute
   '/api/gold-price': typeof ApiGoldPriceRoute
   '/api/mc-ping': typeof ApiMcPingRoute
   '/archive': typeof ArchiveIndexRoute
@@ -139,6 +154,7 @@ export interface FileRoutesByTo {
   '/qr': typeof QrIndexRoute
   '/tools': typeof ToolsIndexRoute
   '/urldecoder': typeof UrldecoderIndexRoute
+  '/api/spotify/listening': typeof ApiSpotifyListeningRoute
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
   '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
   '/blogs/itkmitl-review-2026': typeof BlogsItkmitlReview2026IndexRoute
@@ -148,6 +164,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/api/github-contributions': typeof ApiGithubContributionsRoute
   '/api/gold-price': typeof ApiGoldPriceRoute
   '/api/mc-ping': typeof ApiMcPingRoute
   '/archive/': typeof ArchiveIndexRoute
@@ -158,6 +175,7 @@ export interface FileRoutesById {
   '/qr/': typeof QrIndexRoute
   '/tools/': typeof ToolsIndexRoute
   '/urldecoder/': typeof UrldecoderIndexRoute
+  '/api/spotify/listening': typeof ApiSpotifyListeningRoute
   '/api/spotify/lyrics': typeof ApiSpotifyLyricsRoute
   '/api/spotify/now-playing': typeof ApiSpotifyNowPlayingRoute
   '/blogs/itkmitl-review-2026/': typeof BlogsItkmitlReview2026IndexRoute
@@ -168,6 +186,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/api/github-contributions'
     | '/api/gold-price'
     | '/api/mc-ping'
     | '/archive/'
@@ -178,6 +197,7 @@ export interface FileRouteTypes {
     | '/qr/'
     | '/tools/'
     | '/urldecoder/'
+    | '/api/spotify/listening'
     | '/api/spotify/lyrics'
     | '/api/spotify/now-playing'
     | '/blogs/itkmitl-review-2026/'
@@ -186,6 +206,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/api/github-contributions'
     | '/api/gold-price'
     | '/api/mc-ping'
     | '/archive'
@@ -196,6 +217,7 @@ export interface FileRouteTypes {
     | '/qr'
     | '/tools'
     | '/urldecoder'
+    | '/api/spotify/listening'
     | '/api/spotify/lyrics'
     | '/api/spotify/now-playing'
     | '/blogs/itkmitl-review-2026'
@@ -204,6 +226,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/api/github-contributions'
     | '/api/gold-price'
     | '/api/mc-ping'
     | '/archive/'
@@ -214,6 +237,7 @@ export interface FileRouteTypes {
     | '/qr/'
     | '/tools/'
     | '/urldecoder/'
+    | '/api/spotify/listening'
     | '/api/spotify/lyrics'
     | '/api/spotify/now-playing'
     | '/blogs/itkmitl-review-2026/'
@@ -223,6 +247,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ApiGithubContributionsRoute: typeof ApiGithubContributionsRoute
   ApiGoldPriceRoute: typeof ApiGoldPriceRoute
   ApiMcPingRoute: typeof ApiMcPingRoute
   ArchiveIndexRoute: typeof ArchiveIndexRoute
@@ -233,6 +258,7 @@ export interface RootRouteChildren {
   QrIndexRoute: typeof QrIndexRoute
   ToolsIndexRoute: typeof ToolsIndexRoute
   UrldecoderIndexRoute: typeof UrldecoderIndexRoute
+  ApiSpotifyListeningRoute: typeof ApiSpotifyListeningRoute
   ApiSpotifyLyricsRoute: typeof ApiSpotifyLyricsRoute
   ApiSpotifyNowPlayingRoute: typeof ApiSpotifyNowPlayingRoute
   BlogsItkmitlReview2026IndexRoute: typeof BlogsItkmitlReview2026IndexRoute
@@ -247,6 +273,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/github-contributions': {
+      id: '/api/github-contributions'
+      path: '/api/github-contributions'
+      fullPath: '/api/github-contributions'
+      preLoaderRoute: typeof ApiGithubContributionsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/gold-price': {
@@ -319,6 +352,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof UrldecoderIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/spotify/listening': {
+      id: '/api/spotify/listening'
+      path: '/api/spotify/listening'
+      fullPath: '/api/spotify/listening'
+      preLoaderRoute: typeof ApiSpotifyListeningRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/spotify/lyrics': {
       id: '/api/spotify/lyrics'
       path: '/api/spotify/lyrics'
@@ -359,6 +399,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ApiGithubContributionsRoute: ApiGithubContributionsRoute,
   ApiGoldPriceRoute: ApiGoldPriceRoute,
   ApiMcPingRoute: ApiMcPingRoute,
   ArchiveIndexRoute: ArchiveIndexRoute,
@@ -369,6 +410,7 @@ const rootRouteChildren: RootRouteChildren = {
   QrIndexRoute: QrIndexRoute,
   ToolsIndexRoute: ToolsIndexRoute,
   UrldecoderIndexRoute: UrldecoderIndexRoute,
+  ApiSpotifyListeningRoute: ApiSpotifyListeningRoute,
   ApiSpotifyLyricsRoute: ApiSpotifyLyricsRoute,
   ApiSpotifyNowPlayingRoute: ApiSpotifyNowPlayingRoute,
   BlogsItkmitlReview2026IndexRoute: BlogsItkmitlReview2026IndexRoute,
