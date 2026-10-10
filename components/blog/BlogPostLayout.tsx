@@ -16,7 +16,7 @@ import { cn } from '@/lib/utils'
 const ease = [0.22, 1, 0.36, 1] as const
 
 export const backPillClassName =
-  'inline-flex h-9 items-center gap-2 rounded-full border border-border bg-white px-4 text-sm font-medium text-muted-foreground transition-colors hover:border-g-blue/50 hover:bg-g-blue-soft/50 hover:text-foreground'
+  'inline-flex h-9 items-center gap-2 rounded-full border border-border bg-card px-4 text-sm font-medium text-muted-foreground transition-colors hover:border-g-blue/50 hover:bg-g-blue-soft/50 hover:text-foreground'
 
 interface BlogPostLayoutProps {
   /** Route of the post; title, date, tags and cover are read from `lib/blog-posts.ts` */

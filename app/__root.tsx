@@ -11,6 +11,7 @@ import MemphisEdges from '@/components/decor/MemphisEdges'
 import ColorDashes from '@/components/google/ColorDashes'
 import { PillDot, pillClassName } from '@/components/google/PillLink'
 import { LocaleProvider, getInitialLocale, useI18n } from '@/lib/i18n'
+import { themeInitScript } from '@/lib/theme'
 
 export const Route = createRootRoute({
   notFoundComponent: NotFound,
@@ -91,8 +92,10 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
   // One client per app instance (and per SSR request), never shared at module scope.
   const [queryClient] = useState(() => new QueryClient())
   return (
-    <html lang={locale}>
+    // The theme script adds `dark` to <html> before React hydrates
+    <html lang={locale} suppressHydrationWarning>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <HeadContent />
       </head>
       <body className="antialiased font-google-sans pb-[5rem] md:pb-0">

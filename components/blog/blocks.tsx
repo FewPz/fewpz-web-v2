@@ -117,7 +117,7 @@ export function BlogCallout({
   const c = colorClasses(color)
   return (
     <aside className={cn('flex gap-4 rounded-xl p-5 sm:p-6', c.soft)}>
-      <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-white">
+      <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-card">
         <Icon className={cn('size-4.5', c.ink)} />
       </span>
       <div className="space-y-1.5 pt-1.5">

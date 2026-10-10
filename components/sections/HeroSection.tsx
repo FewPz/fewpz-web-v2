@@ -77,7 +77,7 @@ function RingAvatar() {
         variants={{ rest: { rotate: 0 }, hover: { rotate: 180 } }}
         transition={{ type: 'spring', stiffness: 120, damping: 14 }}
       />
-      <span className="absolute inset-[3px] overflow-hidden rounded-full border-[3px] border-white bg-white">
+      <span className="absolute inset-[3px] overflow-hidden rounded-full border-[3px] border-background bg-background">
         <img src="/photos/photo6.jpg" alt="Peeranat Matsor" className="size-full object-cover" />
       </span>
     </motion.div>

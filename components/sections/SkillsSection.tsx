@@ -54,8 +54,8 @@ const groups: SkillGroup[] = [
       {
         skills: [
           { name: 'React', icon: SiReact, color: '#149ECA' },
-          { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
-          { name: 'TanStack Start', icon: SiTanstack, color: '#000000' },
+          { name: 'Next.js', icon: SiNextdotjs, color: 'light-dark(#000000, #FFFFFF)' },
+          { name: 'TanStack Start', icon: SiTanstack, color: 'light-dark(#000000, #FFFFFF)' },
           { name: 'TanStack Query', icon: SiReactquery, color: '#FF4154' },
           { name: 'SvelteKit', icon: SiSvelte, color: '#FF3E00' },
           { name: 'Nuxt', icon: SiNuxt, color: '#00DC82' },
@@ -72,10 +72,10 @@ const groups: SkillGroup[] = [
       {
         skills: [
           { name: 'Node.js', icon: SiNodedotjs, color: '#5FA04E' },
-          { name: 'Express.js', icon: SiExpress, color: '#000000' },
-          { name: 'Elysia (Bun)', icon: SiBun, color: '#000000' },
+          { name: 'Express.js', icon: SiExpress, color: 'light-dark(#000000, #FFFFFF)' },
+          { name: 'Elysia (Bun)', icon: SiBun, color: 'light-dark(#000000, #FFFFFF)' },
           { name: 'Hono', icon: SiHono, color: '#E36002' },
-          { name: 'Django', icon: SiDjango, color: '#092E20' },
+          { name: 'Django', icon: SiDjango, color: 'light-dark(#092E20, #44B78B)' },
           { name: 'Nginx', icon: SiNginx, color: '#009639' },
           { name: 'HAProxy', icon: Network },
           { name: 'LDAP', icon: KeyRound },
@@ -93,7 +93,7 @@ const groups: SkillGroup[] = [
           { name: 'MySQL', icon: SiMysql, color: '#4479A1' },
           { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
           { name: 'Redis', icon: SiRedis, color: '#FF4438' },
-          { name: 'Elasticsearch', icon: SiElasticsearch, color: '#005571' },
+          { name: 'Elasticsearch', icon: SiElasticsearch, color: 'light-dark(#005571, #00BFB3)' },
           { name: 'MinIO', icon: SiMinio, color: '#C72E49' },
           { name: 'RustFS', icon: SiRustfs, color: '#DEA584' },
         ],
@@ -102,7 +102,7 @@ const groups: SkillGroup[] = [
         label: 'Messaging',
         skills: [
           { name: 'RabbitMQ', icon: SiRabbitmq, color: '#FF6600' },
-          { name: 'MQTT', icon: SiMqtt, color: '#660066' },
+          { name: 'MQTT', icon: SiMqtt, color: 'light-dark(#660066, #B565B5)' },
           { name: 'Redis Pub/Sub', icon: SiRedis, color: '#FF4438' },
         ],
       },
@@ -166,7 +166,7 @@ const groups: SkillGroup[] = [
           { name: 'Git', icon: SiGit, color: '#F05032' },
           { name: 'VS Code', icon: VscVscode, color: '#007ACC' },
           { name: 'Maven', icon: SiApachemaven, color: '#C71A36' },
-          { name: 'Gradle', icon: SiGradle, color: '#02303A' },
+          { name: 'Gradle', icon: SiGradle, color: 'light-dark(#02303A, #1BA8CB)' },
           { name: 'Figma', icon: SiFigma, color: '#F24E1E' },
         ],
       },
@@ -226,7 +226,7 @@ function SkillBlock({ group, index }: { group: SkillGroup; index: number }) {
                   key={name}
                   variants={chipItem}
                   className={cn(
-                    'inline-flex cursor-default items-center gap-1.5 rounded-full border border-border bg-white px-2.5 py-1 text-xs text-foreground transition-colors',
+                    'inline-flex cursor-default items-center gap-1.5 rounded-full border border-border bg-card px-2.5 py-1 text-xs text-foreground transition-colors',
                     chipHoverBorder[accent.name],
                   )}
                 >

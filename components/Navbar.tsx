@@ -1,11 +1,12 @@
 import { Link, useRouterState } from '@tanstack/react-router';
-import { User, Briefcase, Newspaper } from 'lucide-react';
+import { User, Briefcase, Newspaper, Sun, Moon } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { motion, useMotionValueEvent, useScroll } from 'motion/react';
 import FlagIcon from '@/components/google/FlagIcon';
 import LogoMark from '@/components/google/LogoMark';
 import { GOOGLE_HEX, colorClasses, type GoogleColor } from '@/lib/google-colors';
 import { useI18n, type Locale, type Localized } from '@/lib/i18n';
+import { useTheme } from '@/lib/theme';
 import { cn } from '@/lib/utils';
 
 const navLinks: { label: Localized; href: string; icon: typeof User; color: GoogleColor }[] = [
@@ -80,6 +81,62 @@ function NavItem({
   );
 }
 
+/** Sun/moon switch; the new theme spreads out from the button. */
+function ThemeToggle({ className }: { className?: string }) {
+  const { t } = useI18n();
+  const { theme, toggle } = useTheme();
+  const dark = theme === 'dark';
+  const label = dark ? t({ en: 'Light mode', th: 'โหมดสว่าง' }) : t({ en: 'Dark mode', th: 'โหมดมืด' });
+  return (
+    <button
+      type="button"
+      onClick={(e) => {
+        const r = e.currentTarget.getBoundingClientRect();
+        toggle({ x: r.left + r.width / 2, y: r.top + r.height / 2 });
+      }}
+      aria-label={label}
+      title={label}
+      className={cn(
+        'relative flex size-8 items-center justify-center overflow-hidden rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground',
+        className,
+      )}
+    >
+      <motion.span
+        key={theme}
+        initial={{ rotate: -90, scale: 0.4, opacity: 0 }}
+        animate={{ rotate: 0, scale: 1, opacity: 1 }}
+        transition={spring}
+        className="flex"
+      >
+        {dark ? <Moon className="size-4" /> : <Sun className="size-4" />}
+      </motion.span>
+    </button>
+  );
+}
+
+/** Bottom-bar version of the theme switch, labelled like the other tabs. */
+function MobileThemeToggle() {
+  const { t } = useI18n();
+  const { theme, toggle } = useTheme();
+  const dark = theme === 'dark';
+  return (
+    <button
+      type="button"
+      onClick={(e) => {
+        const r = e.currentTarget.getBoundingClientRect();
+        toggle({ x: r.left + r.width / 2, y: r.top + r.height / 2 });
+      }}
+      aria-label={dark ? t({ en: 'Light mode', th: 'โหมดสว่าง' }) : t({ en: 'Dark mode', th: 'โหมดมืด' })}
+      className="flex flex-col items-center gap-1 min-w-[4rem] py-0.5 text-muted-foreground transition-colors"
+    >
+      <span className="flex h-8 w-14 items-center justify-center">
+        {dark ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
+      </span>
+      <span className="text-[11px] font-medium">{dark ? t({ en: 'Dark', th: 'มืด' }) : t({ en: 'Light', th: 'สว่าง' })}</span>
+    </button>
+  );
+}
+
 /** Thai | English flag switch for the desktop pill. */
 function LanguageToggle() {
   const { locale, setLocale } = useI18n();
@@ -104,7 +161,7 @@ function LanguageToggle() {
             {selected && (
               <motion.span
                 layoutId="lang-pill"
-                className="absolute inset-0 rounded-full bg-white shadow-[0_1px_3px_rgba(60,64,67,0.25)]"
+                className="absolute inset-0 rounded-full bg-white shadow-[0_1px_3px_rgba(60,64,67,0.25)] dark:bg-white/15"
                 transition={spring}
               />
             )}
@@ -142,7 +199,7 @@ export default function Navbar() {
       >
         <div
           className={cn(
-            'flex items-center gap-1 rounded-full border border-border bg-white/85 backdrop-blur-xl transition-[padding,box-shadow] duration-300',
+            'flex items-center gap-1 rounded-full border border-border bg-card/85 backdrop-blur-xl transition-[padding,box-shadow] duration-300',
             scrolled
               ? 'px-2 py-1.5 shadow-[0_1px_3px_rgba(60,64,67,0.2),0_4px_12px_rgba(60,64,67,0.12)]'
               : 'px-3 py-2',
@@ -185,13 +242,14 @@ export default function Navbar() {
           })}
 
           <div className="w-px h-5 bg-border mx-1" />
+          <ThemeToggle className="mr-1" />
           <LanguageToggle />
         </div>
       </motion.nav>
 
       {/* Mobile: full-width bottom action bar (Material 3 style) */}
       <motion.nav
-        className="md:hidden fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-white/95 backdrop-blur-xl"
+        className="md:hidden fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-card/95 backdrop-blur-xl"
         initial={{ y: 80 }}
         animate={{ y: 0 }}
         transition={spring}
@@ -224,6 +282,8 @@ export default function Navbar() {
               </NavItem>
             );
           })}
+
+          <MobileThemeToggle />
 
           {/* Language switch: shows the language you'd switch to */}
           <button

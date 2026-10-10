@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Dark mode is a `.dark` class on <html>, set before first paint by the inline script in app/__root.tsx */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -112,6 +115,55 @@
   --sidebar-accent-foreground: #1A73E8;
   --sidebar-border: #DADCE0;
   --sidebar-ring: #4285F4;
+}
+
+/* Google dark theme (Material dark surfaces, tonal brand inks) */
+.dark {
+  color-scheme: dark;
+
+  --g-blue-ink: #8AB4F8;
+  --g-red-ink: #F28B82;
+  --g-yellow-ink: #FDD663;
+  --g-green-ink: #81C995;
+  --g-blue-soft: #1B2A42;
+  --g-red-soft: #3B1F1D;
+  --g-yellow-soft: #3A3017;
+  --g-green-soft: #17311F;
+  --g-navy: #A8C7FA;
+
+  --background: #131314;
+  --foreground: #E3E3E3;
+  --card: #1E1F20;
+  --card-foreground: #E3E3E3;
+  --popover: #1E1F20;
+  --popover-foreground: #E3E3E3;
+  --primary: #8AB4F8;
+  --primary-foreground: #131314;
+  --secondary: #282A2C;
+  --secondary-foreground: #E3E3E3;
+  --muted: #282A2C;
+  --muted-foreground: #A8ABB0;
+  --accent: #1B2A42;
+  --accent-foreground: #8AB4F8;
+  --destructive: #F28B82;
+  --border: #3C4043;
+  --input: #3C4043;
+  --ring: #8AB4F8;
+  --chart-5: #A8ABB0;
+  --sidebar: #1E1F20;
+  --sidebar-foreground: #E3E3E3;
+  --sidebar-primary: #8AB4F8;
+  --sidebar-primary-foreground: #131314;
+  --sidebar-accent: #1B2A42;
+  --sidebar-accent-foreground: #8AB4F8;
+  --sidebar-border: #3C4043;
+}
+
+/* Theme switch: the new theme grows out of the toggle as a circle (see lib/theme.tsx) */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
 }
 
 @layer base {

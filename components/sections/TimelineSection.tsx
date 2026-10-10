@@ -444,7 +444,7 @@ function ExperienceCard({ item, index, isLast }: { item: ExperienceItem; index: 
         {item.tags && (
           <div className="flex flex-wrap gap-2 pt-2">
             {item.tags.map((tag) => (
-              <span key={tag} className="text-xs px-2.5 py-1 border border-border bg-white text-muted-foreground rounded-full">
+              <span key={tag} className="text-xs px-2.5 py-1 border border-border bg-card text-muted-foreground rounded-full">
                 {tag}
               </span>
             ))}
@@ -456,7 +456,7 @@ function ExperienceCard({ item, index, isLast }: { item: ExperienceItem; index: 
               <button
                 type="button"
                 aria-label={t({ en: 'View award photo', th: 'ดูรูปรางวัล' })}
-                className="mt-3 block w-60 overflow-hidden rounded-xl border border-border bg-white transition-[translate,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_1px_3px_rgba(60,64,67,0.2),0_6px_16px_rgba(60,64,67,0.12)] sm:w-64"
+                className="mt-3 block w-60 overflow-hidden rounded-xl border border-border bg-card transition-[translate,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_1px_3px_rgba(60,64,67,0.2),0_6px_16px_rgba(60,64,67,0.12)] sm:w-64"
               >
                 <img src={item.image} alt={t(item.title)} loading="lazy" className="h-auto w-full" />
               </button>
@@ -558,7 +558,7 @@ export default function TimelineSection() {
           <div
             role="tablist"
             aria-label={t({ en: 'Experience', th: 'ประสบการณ์' })}
-            className="mb-10 inline-flex max-w-full gap-1 overflow-x-auto rounded-full border border-border bg-white p-1 scrollbar-hide"
+            className="mb-10 inline-flex max-w-full gap-1 overflow-x-auto rounded-full border border-border bg-card p-1 scrollbar-hide"
           >
             {experienceTabs.map(({ id, label, icon: Icon, soft, ink, soon }) => {
               const selected = experienceTab === id;
@@ -634,7 +634,7 @@ export default function TimelineSection() {
               <Button
                 variant="outline"
                 onClick={() => setShowAllEducation(!showAllEducation)}
-                className="h-10 rounded-full border-border bg-white px-5 font-medium text-foreground hover:border-g-blue/50 hover:bg-g-blue-soft/50 hover:text-foreground"
+                className="h-10 rounded-full border-border bg-card px-5 font-medium text-foreground hover:border-g-blue/50 hover:bg-g-blue-soft/50 hover:text-foreground"
               >
                 {showAllEducation ? (
                   <>

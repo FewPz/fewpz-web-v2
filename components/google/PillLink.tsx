@@ -9,7 +9,7 @@ interface PillLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 }
 
 export const pillClassName =
-  'group/pill inline-flex h-12 items-center justify-center gap-2.5 rounded-full border border-border bg-white px-6 text-sm font-semibold text-foreground ' +
+  'group/pill inline-flex h-12 items-center justify-center gap-2.5 rounded-full border border-border bg-card px-6 text-sm font-semibold text-foreground ' +
   'transition-[background-color,border-color,box-shadow] duration-200 hover:border-g-blue/50 hover:bg-g-blue-soft/50 hover:shadow-[0_1px_3px_rgba(60,64,67,0.12)] ' +
   'outline-none focus-visible:ring-[3px] focus-visible:ring-ring/40'
 
