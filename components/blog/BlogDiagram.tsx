@@ -21,7 +21,7 @@ function loadMermaid() {
       startOnLoad: false,
       securityLevel: 'strict',
       theme: 'base',
-      fontFamily: "'Google Sans', 'Bai Jamjuree', sans-serif",
+      fontFamily: "'Google Sans', 'Bai Jamjuree', 'Noto Sans JP', sans-serif",
       themeVariables: {
         fontSize: '15px',
         primaryColor: '#E8F0FE',

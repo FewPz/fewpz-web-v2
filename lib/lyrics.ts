@@ -29,6 +29,14 @@ function toMs(minutes: string, seconds: string, fraction = "0") {
   return mins * 60_000 + secs * 1_000 + millis;
 }
 
+/**
+ * Some LRCLIB uploads letter-space Thai ("เ ร า ม ี good energy"). Thai has no spaces inside
+ * words, so a run of 3+ single Thai characters separated by spaces is joined back together.
+ */
+export function collapseSpacedThai(text: string): string {
+  return text.replace(/(?<=^|\s)[฀-๿](?: [฀-๿](?=$|\s)){2,}/gm, (run) => run.replace(/ /g, ""));
+}
+
 export function parseSyncedLyrics(lrc: string): LyricLine[] {
   const lines = lrc.split(/\r?\n/);
   const parsed: LyricLine[] = [];
@@ -39,7 +47,7 @@ export function parseSyncedLyrics(lrc: string): LyricLine[] {
       continue;
     }
 
-    const text = line.replace(/\[(\d{1,2}):(\d{2})(?:\.(\d{1,3}))?\]/g, "").trim();
+    const text = collapseSpacedThai(line.replace(/\[(\d{1,2}):(\d{2})(?:\.(\d{1,3}))?\]/g, "").trim());
     for (const match of timestamps) {
       parsed.push({
         timeMs: toMs(match[1], match[2], match[3]),
@@ -150,7 +158,7 @@ export async function getLyricsAtCurrentTimestamp(
       currentLine: null,
       nextLine: null,
       lines,
-      plainLyrics: payload.plainLyrics ?? null,
+      plainLyrics: payload.plainLyrics ? collapseSpacedThai(payload.plainLyrics) : null,
       source: "lrclib",
     };
     lyricCache.set(cacheKey, { data: result, expiry: now + 10 * 60 * 1000 });

@@ -6,7 +6,7 @@ import SectionHeading from '@/components/google/SectionHeading';
 import { colorAt } from '@/lib/google-colors';
 import { useI18n } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
-import { Music, Play, SkipBack, SkipForward } from 'lucide-react';
+import { Mic2, Music, Play, SkipBack, SkipForward } from 'lucide-react';
 import { motion, useReducedMotion } from 'motion/react';
 import { SiSpotify } from 'react-icons/si';
 
@@ -310,19 +310,35 @@ function PlayerCard({
 
       {track.quote && (
         <div className="mt-auto pt-5">
-          <blockquote
-            key={track.trackId}
-            className="border-l-[3px] pl-4 text-sm italic leading-relaxed text-muted-foreground [border-image:linear-gradient(to_bottom,var(--g-blue),var(--g-red),var(--g-yellow),var(--g-green))_1]"
-          >
-            {track.quote.map((line, i) => (
-              <span key={i} className="block">
-                {line}
-              </span>
-            ))}
-          </blockquote>
+          <LyricQuote key={track.trackId} lines={track.quote} />
         </div>
       )}
     </GoogleCard>
+  );
+}
+
+function LyricQuote({ lines }: { lines: string[] }) {
+  const { t } = useI18n();
+  const reduceMotion = useReducedMotion();
+
+  return (
+    <figure className="border-t border-border pt-5">
+      <CardLabel dot="bg-g-yellow" meta={<Mic2 className="size-3.5 text-muted-foreground" />}>
+        {t({ en: 'Lyrics', th: 'เนื้อเพลง' })}
+      </CardLabel>
+      <blockquote className="-mt-2 space-y-1 text-[15px] font-medium leading-relaxed text-foreground">
+        {lines.map((line, i) => (
+          <motion.p
+            key={i}
+            initial={reduceMotion ? false : { opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.15 + i * 0.12, ease: [0.22, 1, 0.36, 1] }}
+          >
+            {line}
+          </motion.p>
+        ))}
+      </blockquote>
+    </figure>
   );
 }
 
